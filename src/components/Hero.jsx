@@ -117,7 +117,7 @@ const Hero = () => {
       </motion.div>
 
       {/* O Spline não tem mais nenhuma animação vinda do Framer Motion */}
-      <Spline className='absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:lfEt-[-2%] h-full [clip-path:inset(0_0_6%_0)]' scene="https://prod.spline.design/kdPjCdHsh7NKkXM4/scene.splinecode" />
+      <Spline className='absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:lfEt-[-2%] h-full [clip-path:inset(0_0_10%_0)]' scene="https://prod.spline.design/kdPjCdHsh7NKkXM4/scene.splinecode" />
 
     </main>
   )
