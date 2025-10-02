@@ -77,11 +77,11 @@ const itemVariants = {
 const Hero = () => {
   return (
     // O <main> agora é um elemento normal, sem animação
-    <main className="flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(80vh-6rem)]">
+    <main className="flex lg:mt-20 flex-col lg:flex-row items-center justify-between h-[80vh]">
 
       {/* A animação em cascata começa AQUI */}
       <motion.div 
-        className="max-w-xl ml-[5%] mr-[5%] z-10 mt-[90%] md:mt-[60%] lg:mt-0"
+        className="max-w-xl ml-[5%] mr-[5%] z-10 mt-[90%] md:mt-[60%] lg:mt-0 bg-black"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
