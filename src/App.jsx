@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import Portfolio from "./components/portfolio/Portfolio"
 import Services from "./components/services/Services"
 
 export default function App() {
@@ -19,6 +20,9 @@ export default function App() {
 
         <Services />
       </section>
+
+      
+      <Portfolio />
 
       
     </main>
