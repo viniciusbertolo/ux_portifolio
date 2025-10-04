@@ -1,9 +1,146 @@
+// $breakpoint-mobile: 768px;
+
+// .portfolio {
+//     position: relative;
+
+
+
+//     .progress {
+//         position: sticky;
+//         left: 0;
+//         top: 0;
+//         padding-top: 50px;
+//         text-align: center;
+//         color: orange;
+//         font-size: 36px;
+
+//         @media (max-width: $breakpoint-mobile) {
+//             padding-top: 25px;
+//         }
+
+//         .progressBar {
+//             height: 10px;
+//             background-color: white;
+
+//             @media (max-width: $breakpoint-mobile) {
+//                 height: 4px;
+//             }
+
+//         }
+//     }
+
+
+
+
+//     .container {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         height: 100%;
+//         overflow: hidden;
+//         min-width: 100%;
+
+       
+
+
+
+//         .wrapper {
+//             max-width: 1366px;
+//             height: 100%;
+//             margin: auto;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             gap: 50px;
+
+//             // Aplica os estilos abaixo apenas em telas com até 768px de largura
+//             @media (max-width: $breakpoint-mobile) {
+//                 height: calc(100% - 250px);
+//                 flex-direction: column;
+
+//                 //  =============== AJUSTE PRINCIPAL ===============
+//                 justify-content: center; // 1. Centraliza TUDO na vertical
+//                 align-items: center; // 2. Garante a centralização na horizontal
+//                 // ===============================================
+
+//                 padding: 10px;
+//                 gap: 50px;
+//                 text-align: center;
+//             }
+
+
+//             .imgContainer {
+//                 flex: 1;
+//                 height: 50%;
+
+//                 @media (max-width: $breakpoint-mobile) {
+//                     width: 90%; // 2. Imagem ocupa 90% da largura da tela
+//                     height: auto; // Altura se ajusta automaticamente
+//                     flex: none; // Remove a propriedade flex para não interferir
+//                 }
+
+//                 img {
+//                     width: 100%;
+//                     height: 100%;
+//                     object-fit: cover;
+//                 }
+//             }
+
+//             .textContainer {
+//                 flex: 1;
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 30px;
+
+//                 @media (max-width: $breakpoint-mobile) {
+//                     align-items: start; // Centraliza o botão
+//                     gap: 20px;
+//                     width: 90%; // Garante que o texto tenha a mesma largura da imagem
+//                     flex: none;
+//                     text-align: left;
+//                     transform: none !important; // ANULA A ANIMAÇÃO DO FRAMER-MOTION
+
+//                 }
+
+//                 h2 {
+//                     font-size: 72px;
+
+//                     @media (max-width: $breakpoint-mobile) {
+//                         font-size: 42px; // 3. Ajusta o tamanho da fonte do título
+//                     }
+//                 }
+
+//                 p {
+//                     color: gray;
+//                     font-size: 20px;
+
+//                     @media (max-width: $breakpoint-mobile) {
+//                         font-size: 16px; // 3. Ajusta o tamanho da fonte do parágrafo
+//                     }
+//                 }
+
+//                 button {
+//                     background-color: orange;
+//                     border: none;
+//                     border-radius: 10px;
+//                     padding: 10px;
+//                     width: 200px;
+//                     cursor: pointer;
+//                     color: black;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
 $breakpoint-mobile: 768px;
+$breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas como iPhone SE
 
 .portfolio {
     position: relative;
-
-
+    
 
     .progress {
         position: sticky;
@@ -11,37 +148,31 @@ $breakpoint-mobile: 768px;
         top: 0;
         padding-top: 50px;
         text-align: center;
-        color: orange;
+        color: white;
         font-size: 36px;
+        z-index: 1;
 
         @media (max-width: $breakpoint-mobile) {
-            padding-top: 25px;
+            padding-top: calc(env(safe-area-inset-top) + 25px);
+            font-size: 24px;
         }
 
         .progressBar {
             height: 10px;
-            background-color: white;
+            background-color: #ff8c00;
 
             @media (max-width: $breakpoint-mobile) {
                 height: 4px;
             }
-
         }
     }
-
-
-
 
     .container {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%;
-        overflow: hidden;
         min-width: 100%;
-
-       
-
+        height: 100%;
 
 
         .wrapper {
@@ -53,36 +184,41 @@ $breakpoint-mobile: 768px;
             justify-content: center;
             gap: 50px;
 
-            // Aplica os estilos abaixo apenas em telas com até 768px de largura
             @media (max-width: $breakpoint-mobile) {
-                height: calc(100% - 250px);
+                height: 100%;
                 flex-direction: column;
-
-                //  =============== AJUSTE PRINCIPAL ===============
-                justify-content: center; // 1. Centraliza TUDO na vertical
-                align-items: center; // 2. Garante a centralização na horizontal
-                // ===============================================
-
-                padding: 10px;
-                gap: 50px;
-                text-align: center;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                padding: 0 20px;
+                
+                // NOVO: Reduz o espaçamento principal em telas baixas
+                @media (max-height: $breakpoint-short-mobile-height) {
+                    gap: 20px;
+                    justify-content: center; // Distribui melhor o espaço
+                }
             }
-
 
             .imgContainer {
                 flex: 1;
                 height: 50%;
 
                 @media (max-width: $breakpoint-mobile) {
-                    width: 90%; // 2. Imagem ocupa 90% da largura da tela
-                    height: auto; // Altura se ajusta automaticamente
-                    flex: none; // Remove a propriedade flex para não interferir
+                    width: 100%;
+                    max-height: 300px;
+                    flex: none;
+
+                    // NOVO: Reduz drasticamente a altura da imagem em telas baixas
+                    @media (max-height: $breakpoint-short-mobile-height) {
+                        max-height: 200px;
+                    }
                 }
 
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    border-radius: 10px;
                 }
             }
 
@@ -92,21 +228,31 @@ $breakpoint-mobile: 768px;
                 flex-direction: column;
                 gap: 30px;
 
-                @media (max-width: $breakpoint-mobile) {
-                    align-items: start; // Centraliza o botão
-                    gap: 20px;
-                    width: 90%; // Garante que o texto tenha a mesma largura da imagem
-                    flex: none;
-                    text-align: left;
-                    transform: none !important; // ANULA A ANIMAÇÃO DO FRAMER-MOTION
 
+                @media (max-width: $breakpoint-mobile) {
+                    align-items: start;
+                    text-align: left;
+                    flex: none;
+                    width: 100%;
+                    gap: 15px;
+                    transform: none !important;
+
+                    // NOVO: Reduz o espaçamento do texto em telas baixas
+                    @media (max-height: $breakpoint-short-mobile-height) {
+                        gap: 10px;
+                    }
                 }
 
                 h2 {
                     font-size: 72px;
 
                     @media (max-width: $breakpoint-mobile) {
-                        font-size: 42px; // 3. Ajusta o tamanho da fonte do título
+                        font-size: 36px;
+
+                        // NOVO: Reduz a fonte do título em telas baixas
+                        @media (max-height: $breakpoint-short-mobile-height) {
+                            font-size: 28px;
+                        }
                     }
                 }
 
@@ -115,18 +261,29 @@ $breakpoint-mobile: 768px;
                     font-size: 20px;
 
                     @media (max-width: $breakpoint-mobile) {
-                        font-size: 16px; // 3. Ajusta o tamanho da fonte do parágrafo
+                        font-size: 16px;
+                        
+                        // NOVO: Reduz a fonte do parágrafo em telas baixas
+                        @media (max-height: $breakpoint-short-mobile-height) {
+                            font-size: 14px;
+                        }
                     }
                 }
 
                 button {
-                    background-color: orange;
+                    background-color: #ff8c00;
                     border: none;
                     border-radius: 10px;
                     padding: 10px;
                     width: 200px;
                     cursor: pointer;
                     color: black;
+                    
+                    // NOVO: Reduz o botão em telas baixas
+                    @media (max-height: $breakpoint-short-mobile-height) {
+                       padding: 8px;
+                       width: 180px;
+                    }
                 }
             }
         }
