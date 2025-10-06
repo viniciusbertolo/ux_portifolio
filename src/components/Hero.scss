@@ -284,7 +284,7 @@ $short-mobile-height: 670px;
     height: 100%;
     margin: 0;
     padding: 0;
-    
+
 
 
     &::after {
@@ -308,12 +308,38 @@ $short-mobile-height: 670px;
         width: 100%;
         order: 1;
         max-height: 40%;
-    }
 
-    .spline-canvas{
-    transform: translateY(-20px); 
 
     }
+
+    .spline-canvas {
+        transform: translateY(-20px);
+
+    }
+
+}
+
+@media (max-width: $breakpoint-lg) {
+    .hero-spline-container {
+
+        position: relative;
+       
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            // Posicione no canto inferior direito
+            right: 0px; // Ajuste fino da posição horizontal
+            bottom: 0px; // Ajuste fino da posição vertical
+            // Defina um tamanho para cobrir o logo
+            width: 100%;
+            height: 75px;
+            // Use a cor de fundo da sua animação
+            background-color: black;
+            z-index: 100; // Garante que fique por cima de tudo
+        }
+    }
+
 
 }
 
@@ -345,11 +371,21 @@ $short-mobile-height: 670px;
         min-height: 45%;
 
         &::after {
-        content: '';
-        display: none;
-    }
+            content: '';
+            display: block;
+            position: absolute;
+            // Posicione no canto inferior direito
+            right: 0px; // Ajuste fino da posição horizontal
+            bottom: 0px; // Ajuste fino da posição vertical
+            // Defina um tamanho para cobrir o logo
+            width: 100%;
+            height: 75px;
+            // Use a cor de fundo da sua animação
+            background-color: black;
+            z-index: 100; // Garante que fique por cima de tudo
+        }
 
-        
+
     }
 
 }
