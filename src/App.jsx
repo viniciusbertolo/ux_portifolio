@@ -3,10 +3,10 @@ import Header from "./components/header/Header"
 import Hero from "./components/hero/Hero"
 import Portfolio from "./components/portfolio/Portfolio"
 import Services from "./components/services/Services"
-import BackToTopButton from "./components/backTop/backTop"
 import Socials from "./components/social/Social"
 
 import { useTranslation } from 'react-i18next';
+import BackTop from "./components/backTop/backTop"
 
 export default function App() {
 
@@ -22,7 +22,6 @@ export default function App() {
 
   return (
     <main>
-      <BackToTopButton />
       <section>
 
         <img className="absolute top-0 right-0 opacity-60 -z-10" src="/gradient.png" alt="Gradient-img" />
@@ -48,6 +47,8 @@ export default function App() {
       <section id="contact">
         <Contact />
       </section>
+
+      <BackTop />
 
 
 

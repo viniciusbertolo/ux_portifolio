@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react'; // Usando um ícone da Lucide
 import './backTop.scss';
 
-const BackToTopButton = () => {
+const BackTop = () => {
   // Estado para controlar a visibilidade do botão
   const [isVisible, setIsVisible] = useState(false);
 
@@ -47,4 +47,4 @@ const BackToTopButton = () => {
   );
 };
 
-export default BackToTopButton;
+export default BackTop;
