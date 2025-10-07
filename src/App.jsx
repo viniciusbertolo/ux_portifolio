@@ -1,3 +1,4 @@
+import Contact from "./components/contact/Contact"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Portfolio from "./components/portfolio/Portfolio"
@@ -23,6 +24,10 @@ export default function App() {
 
       
       <Portfolio />
+
+      <section id="contact">
+        <Contact />
+      </section>
 
       
     </main>

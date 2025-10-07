@@ -160,6 +160,7 @@ $breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas com
         .progressBar {
             height: 10px;
             background-color: #ff8c00;
+            border-radius: 4px;
 
             @media (max-width: $breakpoint-mobile) {
                 height: 4px;
@@ -191,6 +192,7 @@ $breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas com
                 align-items: center;
                 gap: 20px;
                 padding: 0 20px;
+
                 
                 // NOVO: Reduz o espaçamento principal em telas baixas
                 @media (max-height: $breakpoint-short-mobile-height) {

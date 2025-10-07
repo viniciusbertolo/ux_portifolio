@@ -168,8 +168,8 @@ const Hero = () => {
             >
                 <div className="divText">
 
-                    <motion.div variants={itemVariants} className='relative w-full sm:w-48 h-10 bg-gradient-to-r from-[#ff8c00] to-[#ff0080] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full'>
-                        <div className='font-[Open_Sans] absolute inset-[3px] bg-black rounded-full flex items-center justify-center gap-1 text-sm'>
+                    <motion.div variants={itemVariants} className='relative w-full sm:w-48 h-10 bg-gradient-to-r from-[#ff8c00] to-[#ff0080] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-[10px]'>
+                        <div className='font-[Open_Sans] absolute inset-[3px] bg-black rounded-[8px] flex items-center justify-center gap-1 text-sm'>
                             <i className='bx bx-diamond'></i>
                             INTRODUCING
                         </div>
@@ -193,10 +193,10 @@ const Hero = () => {
                         variants={itemVariants}
                         className='hero-buttons flex gap-4'
                     >
-                        <a className='font-[Open_Sans] border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a]' href="#">
+                        <a className='font-[Open_Sans] border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-[10px] sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a]' href="#">
                             Documentation <i className='bx bx-link-external'></i>
                         </a>
-                        <a className='font-[Open_Sans] py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-[#ff8c00] text-black hover:text-white' href="#">
+                        <a className='font-[Open_Sans] py-2 sm:py-3 px-8 sm:px-10 rounded-[10px] sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-[#ff8c00] text-black hover:text-white' href="#">
                             Get Started <i className='bx bx-link-external'></i>
                         </a>
                     </motion.div>
