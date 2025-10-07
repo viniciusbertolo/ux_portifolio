@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <main>
-      <section>
+      <section id="topo">
 
         <img className="absolute top-0 right-0 opacity-60 -z-10" src="/gradient.png" alt="Gradient-img" />
 

@@ -13,22 +13,7 @@ const BackTop = () => {
     }
   };
 
-  // --- AQUI ESTÁ A MUDANÇA ---
-  const scrollToTop = () => {
-    // Adiciona a classe para desativar o scroll-snap
-    document.documentElement.classList.add('scrolling');
-
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-
-    // Remove a classe após um tempo para reativar o scroll-snap
-    // O tempo (750ms) deve ser um pouco maior que a duração do scroll suave
-    setTimeout(() => {
-      document.documentElement.classList.remove('scrolling');
-    }, 750);
-  };
+  // A função scrollToTop FOI REMOVIDA, não precisamos mais dela!
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
@@ -40,9 +25,11 @@ const BackTop = () => {
   return (
     <div className="back-to-top-container">
       {isVisible && (
-        <button onClick={scrollToTop} className="back-to-top-button">
+        // AQUI ESTÁ A MUDANÇA: trocamos <button> por <a>
+        // O onClick foi removido e substituído por href="#topo"
+        <a href="#topo" className="back-to-top-button">
           <ArrowUp size={24} />
-        </button>
+        </a>
       )}
     </div>
   );
