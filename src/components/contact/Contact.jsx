@@ -26,7 +26,7 @@ const Contact = () => {
     const [error, setError] = useState(null)
     const [success, setSuccess] = useState(null)
 
-    const isInView = useInView(ref, { margin: "-100px" })
+    const isInView = useInView(ref, { margin: "-100px"})
 
 
 
