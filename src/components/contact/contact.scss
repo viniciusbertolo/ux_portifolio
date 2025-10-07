@@ -235,22 +235,16 @@ $breakpoint-mobile: 768px;
             display: flex;
             flex-direction: column;
             gap: 20px;
-            background-color: black;
-            padding-bottom: 50px;
-
-            padding-top: 50px;
+           
 
 
             // Breakpoint para telas com altura reduzida
             @media (max-height: $breakpoint-short-mobile-height) and (max-width: $breakpoint-mobile) {
                 gap: 15px; // Reduz o espaço entre os campos do formulário
-                padding-bottom: 0;
-                padding-top: 0;
+                
             }
-            @media (max-width: $breakpoint-mobile) {
-                padding-bottom: 0;
-                padding-top: 0;
-            }
+
+          
 
             input,
             textarea {
