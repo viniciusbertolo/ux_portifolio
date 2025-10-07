@@ -26,7 +26,7 @@ const Contact = () => {
     const [error, setError] = useState(null)
     const [success, setSuccess] = useState(null)
 
-    const isInView = useInView(ref, { margin: "-100px"})
+    const isInView = useInView(ref, { margin: "-100px" })
 
 
 
@@ -42,9 +42,20 @@ const Contact = () => {
                 () => {
                     console.log('SUCCESS!');
                     setSuccess(true)
+                    // Limpa o formulário após o envio bem-sucedido
+                    formRef.current.reset();
+
+                    // Esconde a mensagem de sucesso após 3 segundos
+                    setTimeout(() => {
+                        setSuccess(false);
+                    }, 5000);
                 },
                 (error) => {
                     setError(true)
+                    // Esconde a mensagem de erro após 3 segundos
+                    setTimeout(() => {
+                        setError(false);
+                    }, 5000);
                     console.log('FAILED...', error.text);
                 },
             );
@@ -74,7 +85,7 @@ const Contact = () => {
                     initial={{ opacity: 1 }} whileInView={{ opacity: 0 }} transition={{ delay: 2, duration: 2 }}
                 >
                     <svg
-                        
+
                         viewBox="0 0 32.666 32.666"
 
                     >
@@ -98,12 +109,14 @@ const Contact = () => {
                 </motion.div>
 
                 <motion.form onSubmit={sendEmail} ref={formRef} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 4, duration: 1 }}>
-                    <input type="text" required placeholder="Name" name="name"/>
-                    <input type="email" required placeholder="Email" name="email"/>
+                    <input type="text" required placeholder="Name" name="name" />
+                    <input type="email" required placeholder="Email" name="email" />
                     <textarea placeholder="Message" rows={4} name="message"></textarea>
                     <button>Submit</button>
-                    {error && "Error"}
-                    {success && "Success"}
+                    {/* Mensagens com os novos estilos */}
+                    {success && <span className="success">Mensagem enviada com sucesso!</span>}
+                    {error && <span className="error">Falha ao enviar a mensagem. Tente novamente.</span>}
+
                 </motion.form>
             </div>
         </motion.div>
