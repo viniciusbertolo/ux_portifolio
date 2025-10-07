@@ -3,30 +3,38 @@
 @tailwind utilities;
 
 
-@layer base{
+@layer base {
 
-  body{
+  body {
     @apply bg-black text-white relative font-sans h-screen overflow-x-hidden;
-    
+
   }
 
-  html{
+  html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
   }
 
-  *{
+
+
+  /* Adicione esta nova regra: */
+  html.scrolling {
+    /* Esta classe vai desativar o snap temporariamente */
+    scroll-snap-type: none;
+  }
+
+  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: inherit;
   }
 
-  section{
+  section {
     height: 100dvh;
     scroll-snap-align: center;
   }

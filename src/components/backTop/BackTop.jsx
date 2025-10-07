@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUp } from 'lucide-react'; // Usando um ícone da Lucide
+import { ArrowUp } from 'lucide-react';
 import './backTop.scss';
 
 const BackTop = () => {
-  // Estado para controlar a visibilidade do botão
   const [isVisible, setIsVisible] = useState(false);
 
-  // Função que verifica a posição do scroll e atualiza o estado
   const toggleVisibility = () => {
-    // Se o scroll vertical for maior que 300px, mostra o botão
     if (window.scrollY > 300) {
       setIsVisible(true);
     } else {
@@ -16,27 +13,31 @@ const BackTop = () => {
     }
   };
 
-  // Função para rolar a página suavemente para o topo
+  // --- AQUI ESTÁ A MUDANÇA ---
   const scrollToTop = () => {
+    // Adiciona a classe para desativar o scroll-snap
+    document.documentElement.classList.add('scrolling');
+
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // A mágica do scroll suave
+      behavior: 'smooth',
     });
+
+    // Remove a classe após um tempo para reativar o scroll-snap
+    // O tempo (750ms) deve ser um pouco maior que a duração do scroll suave
+    setTimeout(() => {
+      document.documentElement.classList.remove('scrolling');
+    }, 750);
   };
 
-  // useEffect para adicionar e remover o 'event listener' do scroll
   useEffect(() => {
-    // Adiciona o listener quando o componente é montado
     window.addEventListener('scroll', toggleVisibility);
-
-    // Remove o listener quando o componente é desmontado (importante para performance)
     return () => {
       window.removeEventListener('scroll', toggleVisibility);
     };
-  }, []); // O array vazio [] garante que o efeito só rode na montagem e desmontagem
+  }, []);
 
   return (
-    // Renderiza o botão apenas se 'isVisible' for verdadeiro
     <div className="back-to-top-container">
       {isVisible && (
         <button onClick={scrollToTop} className="back-to-top-button">
