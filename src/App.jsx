@@ -1,13 +1,12 @@
 import Contact from "./components/contact/Contact"
 import Header from "./components/header/Header"
 import Hero from "./components/hero/Hero"
-import LanguageSwitcher from "./components/languageSwitcher/LanguageSwitcher"
 import Portfolio from "./components/portfolio/Portfolio"
 import Services from "./components/services/Services"
+import BackToTopButton from "./components/backTop/backTop"
+import Socials from "./components/social/Social"
 
 import { useTranslation } from 'react-i18next';
-import Socials from "./components/social/Social"
-import BackToTopButton from "./components/backTop/backTop"
 
 export default function App() {
 
