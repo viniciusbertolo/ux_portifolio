@@ -1,3 +1,4 @@
+import BackTop from "./components/backTop/BackTop"
 import Contact from "./components/contact/Contact"
 import Header from "./components/header/Header"
 import Hero from "./components/hero/Hero"
@@ -6,7 +7,6 @@ import Services from "./components/services/Services"
 import Socials from "./components/social/Social"
 
 import { useTranslation } from 'react-i18next';
-import BackTop from "./components/backTop/backTop"
 
 export default function App() {
 
