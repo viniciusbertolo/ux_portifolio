@@ -1,0 +1,173 @@
+// --- Variáveis de Cores ---
+$whatsapp-color: #25D366;
+$linkedin-color: #0077B5;
+$facebook-color: #1877F2;
+$instagram-color: #E4405F;
+$gmail-color: #EA4335;
+$curriculo-color: #f4b400;
+$orange-color: #ff8c00;
+$bg-color: #000000;
+$text-color: white;
+
+/* NOVO: Breakpoint para telas de celular com pouca altura */
+$breakpoint-short-mobile-height: 670px;
+
+// --- Estilo da Seção Principal ---
+.socials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+    padding: 2rem;
+    background-color: $bg-color;
+    color: $text-color;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+// --- Estilo do Título (com a linha) ---
+.socials-title {
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 48px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    line-height: 1.1; // Ajustado para ser mais compacto
+    padding-bottom: 1rem; // Adicionado espaço para a linha
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 70vw;
+        height: 4px;
+        background-color: $orange-color;
+        border-radius: 2px;
+    }
+}
+
+// --- Grid para os Links ---
+.socials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// --- Estilo de cada Link/Botão ---
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    min-width: 240px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: $text-color;
+    background-color: lighten($bg-color, 5%);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+
+    span {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    svg {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+        span {
+            display: none;
+        }
+
+        svg {
+            transform: scale(1.3);
+        }
+    }
+
+    &.whatsapp:hover { background-color: $whatsapp-color; }
+    &.linkedin:hover { background-color: $linkedin-color; }
+    &.facebook:hover { background-color: $facebook-color; }
+    &.instagram:hover { background-color: $instagram-color; }
+    &.gmail:hover { background-color: $gmail-color; }
+    &.curriculo:hover { background-color: $curriculo-color; }
+}
+
+/* --- AJUSTES PARA MOBILE (LARGURA) --- */
+@media (max-width: 767px) {
+    .socials-section {
+        align-items: flex-start;
+    }
+}
+
+/* --- ESTILOS PARA NOTEBOOK E TELAS MAIORES (LARGURA) --- */
+@media (min-width: 768px) {
+    .socials-title {
+        font-size: 100px;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: 2px;
+        padding-bottom: 1.5rem;
+        margin-bottom: 80px;
+
+        &::after {
+            width: 70vw;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 10px;
+        }
+    }
+}
+
+/* --- NOVO: AJUSTES PARA CELULARES COM TELA BAIXA (ALTURA) --- */
+@media (max-height: $breakpoint-short-mobile-height) {
+    .socials-section {
+        // Reduz o padding vertical para ganhar espaço
+        padding: 1rem 2rem;
+        // Permite que a seção seja um pouco menor se necessário
+        min-height: auto;
+    }
+
+    .socials-title {
+        // Diminui o tamanho da fonte
+        font-size: 28px;
+        // Reduz drasticamente a margem inferior
+        margin-bottom: 2rem;
+    }
+
+    .socials-grid {
+        // Diminui o espaçamento entre os botões
+        gap: 0.75rem;
+    }
+
+    .social-link {
+        // Diminui o padding vertical dos botões
+        padding: 0.75rem 1.5rem;
+        // Diminui o tamanho da fonte e do ícone dentro dos botões
+        span {
+            font-size: 1rem;
+        }
+        svg {
+            font-size: 1.25rem;
+        }
+    }
+}

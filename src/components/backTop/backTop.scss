@@ -1,0 +1,58 @@
+// Variáveis de estilo
+$button-size: 50px;
+$button-color: #ff8c00; // Laranja, para combinar com o tema
+$icon-color: #000000;
+$bottom-position: 2rem;
+$right-position: 2rem;
+$breakpoint-short-mobile-height: 700px; // Ponto de quebra para telas baixas como iPhone SE
+
+.back-to-top-button {
+  // --- Posicionamento ---
+  position: fixed;
+  bottom: $bottom-position;
+  right: $right-position;
+  z-index: 1000; // Garante que fique acima de outros elementos
+
+  // --- Estilo Visual ---
+  width: $button-size;
+  height: $button-size;
+  border-radius: 50%; // Para fazer um círculo perfeito
+  background-color: $button-color;
+  color: $icon-color;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  // --- Alinhamento do Ícone ---
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // --- Animações e Transições ---
+  opacity: 0; // Começa invisível
+  transform: translateY(20px); // Começa um pouco para baixo
+  animation: fadeIn 0.5s forwards; // Aplica a animação de entrada
+
+  // Efeito de hover
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  // Define a animação de entrada
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+// NOVO: Regra para esconder o botão em telas com pouca altura
+@media (max-height: $breakpoint-short-mobile-height) {
+  .back-to-top-button {
+    // Simplesmente esconde o botão
+    display: none;
+  }
+}
