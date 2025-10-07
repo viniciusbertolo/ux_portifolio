@@ -15,7 +15,7 @@
 //         flex-direction: column;
 //         justify-content: start;
 //         gap: 30px;
-        
+
 //     }
 
 //     .textContainer {
@@ -23,8 +23,8 @@
 //         display: flex;
 //         flex-direction: column;
 //         gap: 40px;
-        
-        
+
+
 //         @media (max-width: $breakpoint-mobile) {
 //             width: 100%;
 //             flex:none;
@@ -57,13 +57,13 @@
 //     .formContainer {
 //         flex: 1;
 //         position: relative;
-        
+
 
 //         @media (max-width: $breakpoint-mobile) {
 //             flex: none;
 //             width: 100%;
 //             padding: 10px;
-             
+
 
 //         }
 
@@ -74,7 +74,7 @@
 //             z-index: -1;
 //             width: 450px;
 //             height: 450px;
-            
+
 
 
 //             @media (max-width: $breakpoint-mobile) {
@@ -84,7 +84,7 @@
 //             left: 0;
 //             height: 300px;
 //             margin: 0 auto;
-           
+
 
 //         }
 //         }
@@ -208,6 +208,7 @@ $breakpoint-mobile: 768px;
         @media (max-width: $breakpoint-mobile) {
             flex: none;
             width: 100%;
+
             padding: 10px;
         }
 
@@ -220,6 +221,7 @@ $breakpoint-mobile: 768px;
             height: 450px;
 
             @media (max-width: $breakpoint-mobile) {
+
                 width: 250px;
                 margin-left: 0;
                 padding-left: 0;
@@ -233,10 +235,21 @@ $breakpoint-mobile: 768px;
             display: flex;
             flex-direction: column;
             gap: 20px;
-            
+            background-color: black;
+            padding-bottom: 50px;
+
+            padding-top: 50px;
+
+
             // Breakpoint para telas com altura reduzida
-            @media (max-height: $breakpoint-short-mobile-height) and (max-width: $breakpoint-mobile){
+            @media (max-height: $breakpoint-short-mobile-height) and (max-width: $breakpoint-mobile) {
                 gap: 15px; // Reduz o espaço entre os campos do formulário
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+            @media (max-width: $breakpoint-mobile) {
+                padding-bottom: 0;
+                padding-top: 0;
             }
 
             input,
