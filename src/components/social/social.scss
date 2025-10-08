@@ -11,6 +11,7 @@ $text-color: white;
 
 /* NOVO: Breakpoint para telas de celular com pouca altura */
 $breakpoint-short-mobile-height: 670px;
+$breakpoint-mobile: 768px;
 
 // --- Estilo da Seção Principal ---
 .socials-section {
@@ -25,28 +26,42 @@ $breakpoint-short-mobile-height: 670px;
     color: $text-color;
     text-align: center;
     overflow-x: hidden;
+
+
+     
 }
 
 // --- Estilo do Título (com a linha) ---
 .socials-title {
     font-size: 36px;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 48px;
     text-align: left;
     width: 100%;
     position: relative;
     line-height: 1.1; // Ajustado para ser mais compacto
-    padding-bottom: 1rem; // Adicionado espaço para a linha
+    margin-bottom: 16px;
 
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 70vw;
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     width: 70vw;
+    //     height: 4px;
+    //     background-color: $orange-color;
+    //     border-radius: 2px;
+    // }
+}
+
+.progressBar {
+    width: 100%;
+    height: 10px;
+    background-color: $orange-color; // <-- Usando a variável
+    border-radius: 4px;
+    margin-bottom: 50px;
+
+    @media (max-width: $breakpoint-mobile) {
         height: 4px;
-        background-color: $orange-color;
-        border-radius: 2px;
     }
 }
 
@@ -76,7 +91,7 @@ $breakpoint-short-mobile-height: 670px;
     border-radius: 12px;
     text-decoration: none;
     color: $text-color;
-    background-color: lighten($bg-color, 5%);
+    background-color: #111111;
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
 
@@ -126,16 +141,18 @@ $breakpoint-short-mobile-height: 670px;
         line-height: 1;
         text-align: center;
         letter-spacing: 2px;
-        padding-bottom: 1.5rem;
-        margin-bottom: 80px;
+        margin-bottom: 24px;
 
-        &::after {
-            width: 70vw;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 10px;
-        }
+
+
+        // &::after {
+        //     width: 70vw;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     height: 10px;
+        // }
     }
+    
 }
 
 /* --- NOVO: AJUSTES PARA CELULARES COM TELA BAIXA (ALTURA) --- */
@@ -151,7 +168,7 @@ $breakpoint-short-mobile-height: 670px;
         // Diminui o tamanho da fonte
         font-size: 28px;
         // Reduz drasticamente a margem inferior
-        margin-bottom: 2rem;
+        margin-bottom: 12px;
     }
 
     .socials-grid {

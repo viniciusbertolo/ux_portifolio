@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 // 1. Importamos o hook 'useTranslation' para acessar o idioma
 import { useTranslation } from 'react-i18next';
 import './social.scss';
@@ -7,6 +7,7 @@ import './social.scss';
 import { FaWhatsapp, FaLinkedinIn, FaFacebookF, FaInstagram, FaGithub } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import { IoDocumentTextOutline } from 'react-icons/io5';
+import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 
 
 const Socials = () => {
@@ -38,12 +39,12 @@ const Socials = () => {
       className: 'linkedin',
     },
     {
-    // Objeto alterado
-    name: 'GitHub',
-    icon: <FaGithub />,
-    href: 'https://github.com/viniciusbertolo', // Lembre-se de atualizar este
-    className: 'github',
-  },
+      // Objeto alterado
+      name: 'GitHub',
+      icon: <FaGithub />,
+      href: 'https://github.com/viniciusbertolo', // Lembre-se de atualizar este
+      className: 'github',
+    },
     {
       name: 'Instagram',
       icon: <FaInstagram />,
@@ -66,10 +67,20 @@ const Socials = () => {
   ];
 
 
+  const ref = useRef()
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end end"] });
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+  })
+
+
   return (
-    <section className="socials-section">
+    <section className="socials-section" ref={ref}>
       {/* Mantive seu h1 e o texto como você definiu */}
       <h1 className="socials-title">Contato & Redes</h1>
+      <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       <div className="socials-grid">
         {socialLinks.map((link) => (
           <a
