@@ -141,7 +141,6 @@ $breakpoint-mobile: 768px;
     align-items: center;
     gap: 50px;
     height: 100vh;
-    min-height: 100vh;
 
     @media (max-width: $breakpoint-mobile) {
         width: 100%;
