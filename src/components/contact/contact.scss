@@ -135,13 +135,13 @@ $breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas com
 $breakpoint-mobile: 768px;
 
 .contact {
-    height: 100%;
     max-width: 1366px;
     margin: auto;
     display: flex;
     align-items: center;
     gap: 50px;
-    max-height: 100vh;
+    height: 100vh;
+    min-height: 100vh;
 
     @media (max-width: $breakpoint-mobile) {
         width: 100%;
