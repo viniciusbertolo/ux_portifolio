@@ -16,7 +16,7 @@ const Header = () => {
             <h1 className="font-[Open_Sans] text-3xl md:text-4xl lg:text-5xl font-light m-0">MCODE</h1>
 
             <nav className="hidden md:flex items-center gap-12">
-                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
+                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="/projeto">
                     COMPANY
                 </a>
                 <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
