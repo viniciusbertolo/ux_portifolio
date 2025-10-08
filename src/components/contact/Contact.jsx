@@ -355,19 +355,19 @@ const Contact = () => {
         offset: ["start end", "end end"]
     });
 
-    // Animação do formulário (vindo da direita)
-    const formOpacity = useTransform(scrollYProgress, [0, 0.75], [0, 1]);
-    const formX = useTransform(scrollYProgress, [0, 0.75], [100, 0]); // MUDANÇA AQUI
+   // Animação do formulário (agora vindo da esquerda, com um pequeno atraso)
+    const formOpacity = useTransform(scrollYProgress, [0.3, 1.0], [0, 1]);
+    const formX = useTransform(scrollYProgress, [0.3, 1.0], [-50, 0]); // <-- MUDANÇA PRINCIPAL AQUI
 
     // Animações individuais para o texto (vindo da esquerda)
     const itemOpacity1 = useTransform(scrollYProgress, [0, 0.75], [0, 1]);
-    const itemX1 = useTransform(scrollYProgress, [0, 0.75], [-50, 0]); // MUDANÇA AQUI
+    const itemX1 = useTransform(scrollYProgress, [0, 0.75], [-50, 0]);
 
     const itemOpacity2 = useTransform(scrollYProgress, [0.1, 0.85], [0, 1]);
-    const itemX2 = useTransform(scrollYProgress, [0.1, 0.85], [-50, 0]); // MUDANÇA AQUI
+    const itemX2 = useTransform(scrollYProgress, [0.1, 0.85], [-50, 0]);
 
     const itemOpacity3 = useTransform(scrollYProgress, [0.2, 0.95], [0, 1]);
-    const itemX3 = useTransform(scrollYProgress, [0.2, 0.95], [-50, 0]); // MUDANÇA AQUI
+    const itemX3 = useTransform(scrollYProgress, [0.2, 0.95], [-50, 0]);
 
     const sendEmail = (e) => {
         e.preventDefault();

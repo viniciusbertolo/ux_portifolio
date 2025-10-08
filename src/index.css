@@ -5,6 +5,10 @@
 
 @layer base {
 
+  /* * {
+  outline: 1px solid red !important;
+} */
+
   body {
     @apply bg-black text-white relative font-sans h-screen overflow-x-hidden;
 
@@ -13,6 +17,9 @@
   html {
     /* scroll-snap-type: y mandatory; */
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    max-width: 100%;
+    
   }
 
 
