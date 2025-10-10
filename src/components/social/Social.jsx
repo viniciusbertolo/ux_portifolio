@@ -77,7 +77,7 @@ const Socials = () => {
 
 
   return (
-    <section className="socials-section" ref={ref}>
+    <section className="socials-section" ref={ref} id="networks">
       {/* Mantive seu h1 e o texto como você definiu */}
       <h1 className="socials-title">Contato & Redes</h1>
       <motion.div style={{ scaleX }} className="progressBar"></motion.div>

@@ -1,5 +1,6 @@
 import 'boxicons/css/boxicons.min.css';
 import LanguageSwitcher from '../languageSwitcher/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
     const toggleMobileMenu = () =>{
@@ -11,22 +12,25 @@ const Header = () => {
             mobileMenu.classList.add('hidden')
         }
     }
+
+
+    const { t } = useTranslation();
     return (
         <header className="flex justify-between items-center py-4 px-4 lg:px-20">
-            <h1 className="font-[Open_Sans] text-3xl md:text-4xl lg:text-5xl font-light m-0">MCODE</h1>
+            <h1 className="font-[Open_Sans] text-3xl md:text-4xl lg:text-5xl font-light m-0">VMUS</h1>
 
             <nav className="hidden md:flex items-center gap-12">
-                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="/projeto">
-                    COMPANY
+                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#skills">
+                    {t('header.header_1')}
                 </a>
-                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
-                    FEATURES
+                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#projects">
+                    {t('header.header_2')}
                 </a>
-                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
-                    RESOURCES
+                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#networks">
+                    {t('header.header_3')}
                 </a>
-                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
-                    DOCS
+                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#contact">
+                    {t('header.header_4')}
                 </a>
             </nav>
 
@@ -42,7 +46,7 @@ const Header = () => {
             <div className="hidden md:flex items-center gap-6">
                 <LanguageSwitcher />
                 <button className="font-[Open_Sans] bg-[#222222] text-white py-3 px-8 rounded-[10px] border-none font-medium transition-all duration-500 hover:bg-[#ff8c00] cursor-pointer z-50">
-                    SIGNIN
+                    {t('header.button')}
                 </button>
             </div>
 
@@ -58,16 +62,16 @@ const Header = () => {
             <div id='mobileMenu' className=' hidden fixed top-0 pt-20 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-90 backdrop-blur- md'>
                 <nav className="flex flex-col gap-6 items-center">
                     <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
-                        COMPANY
+                        {t('header.header_1')}
                     </a>
                     <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
-                        FEATURES
+                        {t('header.header_2')}
                     </a>
                     <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
-                        RESOURCES
+                        {t('header.header_3')}
                     </a>
                     <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
-                        DOCS
+                        {t('header.header_4')}
                     </a>
                 </nav>
             </div>

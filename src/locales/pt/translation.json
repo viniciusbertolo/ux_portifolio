@@ -1,5 +1,34 @@
 {
-  "welcome": "Bem-vindo ao meu Site",
-  "about": "Este é um parágrafo simples explicando algo sobre o site.",
-  "change_language": "Mudar Idioma"
+  "header": {
+    "header_1": "HABILIDADES",
+    "header_2": "PROJETOS",
+    "header_3": "REDES",
+    "header_4": "CONTATO",
+    "button": "CURRÍCULO"
+  },
+  "hero": {
+    "up_title_main": "VINICIUS MÜSCHENBORN",
+    "title_main": "UI/UX DESIGNER",
+    "desc_main": "Usuários não são robôs, saiba como eu lido com eles em diferentes tipos de projetos, transformando dores em telas e protótipos interativos de brilhar os olhos!",
+    "button_1_main": "Contatos",
+    "button_2_main": "Meus Projetos"
+  },
+  "skills": {
+    "sub_title": "Minhas habilidades e ferramentas para criar experiências incríveis",
+    "title_1": "Minhas Skills",
+    "title_2": "em Design",
+    "button": "VEJA MEUS PROJETOS",
+    "skill_title_1": "Figma (Pixel-perfect & Auto-Layout)",
+    "skill_title_2": "UI/UX Research",
+    "skill_title_3": "Teste de Usabilidade",
+    "skill_title_4": "Design System & Componentização",
+    "skill_title_5": "Protótipos Interativos",
+    "skill_title_6": "Wireframing",
+    "skill_title_7": "Metodologias Ágeis",
+    "skill_title_8": "Inteligência Artificial",
+    "skill_title_9": "HTML5 & CSS3",
+    "skill_title_10": "React JS & Next JS",
+    "skill_title_11": "Análise e Solução de Problemas Complexos",
+    "skill_title_12": "Comunicação Clara e Colaboração em Equipe"
+  }
 }

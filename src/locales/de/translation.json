@@ -1,5 +1,34 @@
 {
-  "welcome": "Hallo",
-  "about": "Es is eine shones Website",
-  "change_language": "Sprache"
+  "header": {
+    "header_1": "FÄHIGKEITEN",
+    "header_2": "PROJEKTE",
+    "header_3": "NETZWERKE",
+    "header_4": "KONTAKT",
+    "button": "LEBENSLAUF"
+  },
+  "hero": {
+    "up_title_main": "VINICIUS MÜSCHENBORN",
+    "title_main": "UI/UX DESIGNER",
+    "desc_main": "Benutzer sind keine Roboter. Entdecken Sie, wie ich in verschiedenen Projekten mit ihnen umgehe und Schmerzpunkte in beeindruckende, interaktive Bildschirme und Prototypen verwandle!",
+    "button_1_main": "Kontakt",
+    "button_2_main": "Meine Projekte"
+  },
+  "skills": {
+    "sub_title": "Meine Fähigkeiten und Werkzeuge zur Schaffung unglaublicher Erlebnisse",
+    "title_1": "Meine Design",
+    "title_2": "Fähigkeiten",
+    "button": "MEINE PROJEKTE ANSEHEN",
+    "skill_title_1": "Figma (Pixel-perfect & Auto-Layout)",
+    "skill_title_2": "UI/UX Research (Nutzerforschung)",
+    "skill_title_3": "Usability-Tests",
+    "skill_title_4": "Designsysteme & Komponentisierung",
+    "skill_title_5": "Interaktive Prototypen",
+    "skill_title_6": "Wireframing",
+    "skill_title_7": "Agile Methoden",
+    "skill_title_8": "Künstliche Intelligenz",
+    "skill_title_9": "HTML5 & CSS3",
+    "skill_title_10": "React JS & Next JS",
+    "skill_title_11": "Analyse und Lösung komplexer Probleme",
+    "skill_title_12": "Klare Kommunikation & Team-Zusammenarbeit"
+  }
 }

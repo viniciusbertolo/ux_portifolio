@@ -1,5 +1,34 @@
 {
-  "welcome": "Welcome to my Website",
-  "about": "This is a simple paragraph explaining something about the site.",
-  "change_language": "Change Language"
+  "header": {
+    "header_1": "SKILLS",
+    "header_2": "PROJECTS",
+    "header_3": "NETWORKS",
+    "header_4": "CONTACT",
+    "button": "CURRICULUM (CV)"
+  },
+  "hero": {
+    "up_title_main": "VINICIUS MÜSCHENBORN",
+    "title_main": "UI/UX DESIGNER",
+    "desc_main": "Users aren't robots. See how I handle them in different kinds of projects, turning pain points into stunning, interactive screens and prototypes!",
+    "button_1_main": "Contact Me",
+    "button_2_main": "My Projects"
+  },
+  "skills": {
+    "sub_title": "My skills and tools for creating incredible experiences",
+    "title_1": "My Design",
+    "title_2": "Skills",
+    "button": "VIEW MY PROJECTS",
+    "skill_title_1": "Figma (Pixel-perfect & Auto-Layout)",
+    "skill_title_2": "UI/UX Research",
+    "skill_title_3": "Usability Testing",
+    "skill_title_4": "Design Systems & Componentization",
+    "skill_title_5": "Interactive Prototypes",
+    "skill_title_6": "Wireframing",
+    "skill_title_7": "Agile Methodologies",
+    "skill_title_8": "Artificial Intelligence",
+    "skill_title_9": "HTML5 & CSS3",
+    "skill_title_10": "React JS & Next JS",
+    "skill_title_11": "Complex Problem-Solving & Analysis",
+    "skill_title_12": "Clear Communication & Team Collaboration"
+  }
 }

@@ -296,7 +296,9 @@ $breakpoint-mobile: 768px;
                     background-color: #1a1a1a;
                     color: white;
                 }
-                width: 350px;
+                width: fit-content;
+                padding-left: 12px;
+                padding-right: 12px;
                 height: 90px;
                 border-radius: 10px;
                 background-color: #ff8c00;
