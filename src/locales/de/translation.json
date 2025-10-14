@@ -30,5 +30,17 @@
     "skill_title_10": "React JS & Next JS",
     "skill_title_11": "Analyse und Lösung komplexer Probleme",
     "skill_title_12": "Klare Kommunikation & Team-Zusammenarbeit"
+  },
+  "projects": {
+    "title": "Meine Projekte",
+    "Project_1_title": "DigitalTech-Portal",
+    "Project_1_desc": "Ein Portal kann ein Archiv oder ein Motor für den Wandel sein. Dieses Projekt untersucht, wie UX die Zündung für eine Innovationskultur sein kann, indem es ein einfaches Informationsarchiv in eine Plattform verwandelt, die 50.000 Bürgerentwickler befähigt und den Zugang zu Daten demokratisiert.",
+    "Project_2_title": "Broto",
+    "Project_2_desc": "Wie wird die DNA einer starken Marke in eine Designsprache übersetzt, die sich auf Dutzende von Produkten skalieren lässt, ohne an Konsistenz zu verlieren? Dieses Projekt war die Schaffung dieser einzigen Quelle der Wahrheit: ein Designsystem, das die Prinzipien, die Grundlage und die Komponenten der Marke kodifiziert, um sicherzustellen, dass Exzellenz der Standard und nicht die Ausnahme ist.",
+    "Project_3_title": "Vagalumen",
+    "Project_3_desc": "Was wäre, wenn das schwächste Glied in der Datensicherheit – der menschliche Zugriff – vollständig entfernt werden könnte? Vagalume 2.0 ist ein Projekt über Vertrauen und Effizienz, das zeigt, wie ein sorgfältiger UX-Prozess der Schlüssel zum Aufbau einer Benutzeroberfläche war, die die Komplexität der KI einfach und zuverlässig macht.",
+    "Project_4_title": "SOMMOS",
+    "Project_4_desc": "Hinter jeder Datenzeile in einem HR-System verbirgt sich eine menschliche Reise. Die Herausforderung von SOMMOS war genau diese: Wie kann Design Klarheit, Empathie und Einfachheit in ein Universum aus dichten Informationen und kritischen Prozessen bringen? Dieses Projekt zeigt die Kraft von UX, Technologie zu vermenschlichen und Entscheidungen zu unterstützen, die Tausende von Leben beeinflussen.",
+    "button": "Details"
   }
 }

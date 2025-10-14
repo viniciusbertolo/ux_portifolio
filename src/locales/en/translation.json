@@ -30,5 +30,17 @@
     "skill_title_10": "React JS & Next JS",
     "skill_title_11": "Complex Problem-Solving & Analysis",
     "skill_title_12": "Clear Communication & Team Collaboration"
+  },
+  "projects": {
+    "title": "My Projects",
+    "Project_1_title": "DigitalTech Portal",
+    "Project_1_desc": "A portal can be an archive or an engine for transformation. This project investigates how UX can be the ignition for a culture of innovation, turning a simple information repository into a platform to empower 50,000 citizen-developers and democratize access to data.",
+    "Project_2_title": "Broto",
+    "Project_2_desc": "How is the DNA of a strong brand translated into a design language that scales to dozens of products without losing consistency? This project was the creation of that single source of truth: a Design System that encodes the brand's principles, foundation, and components to ensure that excellence is the standard, not the exception.",
+    "Project_3_title": "Vagalumen",
+    "Project_3_desc": "What if the weakest link in data security—human access—could be completely removed? Vagalume 2.0 is a project about trust and efficiency, showing how a careful UX process was the key to building an interface that makes the complexity of AI simple and reliable.",
+    "Project_4_title": "SOMMOS",
+    "Project_4_desc": "Behind every line of data in an HR system, there is a human journey. The challenge for SOMMOS was exactly this: how can design inject clarity, empathy, and simplicity into a universe of dense information and critical processes? This project reveals the power of UX to humanize technology and support decisions that impact thousands of lives.",
+    "button": "Details"
   }
 }
