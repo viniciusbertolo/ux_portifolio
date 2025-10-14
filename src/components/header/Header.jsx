@@ -61,16 +61,16 @@ const Header = () => {
 
             <div id='mobileMenu' className=' hidden fixed top-0 pt-20 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-90 backdrop-blur- md'>
                 <nav className="flex flex-col gap-6 items-center">
-                    <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
+                    <a onClick={toggleMobileMenu} className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#skills">
                         {t('header.header_1')}
                     </a>
-                    <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
+                    <a onClick={toggleMobileMenu} className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#projects">
                         {t('header.header_2')}
                     </a>
-                    <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
+                    <a onClick={toggleMobileMenu} className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#networks">
                         {t('header.header_3')}
                     </a>
-                    <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#">
+                    <a onClick={toggleMobileMenu} className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#contact">
                         {t('header.header_4')}
                     </a>
                 </nav>

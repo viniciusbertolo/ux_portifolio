@@ -1,231 +1,3 @@
-// // Adicionando uma variável para breakpoints para facilitar a manutenção
-// $breakpoint-mobile: 768px;
-
-// .services {
-    
-
-
-//     // background: linear-gradient(180deg, #0c0c1d, #111132);
-//     background: black;
-//     height: 100vh;
-//     display: flex;
-//     flex-direction: column;
-
-//     // Esta linha junta os blocos e centraliza o grupo na vertical
-//     justify-content: center;
-
-//     gap: 100px; // Cria o espaço "bonitinho" entre o título e as skills
-//     padding: 20px;
-//     overflow: hidden;
-
-
-
-
-//     // O container do conteúdo não precisa mais de regras flex, ele se ajusta ao conteúdo
-//     .contentContainer {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 40px;
-//         align-items: center; // Alinha o conteúdo interno no centro
-//     }
-
-//     .textContainer {
-//         flex: 1;
-//         align-self: flex-end;
-//         display: flex;
-//         align-items: center;
-//         gap: 20px;
-
-//         p {
-//             font-weight: 200;
-//             font-size: 20px;
-//             color: gray;
-//             text-align: right;
-//         }
-
-//         hr {
-//             width: 500px;
-//             border: none;
-//             border-top: 0.5px solid gray;
-//         }
-//     }
-
-//     .titleContainer {
-//         flex: 2;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-
-//         .title {
-//             display: flex;
-//             gap: 20px;
-//             align-items: center;
-
-//             img {
-//                 width: 300px;
-//                 height: 100px;
-//                 border-radius: 50px;
-//                 object-fit: cover;
-//             }
-
-//             h1 {
-//                 font-size: 96px;
-//                 font-weight: 100;
-//             }
-
-//             button {
-//                 &:hover{
-//                     background-color: #1a1a1a;
-//                     color: white;
-//                 }
-//                 width: 350px;
-//                 height: 90px;
-//                 border-radius: 50px;
-//                 background-color: #ff8c00;
-//                 border: none;
-//                 font-size: 24px;
-//                 cursor: pointer;
-//                 color: black;
-
-
-//             }
-
-            
-//         }
-//     }
-
-//     // --- CONTAINER DAS SKILLS AJUSTADO ---
-//     .skillsContainer {
-//         // width: 100%;
-//         // padding-left: 300px;
-//         // padding-right: 300px;
-//         // height: 100%;
-//         // display: grid;
-//         // // MUDANÇA PRINCIPAL: Duas colunas, como você gostou
-//         // grid-template-columns: repeat(2, 1fr);
-//         // gap: 25px 50px; // Aumenta o gap (vertical e horizontal)
-
-
-//         width: 100%; // Ocupa 100% do espaço disponível até o limite
-//         max-width: 1100px; // Define a largura máxima, como você pediu
-//         margin: 0 auto; // A forma correta de centralizar horizontalmente
-//         display: grid;
-//         grid-template-columns: repeat(3, 1fr);
-//         gap: 25px 50px;
-
-//         .skill-wrapper {
-//             display: flex;
-//             flex-direction: column;
-//             gap: 10px;
-
-//             .skill-name {
-//                 font-size: 16px;
-//                 font-weight: 500;
-//                 color: white;
-//             }
-
-//             .skill-bar-track {
-//                 width: 100%;
-//                 height: 10px;
-//                 background-color: #2c2c34;
-//                 border-radius: 10px;
-//                 overflow: hidden;
-//                 border: 1px solid #444;
-//             }
-
-//             .skill-bar-fill {
-//                 height: 100%;
-//                 border-radius: 10px;
-//                 background: linear-gradient(90deg, #ff8c00, #ff0080);
-//             }
-//         }
-//     }
-// }
-
-
-// //========================================
-// // RESPONSIVIDADE PARA CELULAR - VERSÃO 100vh
-// //========================================
-// @media (max-width: $breakpoint-mobile) {
-//     .services {
-//         // Força a seção a ocupar exatamente a altura da tela
-//         height: 100vh; 
-//         padding: 40px 25px; // Reduz o preenchimento vertical
-//         justify-content: center; // Centraliza todo o conteúdo verticalmente
-//         gap: 40px; // Diminui o espaço entre os blocos principais
-
-//         // --- Container do texto superior ---
-//         .textContainer {
-//             align-self: flex-start; // Alinha o bloco à esquerda
-//             flex-direction: row; // Mantém texto e linha lado a lado
-//             width: 100%;
-//             gap: 15px;
-
-//             p {
-//                 text-align: left; // Alinha o parágrafo à esquerda
-//                 font-size: 14px; // Diminui a fonte para economizar espaço
-//                 flex-shrink: 0; // Impede que o texto encolha
-//             }
-            
-//             hr {
-//                 width: 100%; // A linha ocupa o espaço restante
-//                 border-top: 1px solid #444;
-//             }
-//         }
-
-//         // --- Container do Título Principal ---
-//         .titleContainer {
-//             align-self: flex-start; // Alinha o bloco inteiro à esquerda
-            
-//             img {
-//                 display: none;
-//             }
-
-//             .title {
-//                 flex-direction: column;
-//                 align-items: flex-start; // Alinha os itens da coluna (h1, button) à esquerda
-//                 text-align: left; // Alinha o texto dentro dos itens à esquerda
-//                 gap: 20px; // Reduz o espaço entre título e botão
-
-//                 h1 {
-//                     font-size: 40px; // Fonte menor para caber na tela
-//                     line-height: 1.1; 
-//                 }
-                
-//                 button {
-//                     width: auto; // Largura se adapta ao texto
-//                     height: auto; // Altura se adapta ao texto
-//                     padding: 12px 30px; // Preenchimento interno para definir o tamanho
-//                     border-radius: 30px;
-//                     font-size: 15px;
-//                 }
-//             }
-//         }
-
-//         // --- Container das Barras de Habilidade ---
-//         .skillsContainer {
-//             // Volta para 2 colunas para economizar espaço vertical
-//             grid-template-columns: repeat(2, 1fr); 
-//             gap: 15px 20px; // Reduz os espaçamentos
-//             padding: 0;
-
-//             .skill-wrapper {
-//                 gap: 8px; // Menos espaço entre o nome e a barra
-
-//                 .skill-name {
-//                     font-size: 14px; // Fonte menor
-//                 }
-
-//                 .skill-bar-track {
-//                     height: 8px; // Barra mais fina
-//                 }
-//             }
-//         }
-//     }
-// }
-
-
-
 // Variáveis de breakpoints
 $breakpoint-tablet: 1024px; 
 $breakpoint-mobile: 768px;
@@ -293,7 +65,7 @@ $breakpoint-mobile: 768px;
                 font-weight: 100;
             }
 
-            button {
+            a {
                 &:hover {
                     background-color: #1a1a1a;
                     color: white;
@@ -301,7 +73,10 @@ $breakpoint-mobile: 768px;
                 width: fit-content;
                 padding-left: 12px;
                 padding-right: 12px;
-                height: 90px;
+                padding-top: 24px;
+                padding-bottom: 24px;
+                height: fit-content;
+
                 border-radius: 10px;
                 background-color: #ff8c00;
                 border: none;
@@ -399,7 +174,7 @@ $breakpoint-mobile: 768px;
                     text-align: left;
                 }
                 
-                button {
+                a {
                     width: auto;
                     height: auto;
                     padding: 14px 35px;
@@ -439,7 +214,7 @@ $breakpoint-mobile: 768px;
             // Título para CELULAR (sobrescreve o de tablet)
             font-size: 40px;
         }
-        button {
+        a {
             padding: 12px 30px;
             font-size: 15px;
         }

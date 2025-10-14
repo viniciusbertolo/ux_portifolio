@@ -86,7 +86,7 @@ const Services = () => {
           </div>
           <div className="title">
             <h1 className="font-[Open_Sans]">{t('skills.title_2')}</h1>
-            <button className="font-[Open_Sans]">{t('skills.button')}</button>
+            <a href="#projects" className="font-[Open_Sans]">{t('skills.button')}</a>
           </div>
         </div>
       </motion.div>
