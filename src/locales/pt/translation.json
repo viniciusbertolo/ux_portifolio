@@ -31,17 +31,189 @@
     "skill_title_11": "Análise e Solução de Problemas Complexos",
     "skill_title_12": "Comunicação Clara e Colaboração em Equipe"
   },
-  "projects":{
-    "title" : "Meus Projetos",
-    "Project_1_title" : "Portal DigitalTech",
-    "Project_1_desc" : "Um portal pode ser um arquivo morto ou um motor de transformação. Este projeto investiga como o UX pode ser a ignição para uma cultura de inovação, transformando um simples repositório de informações em uma plataforma para capacitar 50.000 cidadãos-desenvolvedores e democratizar o acesso a dados.",
-    "Project_2_title" : "Broto",
-    "Project_2_desc" : "Como o DNA de uma marca forte é traduzido em uma linguagem de design que escala para dezenas de produtos sem perder a consistência? Este projeto foi a criação dessa fonte única da verdade: um Design System que codifica os princípios, a fundação e os componentes da marca para garantir que a excelência seja o padrão, e não a exceção.",
-    "Project_3_title" : "Vagalumen",
-    "Project_3_desc" : "E se o elo mais fraco na segurança de dados — o acesso humano — pudesse ser totalmente removido? Vagalume 2.0 é um projeto sobre confiança e eficiência, que mostra como um processo de UX cuidadoso foi a chave para construir uma interface que torna a complexidade da IA em algo simples e confiável.",
-    "Project_4_title" : "SOMMOS",
-    "Project_4_desc" : "Por trás de cada linha de dados em um sistema de RH, existe uma jornada humana. O desafio do SOMMOS foi exatamente este: como o design pode injetar clareza, empatia e simplicidade em um universo de informações densas e processos críticos? Este projeto revela o poder do UX para humanizar a tecnologia e dar suporte a decisões que impactam milhares de vidas.",
-    "button" : "Detalhes"
-
+  "projects": {
+    "title": "Meus Projetos",
+    "Project_1_title": "Portal DigitalTech",
+    "Project_1_desc": "Um portal pode ser um arquivo morto ou um motor de transformação. Este projeto investiga como o UX pode ser a ignição para uma cultura de inovação, transformando um simples repositório de informações em uma plataforma para capacitar 50.000 cidadãos-desenvolvedores e democratizar o acesso a dados.",
+    "Project_2_title": "Broto",
+    "Project_2_desc": "Como o DNA de uma marca forte é traduzido em uma linguagem de design que escala para dezenas de produtos sem perder a consistência? Este projeto foi a criação dessa fonte única da verdade: um Design System que codifica os princípios, a fundação e os componentes da marca para garantir que a excelência seja o padrão, e não a exceção.",
+    "Project_3_title": "Vagalumen",
+    "Project_3_desc": "E se o elo mais fraco na segurança de dados — o acesso humano — pudesse ser totalmente removido? Vagalume 2.0 é um projeto sobre confiança e eficiência, que mostra como um processo de UX cuidadoso foi a chave para construir uma interface que torna a complexidade da IA em algo simples e confiável.",
+    "Project_4_title": "SOMMOS",
+    "Project_4_desc": "Por trás de cada linha de dados em um sistema de RH, existe uma jornada humana. O desafio do SOMMOS foi exatamente este: como o design pode injetar clareza, empatia e simplicidade em um universo de informações densas e processos críticos? Este projeto revela o poder do UX para humanizar a tecnologia e dar suporte a decisões que impactam milhares de vidas.",
+    "button": "Detalhes"
+  },
+  "digitaltech": {
+    "hero": {
+      "alt": "Capa do Projeto DigitalTech"
+    },
+    "meta": {
+      "title": "Portal DigitalTech",
+      "about": {
+        "title": "SOBRE O PROJETO",
+        "description": "Este projeto consiste na completa refatoração do portal corporativo de tecnologia, o \"Portal DigitalTech\", focando em centralização de conteúdo, aprendizado e automação com IA para otimizar o suporte na área de Digital Tech."
+      },
+      "role": {
+        "label": "MINHA FUNÇÃO",
+        "value": "UX/UI Designer & Front-end Developer"
+      },
+      "date": {
+        "label": "DATA",
+        "value": "Setembro, 2025"
+      },
+      "tools": {
+        "label": "FERRAMENTAS"
+      }
+    },
+    "scenario": {
+      "title": "Cenário Atual",
+      "description": "A plataforma anterior, chamada \"AcademiaX\", foi desenvolvida sem um processo estruturado de UX/UI, resultando em diversos problemas como informações descentralizadas, falta de um portal de aprendizado estruturado, sobrecarga de colaboradores e uma experiência de usuário ineficiente."
+    },
+    "challenge": {
+      "title": "O Desafio",
+      "description": "Como redesenhar a experiência digital para centralizar todas as iniciativas de tecnologia, criar um portal de cursos de referência e desenvolver IAs de suporte que otimizem o tempo dos colaboradores de forma intuitiva e escalável?"
+    },
+    "designProcess": {
+      "title": "Processo de Design",
+      "description": "Para garantir que a solução fosse centrada no usuário e alinhada aos objetivos de negócio, utilizei a metodologia do Duplo Diamante (Double Diamond), dividindo o projeto nas etapas de Descoberta, Definição, Desenvolvimento e Entrega.",
+      "imageAlts": {
+        "discovery": "Etapa de Descoberta",
+        "definition": "Etapa de Definição",
+        "development": "Etapa de Desenvolvimento"
+      }
+    },
+    "research": {
+      "title": "Pesquisa e Descoberta",
+      "user": {
+        "title": "Conhecendo o Usuário",
+        "description": "Realizei entrevistas e pesquisas qualitativas com profissionais de diversas áreas para mapear suas dores. Com base nos insights, foram criadas protopersonas que representam os principais perfis de usuários, validando a necessidade de automatizar o suporte e centralizar o conhecimento."
+      },
+      "competitors": {
+        "title": "Análise de Concorrentes",
+        "description": "Realizei um benchmarking analisando outras plataformas de aprendizado corporativo e portais de dados para identificar melhores práticas, padrões de interface e oportunidades de inovação."
+      }
+    },
+    "benchmarking": {
+      "header": "Característica",
+      "hotmart": {
+        "name": "Hotmart",
+        "branch": "Plataforma para venda e distribuição de produtos digitais e marketing de afiliados.",
+        "services": {
+          "0": "Hospedagem de cursos e ebooks",
+          "1": "Ferramentas de pagamento",
+          "2": "Gestão de afiliados"
+        },
+        "strengths": {
+          "0": "✅ Ecossistema Completo de vendas",
+          "1": "✅ Forte Programa de Afiliados"
+        },
+        "weaknesses": {
+          "0": "❌ Qualidade Variável",
+          "1": "❌ Taxas Elevadas sobre vendas"
+        }
+      },
+      "udemy": {
+        "name": "Udemy",
+        "branch": "Marketplace global de cursos online com vasta gama de tópicos (B2C e B2B).",
+        "services": {
+          "0": "Venda de cursos avulsos",
+          "1": "Acesso vitalício ao conteúdo",
+          "2": "Certificados de conclusão"
+        },
+        "strengths": {
+          "0": "✅ Catálogo Imenso",
+          "1": "✅ Preços Agressivos",
+          "2": "✅ Acesso Vitalício"
+        },
+        "weaknesses": {
+          "0": "❌ Qualidade Inconsistente",
+          "1": "❌ Falta de Estrutura de aprendizado"
+        }
+      },
+      "alura": {
+        "name": "Alura",
+        "branch": "Plataforma de assinatura para educação em tecnologia, com foco em formação profissional.",
+        "services": {
+          "0": "Acesso ilimitado via assinatura",
+          "1": "Trilhas de aprendizado (\"Formações\")",
+          "2": "Fórum de dúvidas ativo"
+        },
+        "strengths": {
+          "0": "✅ Curadoria de Alta Qualidade",
+          "1": "✅ Metodologia Estruturada",
+          "2": "✅ Comunidade Forte e Ativa"
+        },
+        "weaknesses": {
+          "0": "❌ Nicho Específico de tecnologia",
+          "1": "❌ Modelo de Assinatura pode ser barreira"
+        }
+      },
+      "digitalTech": {
+        "name": "Portal DigitalTech",
+        "branch": "Plataforma corporativa interna de educação, gestão do conhecimento e suporte via IA.",
+        "services": {
+          "0": "Cursos internos focados em stacks da empresa",
+          "1": "Catálogo de dados democratizado",
+          "2": "IAs para suporte geral e de aulas"
+        },
+        "strengths": {
+          "0": "✅ Conteúdo Hiper-Relevante",
+          "1": "✅ Custo Zero para o Colaborador",
+          "2": "✅ Otimização de Tempo com IAs"
+        },
+        "weaknesses": {
+          "0": "❌ Produção interna pode ser um gargalo",
+          "1": "❌ Variedade de cursos limitada"
+        }
+      },
+      "rows": {
+        "branch": "Ramo",
+        "services": "Serviços Oferecidos",
+        "strengths": "Pontos Fortes",
+        "weaknesses": "Pontos Fracos"
+      }
+    },
+    "solution": {
+      "title": "A Solução",
+      "description": "A solução final é um portal unificado, intuitivo e funcional. O front-end foi construído com React, Next.js e Tailwind CSS para uma experiência rápida e escalável. Antes do desenvolvimento, protótipos interativos no Figma foram validados em três rodadas de testes de usabilidade.",
+      "cta": "Ver Protótipo Interativo no Figma",
+      "finalImageAlt": "Resultado final do projeto"
+    },
+    "usabilityTest": {
+      "title": "Teste de Usabilidade: Insights e Soluções",
+      "headers": {
+        "task": "Tarefa do Teste",
+        "result": "Resultado",
+        "insights": "Insights e Soluções"
+      },
+      "rows": {
+        "0": {
+          "task": "Encontrar um evento (ex: Digi.Coffee)",
+          "result": "Sucesso",
+          "insights": "Fluxo validado com 100% de sucesso."
+        },
+        "1": {
+          "task": "Acessar a área \"Meus Cursos\"",
+          "result": "Dificuldade",
+          "insights": "<0>Problema:</0> Acesso apenas no menu principal. <1/> <2>Solução:</2> Adicionar um CTA na home com acesso rápido."
+        },
+        "2": {
+          "task": "Localizar um certificado",
+          "result": "Dificuldade",
+          "insights": "<0>Problema:</0> Certificados em sub-área. <1/> <2>Solução:</2> Incluir CTA direto para \"Certificados\" no dashboard."
+        }
+      }
+    },
+    "results": {
+      "title": "Resultados e Aprendizados",
+      "results": {
+        "title": "Resultados",
+        "description": "O novo portal centralizou com sucesso as informações, e os ganhos de tempo foram significativos devido às IAs de suporte. A criação de um portal de cursos estruturado e o fácil acesso ao catálogo de dados otimizaram processos e impulsionaram a capacitação interna."
+      },
+      "learnings": {
+        "title": "Principais Aprendizados",
+        "description": "Este projeto reforçou a importância de basear uma refatoração em dados de pesquisa. Validar hipóteses com testes de usabilidade foi crucial para corrigir problemas antes do desenvolvimento, economizando tempo e recursos. A migração da stack tecnológica também foi uma grande oportunidade de desenvolvimento profissional."
+      }
+    }
   }
 }

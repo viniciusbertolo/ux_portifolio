@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { useTranslation } from 'react-i18next';
 import Home from './pages/home/Home';
 import ProjectDetailPage from './pages/projetoGenerico/ProjetoGenerico';
+import DigitalTechPage from './pages/portalDigitalTech/PortalDigitalTech';
 
 export default function App() {
 
@@ -21,6 +22,7 @@ export default function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projeto" element={<ProjectDetailPage />} />
+          <Route path="/digital-tech" element={<DigitalTechPage />} />
       </Routes>
     </Router>
   )
