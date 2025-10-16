@@ -76,27 +76,35 @@ const DigitalTechPage = () => {
                     </motion.div>
                 </motion.section>
 
-                <div className="content-section">
-                    <motion.section className="project-content" variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }}>
+                {/* --- CORREÇÃO APLICADA AQUI --- */}
+                {/* O container .content-section agora é um motion.div que controla a animação dos filhos */}
+                <motion.div 
+                    className="content-section"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.1 }}
+                    variants={staggerContainer}
+                >
+                    <motion.section className="project-content" variants={fadeInUp}>
                         <h2>{t('digitaltech.scenario.title')}</h2>
                         <p>{t('digitaltech.scenario.description')}</p>
                     </motion.section>
 
-                    <motion.section className="project-challenge" variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }}>
-                         <h2>{t('digitaltech.challenge.title')}</h2>
+                    <motion.section className="project-challenge" variants={fadeInUp}>
+                        <h2>{t('digitaltech.challenge.title')}</h2>
                         <blockquote>{t('digitaltech.challenge.description')}</blockquote>
                     </motion.section>
 
-                    <motion.section className="project-content" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} variants={staggerContainer}>
-                        <motion.h2 variants={fadeInUp}>{t('digitaltech.designProcess.title')}</motion.h2>
-                        <motion.p variants={fadeInUp}>{t('digitaltech.designProcess.description')}</motion.p>
+                    <motion.section className="project-content" variants={fadeInUp}>
+                        <h2>{t('digitaltech.designProcess.title')}</h2>
+                        <p>{t('digitaltech.designProcess.description')}</p>
                         <div className="image-gallery">
                             <motion.img variants={fadeInUp} src="/double-diamond-design.jpg" alt={t('digitaltech.designProcess.imageAlts.discovery')} />
                         </div>
                     </motion.section>
 
-                    <motion.section className="project-content" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} variants={staggerContainer}>
-                        <motion.h2 variants={fadeInUp}>{t('digitaltech.research.title')}</motion.h2>
+                    <motion.section className="project-content" variants={fadeInUp}>
+                        <h2>{t('digitaltech.research.title')}</h2>
                         <div className="split-section">
                             <motion.div className="split-item" variants={fadeInUp}>
                                 <h3>{t('digitaltech.research.user.title')}</h3>
@@ -120,7 +128,6 @@ const DigitalTechPage = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {/* Adicionando classes para controle no CSS mobile */}
                                     <tr className="bench-row-branch">
                                         <td className="row-header" data-label={t('digitaltech.benchmarking.rows.branch')}>{t('digitaltech.benchmarking.rows.branch')}</td>
                                         <td data-label={t('digitaltech.benchmarking.hotmart.name')}>{t('digitaltech.benchmarking.hotmart.branch')}</td>
@@ -197,7 +204,7 @@ const DigitalTechPage = () => {
                         </div>
                     </motion.section>
 
-                    <motion.section className="project-content" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} variants={fadeInUp}>
+                    <motion.section className="project-content" variants={fadeInUp}>
                         <h2>{t('digitaltech.solution.title')}</h2>
                         <p>{t('digitaltech.solution.description')}</p>
                         <motion.a href="#" target="_blank" rel="noopener noreferrer" className="cta-button figma-cta" variants={fadeInUp}>
@@ -256,8 +263,8 @@ const DigitalTechPage = () => {
                         </div>
                     </motion.section>
 
-                    <motion.section className="project-content" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} variants={staggerContainer}>
-                        <motion.h2 variants={fadeInUp}>{t('digitaltech.results.title')}</motion.h2>
+                    <motion.section className="project-content" variants={fadeInUp}>
+                        <h2>{t('digitaltech.results.title')}</h2>
                         <div className="split-section">
                             <motion.div className="split-item" variants={fadeInUp}>
                                 <h3>{t('digitaltech.results.results.title')}</h3>
@@ -269,7 +276,7 @@ const DigitalTechPage = () => {
                             </motion.div>
                         </div>
                     </motion.section>
-                </div>
+                </motion.div>
             </main>
         </motion.div>
     );
