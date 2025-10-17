@@ -539,6 +539,7 @@ h6 {
 
 /* --- LAYOUT COM MENU LATERAL --- */
 .page-with-sidebar {
+
     display: grid;
     // Define duas colunas: uma para o menu e outra para o conteúdo principal
     grid-template-columns: 240px 1fr;
@@ -552,6 +553,7 @@ h6 {
     /* 1. Move a borda esquerda do elemento para o meio da tela */
     transform: translateX(-50%);
     /* 2. Empurra o elemento para a esquerda pela metade de sua própria largura */
+    padding-bottom: 450px;
 }
 
 /* --- ESTILOS DO MENU LATERAL --- */
@@ -640,6 +642,47 @@ h6 {
     flex-direction: column;
     gap: 48px;
     width: 100%; // Ocupa a coluna do grid
+    
+}
+
+.project-container>.language-switcher {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+    // ...nós mostramos as bandeiras que estão no container principal...
+    .project-container>.language-switcher {
+        display: flex;
+        justify-content: flex-start; // Alinha à esquerda
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 16px; // Espaço para não colar no título
+        width: 100%;
+
+        // Mantém os estilos das bandeiras que já existiam
+        .flag-icon {
+            font-size: 28px;
+            border-radius: 8px;
+            // ...outros estilos de .flag-icon são herdados
+
+             // Efeito de hover para todas as bandeiras
+        &:hover {
+            opacity: 1;
+            transform: scale(1.15);
+        }
+
+        // Estilo para as bandeiras que NÃO estão ativas
+        &.inactive {
+            opacity: 0.6;
+        }
+
+        // Estilo para a bandeira ATIVA
+        &.active {
+            opacity: 1;
+        }
+        }
+    }
 }
 
 /* --- Seção de Título --- */
@@ -986,14 +1029,39 @@ h6 {
 }
 
 
+@media (max-width: 350px) {
+
+    /* --- AJUSTE PARA O LAYOUT DE MENU --- */
+    .page-with-sidebar {
+        line-break:anywhere;
+        grid-template-columns: 1fr;
+        padding: 48px 24px; // Ajusta o padding da página
+        width: 100%;
+    }
+
+     .project-sidebar {
+        // O menu é escondido
+        display: none;
+    }
+
+    .project-container {
+        padding: 0; // Remove padding extra pois já está em .page-with-sidebar
+    }
+
+
+
+}
+
 /* --- Media Queries para Responsividade --- */
-@media (max-width: 1200px) {
+@media (min-width: 351px) and (max-width: 1200px) {
 
     /* --- AJUSTE PARA O LAYOUT DE MENU --- */
     .page-with-sidebar {
         // Em telas menores, o layout volta a ser de uma coluna só
         grid-template-columns: 1fr;
         padding: 48px 24px; // Ajusta o padding da página
+        width: 100%;
+        line-break:normal;
     }
 
     .project-sidebar {

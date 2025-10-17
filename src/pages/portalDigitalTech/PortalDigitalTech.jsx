@@ -301,6 +301,7 @@ import {
 } from "react-icons/si";
 
 import './portalDigitalTech.scss';
+import BackTop from '../../components/backTop/BackTop';
 
 // --- Animações ---
 const staggerContainer = { 
@@ -375,30 +376,70 @@ const DigitalTechPage = () => {
     // }, []);
 
 
-    // Substitua todo o seu useEffect por este
+//     // Substitua todo o seu useEffect por este
+// useEffect(() => {
+//     const observerOptions = {
+//         root: null,
+//         // 1. AJUSTE DE PRECISÃO:
+//         // A "linha" de detecção agora é mais fina, reduzindo a chance de duas seções
+//         // serem detectadas ao mesmo tempo.
+//         rootMargin: '-150px 0px -85% 0px',
+//         threshold: 0,
+//     };
+
+//     // 2. AJUSTE DE LÓGICA:
+//     // Esta função agora é mais inteligente. Se várias seções estiverem na área,
+//     // ela escolherá a que está mais perto do topo da tela.
+//     const observerCallback = (entries) => {
+//         // Encontra a entrada que está visível e mais alta na tela
+//         const topEntry = entries
+//             .filter(e => e.isIntersecting) // Pega apenas as que estão na área de detecção
+//             .reduce((prev, current) => {   // Encontra a que tem o menor valor de 'top' (mais alta)
+//                 return prev.boundingClientRect.top < current.boundingClientRect.top ? prev : current;
+//             }, null); // Começa com nulo
+
+//         // Se encontrou uma entrada válida, define a seção ativa
+//         if (topEntry) {
+//             setActiveSection(topEntry.target.id);
+//         }
+//     };
+
+//     const observer = new IntersectionObserver(observerCallback, observerOptions);
+//     const sections = document.querySelectorAll('.scroll-section');
+
+//     sections.forEach((section) => {
+//         observer.observe(section);
+//     });
+
+//     // Cleanup
+//     return () => {
+//         sections.forEach((section) => {
+//             observer.unobserve(section);
+//         });
+//     };
+// }, []); // O array de dependências vazio está correto
+
+
+// Substitua o useEffect inteiro por esta versão corrigida
 useEffect(() => {
     const observerOptions = {
         root: null,
-        // 1. AJUSTE DE PRECISÃO:
-        // A "linha" de detecção agora é mais fina, reduzindo a chance de duas seções
-        // serem detectadas ao mesmo tempo.
         rootMargin: '-150px 0px -85% 0px',
         threshold: 0,
     };
 
-    // 2. AJUSTE DE LÓGICA:
-    // Esta função agora é mais inteligente. Se várias seções estiverem na área,
-    // ela escolherá a que está mais perto do topo da tela.
     const observerCallback = (entries) => {
-        // Encontra a entrada que está visível e mais alta na tela
-        const topEntry = entries
-            .filter(e => e.isIntersecting) // Pega apenas as que estão na área de detecção
-            .reduce((prev, current) => {   // Encontra a que tem o menor valor de 'top' (mais alta)
-                return prev.boundingClientRect.top < current.boundingClientRect.top ? prev : current;
-            }, null); // Começa com nulo
+        // Filtra para pegar apenas as seções que estão na área de detecção
+        const intersectingEntries = entries.filter(e => e.isIntersecting);
 
-        // Se encontrou uma entrada válida, define a seção ativa
-        if (topEntry) {
+        // Se existir alguma seção na área...
+        if (intersectingEntries.length > 0) {
+            // ...pega a que está mais no topo da tela (menor valor de `boundingClientRect.top`)
+            const topEntry = intersectingEntries.reduce((prev, current) => {
+                return prev.boundingClientRect.top < current.boundingClientRect.top ? prev : current;
+            });
+
+            // E define como a seção ativa
             setActiveSection(topEntry.target.id);
         }
     };
@@ -416,7 +457,7 @@ useEffect(() => {
             observer.unobserve(section);
         });
     };
-}, []); // O array de dependências vazio está correto
+}, []);
 
 
     return (
@@ -426,7 +467,7 @@ useEffect(() => {
             animate="visible"
             variants={staggerContainer}
         >
-            <motion.header className="project-hero" variants={fadeInUp}>
+            <motion.header className="project-hero" variants={fadeInUp} id="topo">
                 <img src="/header_digital_tech.png" alt={t('digitaltech.hero.alt')} className="hero-image" />
             </motion.header>
 
@@ -474,6 +515,32 @@ useEffect(() => {
                 </motion.nav>
 
                 <main className="project-container">
+
+
+                    {/* --- ADICIONADO: Seletor de Idiomas com Bandeiras --- */}
+                    <div className="language-switcher">
+                        <ReactCountryFlag
+                            countryCode="DE"
+                            svg
+                            title="Deutsch"
+                            onClick={() => changeLanguage('de')}
+                            className={`flag-icon ${i18n.language === 'de' ? 'active' : 'inactive'}`}
+                        />
+                        <ReactCountryFlag
+                            countryCode="BR"
+                            svg
+                            title="Português"
+                            onClick={() => changeLanguage('pt')}
+                            className={`flag-icon ${i18n.language.startsWith('pt') ? 'active' : 'inactive'}`}
+                        />
+                        <ReactCountryFlag
+                            countryCode="US"
+                            svg
+                            title="English"
+                            onClick={() => changeLanguage('en')}
+                            className={`flag-icon ${i18n.language.startsWith('en') ? 'active' : 'inactive'}`}
+                        />
+                    </div>
                     <motion.section className="project-title-section" variants={fadeInUp}>
                         <h1>{t('digitaltech.meta.title')}</h1>
                     </motion.section>
@@ -715,7 +782,9 @@ useEffect(() => {
                 </main>
             </div>
             </div>
+            <BackTop />
         </motion.div>
+
         
     );
 };
