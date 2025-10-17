@@ -342,11 +342,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import "./contact.scss";
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
     const formRef = useRef();
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
+    const {t} = useTranslation();
 
     const containerRef = useRef(null);
 
@@ -399,18 +401,18 @@ const Contact = () => {
         <motion.div className="contact" ref={containerRef}>
             <div className="textContainer">
                 {/* A prop 'style' agora usa 'x' em vez de 'y' */}
-                <motion.h1 style={{ opacity: itemOpacity1, x: itemX1 }}>Let's work together</motion.h1>
+                <motion.h1 style={{ opacity: itemOpacity1, x: itemX1 }}>{t('contactSection.title')}</motion.h1>
                 <motion.div className="item" style={{ opacity: itemOpacity1, x: itemX1 }}>
-                    <h2>mail</h2>
-                    <span>hello@gmail.com</span>
+                    <h2>{t('contactSection.contacts.title1')}</h2>
+                    <span>{t('contactSection.contacts.desc1')}</span>
                 </motion.div>
                 <motion.div className="item" style={{ opacity: itemOpacity2, x: itemX2 }}>
-                    <h2>Address</h2>
-                    <span>hello street New York</span>
+                    <h2>{t('contactSection.contacts.title2')}</h2>
+                    <span>{t('contactSection.contacts.desc2')}</span>
                 </motion.div>
                 <motion.div className="item" style={{ opacity: itemOpacity3, x: itemX3 }}>
-                    <h2>Phone</h2>
-                    <span>+55169+82559460</span>
+                    <h2>{t('contactSection.contacts.title3')}</h2>
+                    <span>{t('contactSection.contacts.desc3')}</span>
                 </motion.div>
             </div>
             <motion.div
@@ -418,12 +420,12 @@ const Contact = () => {
                 style={{ opacity: formOpacity, x: formX }} // A prop 'style' agora usa 'x' em vez de 'y'
             >
                 <form onSubmit={sendEmail} ref={formRef}>
-                    <input type="text" required placeholder="Name" name="name" />
-                    <input type="email" required placeholder="Email" name="email" />
-                    <textarea placeholder="Message" rows={4} name="message"></textarea>
-                    <button>Submit</button>
-                    {success && <span className="success">Mensagem enviada com sucesso!</span>}
-                    {error && <span className="error">Falha ao enviar a mensagem. Tente novamente.</span>}
+                    <input type="text" required placeholder={t('contactSection.placeholder1')} name="name" />
+                    <input type="text" required placeholder={t('contactSection.placeholder2')} name="email" />
+                    <textarea placeholder={t('contactSection.placeholder3')} rows={4} name="message"></textarea>
+                    <button>{t('contactSection.button')}</button>
+                    {success && <span className="success">{t('contactSection.successMessage')}</span>}
+                    {error && <span className="error">{t('contactSection.errorMessage')}</span>}
                 </form>
             </motion.div>
         </motion.div>

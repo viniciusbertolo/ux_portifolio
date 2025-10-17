@@ -45,7 +45,7 @@ const Header = () => {
             {/* --- Container para Desktop --- */}
             <div className="hidden md:flex items-center gap-6">
                 <LanguageSwitcher />
-                <button className="font-[Open_Sans] bg-[#222222] text-white py-3 px-8 rounded-[10px] border-none font-medium transition-all duration-500 hover:bg-[#ff8c00] cursor-pointer z-50">
+                <button className="font-[Open_Sans] bg-[#222222] text-white py-3 px-8 rounded-[10px] border-none font-bold transition-all duration-500 hover:bg-[#ff8c00] hover:text-black cursor-pointer z-50">
                     {t('header.button')}
                 </button>
             </div>

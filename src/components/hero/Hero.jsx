@@ -75,10 +75,10 @@ const Hero = () => {
                         variants={itemVariants}
                         className='hero-buttons flex gap-4'
                     >
-                        <a className='font-[Open_Sans] border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-[10px] sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a]' href="#networks">
+                        <a className='font-[Open_Sans] bg-[#222222] py-2 sm:py-3 px-4 sm:px-5 rounded-[10px] sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#ff8c00] hover:text-black' href="#networks">
                             {t('hero.button_1_main')} <i className='bx bx-link-external'></i>
                         </a>
-                        <a className='font-[Open_Sans] py-2 sm:py-3 px-8 sm:px-10 rounded-[10px] sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-[#ff8c00] text-black hover:text-white' href="#projects">
+                        <a className='font-[Open_Sans] py-2 sm:py-3 px-8 sm:px-10 rounded-[10px] sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#222222] bg-[#ff8c00] text-black hover:text-white' href="#projects">
                             {t('hero.button_2_main')} <i className='bx bx-link-external'></i>
                         </a>
                     </motion.div>

@@ -43,6 +43,26 @@
     "Project_4_desc": "Por trás de cada linha de dados em um sistema de RH, existe uma jornada humana. O desafio do SOMMOS foi exatamente este: como o design pode injetar clareza, empatia e simplicidade em um universo de informações densas e processos críticos? Este projeto revela o poder do UX para humanizar a tecnologia e dar suporte a decisões que impactam milhares de vidas.",
     "button": "Detalhes"
   },
+  "network": {
+    "title": "Contato & Redes"
+  },
+  "contactSection": {
+    "title": "Vamos Criar Juntos",
+    "contacts": {
+      "title1": "Email",
+      "desc1": "vini.alex.bertolo@gmail.com",
+      "title2": "Endereço",
+      "desc2": "Rua Alberto Lanzoni, 445",
+      "title3": "Telefone",
+      "desc3": "+5516982559460"
+    },
+    "placeholder1": "Nome",
+    "placeholder2": "Email/Telefone",
+    "placeholder3": "Mensagem",
+    "button": "Enviar",
+    "successMessage": "Mensagem enviada com sucesso!",
+    "errorMessage": "Falha ao enviar a mensagem. Tente novamente."
+  },
   "digitaltech": {
     "hero": {
       "alt": "Capa do Projeto DigitalTech"

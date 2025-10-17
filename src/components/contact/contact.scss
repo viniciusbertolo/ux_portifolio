@@ -302,8 +302,14 @@ $breakpoint-mobile: 768px;
                 border: none;
                 background-color: #ff8c00;
                 cursor: pointer;
-                font-weight: 500;
+                font-weight: bold;
                 border-radius: 10px;
+                color: #000;
+
+                &:hover {
+                    background-color: #222222;
+                    color: white;
+                }
 
                 @media (max-width: $breakpoint-mobile) {
                     padding: 10px;

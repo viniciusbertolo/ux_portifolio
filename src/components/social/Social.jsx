@@ -12,7 +12,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 
 const Socials = () => {
   // 2. Usamos o hook para pegar a instância do i18n
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // 3. Criamos o mapa de arquivos de currículo (lembre-se de colocá-los na pasta /public)
   const resumeFiles = {
@@ -52,7 +52,7 @@ const Socials = () => {
       className: 'instagram',
     },
     {
-      name: 'Currículo',
+      name: t('header.button'),
       icon: <IoDocumentTextOutline />,
       // 6. O 'href' do currículo agora é dinâmico
       href: resumeHref,
@@ -79,7 +79,7 @@ const Socials = () => {
   return (
     <section className="socials-section" ref={ref} id="networks">
       {/* Mantive seu h1 e o texto como você definiu */}
-      <h1 className="socials-title">Contato & Redes</h1>
+      <h1 className="socials-title">{t('network.title')}</h1>
       <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       <div className="socials-grid">
         {socialLinks.map((link) => (

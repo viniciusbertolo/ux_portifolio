@@ -30,7 +30,7 @@ const Single = ({ item }) => {
                     <motion.div className="textContainer" style={{ y }}>
                         <h2>{item.title}</h2>
                         <p>{item.description}</p>
-                        <button>{t('projects.button')}</button>
+                        <a href={item.rota}>{t('projects.button')}</a>
                     </motion.div>
                 </div>
 
@@ -55,25 +55,29 @@ const Portfolio = () => {
         id: 1,
         title: t('projects.Project_1_title'),
         img: "https://images.pexels.com/photos/33847404/pexels-photo-33847404.jpeg",
-        description: t('projects.Project_1_desc')
+        description: t('projects.Project_1_desc'),
+        rota: "/digital-tech"
     },
     {
         id: 2,
         title: t('projects.Project_2_title'),
         img: "https://images.pexels.com/photos/33847404/pexels-photo-33847404.jpeg",
-        description: t('projects.Project_2_desc')
+        description: t('projects.Project_2_desc'),
+        rota: "/digital-tech"    
     },
     {
         id: 3,
         title: t('projects.Project_3_title'),
         img: "https://images.pexels.com/photos/33847404/pexels-photo-33847404.jpeg",
-        description: t('projects.Project_3_desc')
+        description: t('projects.Project_3_desc'),
+        rota: "/digital-tech"
     },
     {
         id: 4,
         title: t('projects.Project_4_title'),
         img: "https://images.pexels.com/photos/33847404/pexels-photo-33847404.jpeg",
-        description: t('projects.Project_4_desc')
+        description: t('projects.Project_4_desc'),
+        rota: "/digital-tech"
     },
 
 ]

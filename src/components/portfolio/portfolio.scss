@@ -2,12 +2,13 @@ $breakpoint-mobile: 768px;
 $breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas como iPhone SE
 
 #projects {
-  scroll-margin-top: -22vh; /* A altura do seu menu fixo */
+    scroll-margin-top: -29vh;
+    /* A altura do seu menu fixo */
 }
 
 .portfolio {
     position: relative;
-    
+
 
     .progress {
         position: sticky;
@@ -60,7 +61,7 @@ $breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas com
                 gap: 20px;
                 padding: 0 20px;
 
-                
+
                 // NOVO: Reduz o espaçamento principal em telas baixas
                 @media (max-height: $breakpoint-short-mobile-height) {
                     gap: 20px;
@@ -131,7 +132,7 @@ $breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas com
 
                     @media (max-width: $breakpoint-mobile) {
                         font-size: 16px;
-                        
+
                         // NOVO: Reduz a fonte do parágrafo em telas baixas
                         @media (max-height: $breakpoint-short-mobile-height) {
                             font-size: 14px;
@@ -139,7 +140,7 @@ $breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas com
                     }
                 }
 
-                button {
+                a {
                     background-color: #ff8c00;
                     border: none;
                     border-radius: 10px;
@@ -147,11 +148,20 @@ $breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas com
                     width: 200px;
                     cursor: pointer;
                     color: black;
-                    
+                    text-align: center;
+                    font-weight: bold;
+                    transition: 0.2s all;
+
+                    &:hover {
+                        background-color: #222222;
+                        color: white;
+                    }
+
+
                     // NOVO: Reduz o botão em telas baixas
                     @media (max-height: $breakpoint-short-mobile-height) {
-                       padding: 8px;
-                       width: 180px;
+                        padding: 8px;
+                        width: 180px;
                     }
                 }
             }

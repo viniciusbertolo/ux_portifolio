@@ -43,6 +43,26 @@
     "Project_4_desc": "Behind every line of data in an HR system, there is a human journey. The challenge for SOMMOS was exactly this: how can design inject clarity, empathy, and simplicity into a universe of dense information and critical processes? This project reveals the power of UX to humanize technology and support decisions that impact thousands of lives.",
     "button": "Details"
   },
+  "network": {
+    "title": "Contact & Networks"
+  },
+  "contactSection": {
+    "title": "Let's Create Together",
+    "contacts": {
+      "title1": "Email",
+      "desc1": "vini.alex.bertolo@gmail.com",
+      "title2": "Address",
+      "desc2": "Rua Alberto Lanzoni, 445",
+      "title3": "Phone",
+      "desc3": "+5516982559460"
+    },
+    "placeholder1": "Name",
+    "placeholder2": "Email/Phone",
+    "placeholder3": "Message",
+    "button": "Send",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "Failed to send message. Please try again."
+  },
   "digitaltech": {
     "hero": {
       "alt": "DigitalTech Project Cover"
