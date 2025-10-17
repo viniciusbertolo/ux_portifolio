@@ -42,5 +42,180 @@
     "Project_4_title": "SOMMOS",
     "Project_4_desc": "Hinter jeder Datenzeile in einem HR-System verbirgt sich eine menschliche Reise. Die Herausforderung von SOMMOS war genau diese: Wie kann Design Klarheit, Empathie und Einfachheit in ein Universum aus dichten Informationen und kritischen Prozessen bringen? Dieses Projekt zeigt die Kraft von UX, Technologie zu vermenschlichen und Entscheidungen zu unterstützen, die Tausende von Leben beeinflussen.",
     "button": "Details"
+  },
+  
+  "digitaltech": {
+    "hero": {
+      "alt": "DigitalTech Projekt-Cover"
+    },
+    "meta": {
+      "title": "DigitalTech-Portal",
+      "about": {
+        "title": "ÜBER DAS PROJEKT",
+        "description": "Dieses Projekt besteht aus der vollständigen Überarbeitung des unternehmensinternen Technologieportals, dem \"DigitalTech-Portal\", mit Fokus auf Inhaltszentralisierung, Lernen und Automatisierung durch KI zur Optimierung des Supports im Bereich Digital Tech."
+      },
+      "role": {
+        "label": "MEINE ROLLE",
+        "value": "UX/UI Designer & Front-end Entwickler"
+      },
+      "date": {
+        "label": "DATUM",
+        "value": "September 2025"
+      },
+      "tools": {
+        "label": "WERKZEUGE"
+      }
+    },
+    "scenario": {
+      "title": "Aktuelles Szenario",
+      "description": "Die vorherige Plattform namens \"AcademiaX\" wurde ohne einen strukturierten UX/UI-Prozess entwickelt, was zu mehreren Problemen führte, wie dezentralisierten Informationen, dem Fehlen eines strukturierten Lernportals, einer Überlastung der Mitarbeiter und einer ineffizienten Benutzererfahrung."
+    },
+    "challenge": {
+      "title": "Die Herausforderung",
+      "description": "Wie kann die digitale Erfahrung neugestaltet werden, um alle Technologieinitiativen zu zentralisieren, ein Referenzkursportal zu schaffen und Support-KIs zu entwickeln, die die Zeit der Mitarbeiter auf intuitive und skalierbare Weise optimieren?"
+    },
+    "designProcess": {
+      "title": "Designprozess",
+      "description": "Um sicherzustellen, dass die Lösung benutzerzentriert und auf die Geschäftsziele ausgerichtet war, habe ich die Double-Diamond-Methodik angewendet und das Projekt in die Phasen Entdecken, Definieren, Entwickeln und Umsetzen unterteilt.",
+      "imageAlts": {
+        "discovery": "Entdeckungsphase",
+        "definition": "Definitionsphase",
+        "development": "Entwicklungsphase"
+      }
+    },
+    "research": {
+      "title": "Recherche und Entdeckung",
+      "user": {
+        "title": "Den Benutzer kennenlernen",
+        "description": "Ich habe Interviews und qualitative Recherchen mit Fachleuten aus verschiedenen Bereichen durchgeführt, um deren Schmerzpunkte zu ermitteln. Basierend auf den Erkenntnissen wurden Proto-Personas erstellt, die die Hauptbenutzerprofile repräsentieren und die Notwendigkeit der Automatisierung des Supports und der Zentralisierung von Wissen bestätigten."
+      },
+      "competitors": {
+        "title": "Wettbewerbsanalyse",
+        "description": "Ich habe ein Benchmarking durchgeführt, bei dem ich andere unternehmensinterne Lernplattformen und Datenportale analysiert habe, um bewährte Verfahren, Schnittstellenmuster und Innovationsmöglichkeiten zu identifizieren."
+      }
+    },
+    "benchmarking": {
+      "header": "Merkmal",
+      "hotmart": {
+        "name": "Hotmart",
+        "branch": "Plattform für den Verkauf und Vertrieb von digitalen Produkten und Affiliate-Marketing.",
+        "services": {
+          "0": "Hosting für Kurse und E-Books",
+          "1": "Zahlungstools",
+          "2": "Affiliate-Management"
+        },
+        "strengths": {
+          "0": "✅ Umfassendes Verkaufsökosystem",
+          "1": "✅ Starkes Partnerprogramm"
+        },
+        "weaknesses": {
+          "0": "❌ Unterschiedliche Qualität",
+          "1": "❌ Hohe Verkaufsgebühren"
+        }
+      },
+      "udemy": {
+        "name": "Udemy",
+        "branch": "Globaler Marktplatz für Online-Kurse mit einer breiten Palette von Themen (B2C und B2B).",
+        "services": {
+          "0": "Verkauf von Einzelkursen",
+          "1": "Lebenslanger Zugriff auf Inhalte",
+          "2": "Abschlusszertifikate"
+        },
+        "strengths": {
+          "0": "✅ Riesiger Katalog",
+          "1": "✅ Aggressive Preise",
+          "2": "✅ Lebenslanger Zugriff"
+        },
+        "weaknesses": {
+          "0": "❌ Inkonsistente Qualität",
+          "1": "❌ Fehlende strukturierte Lernpfade"
+        }
+      },
+      "alura": {
+        "name": "Alura",
+        "branch": "Abonnement-Plattform für Technologiebildung mit Schwerpunkt auf beruflicher Weiterbildung.",
+        "services": {
+          "0": "Unbegrenzter Zugang per Abonnement",
+          "1": "Lernpfade (\"Formações\")",
+          "2": "Aktives Support-Forum"
+        },
+        "strengths": {
+          "0": "✅ Hochwertige Kuratierung",
+          "1": "✅ Strukturierte Methodik",
+          "2": "✅ Starke und aktive Community"
+        },
+        "weaknesses": {
+          "0": "❌ Spezifische Technologienische",
+          "1": "❌ Abonnementmodell kann eine Hürde sein"
+        }
+      },
+      "digitalTech": {
+        "name": "DigitalTech-Portal",
+        "branch": "Interne Unternehmensplattform für Bildung, Wissensmanagement und KI-Support.",
+        "services": {
+          "0": "Interne Kurse mit Fokus auf Unternehmens-Stacks",
+          "1": "Demokratisierter Datenkatalog",
+          "2": "KIs für allgemeinen und kursbezogenen Support"
+        },
+        "strengths": {
+          "0": "✅ Hochrelevante Inhalte",
+          "1": "✅ Kostenlos für Mitarbeiter",
+          "2": "✅ Zeitoptimierung durch KIs"
+        },
+        "weaknesses": {
+          "0": "❌ Interne Produktion kann ein Engpass sein",
+          "1": "❌ Begrenzte Kursvielfalt"
+        }
+      },
+      "rows": {
+        "branch": "Branche",
+        "services": "Angebotene Dienstleistungen",
+        "strengths": "Stärken",
+        "weaknesses": "Schwächen"
+      }
+    },
+    "solution": {
+      "title": "Die Lösung",
+      "description": "Die endgültige Lösung ist ein einheitliches, intuitives und funktionales Portal. Das Front-End wurde mit React, Next.js und Tailwind CSS für eine schnelle und skalierbare Erfahrung erstellt. Vor der Entwicklung wurden interaktive Prototypen in Figma in drei Runden von Usability-Tests validiert.",
+      "cta": "Interaktiven Prototyp auf Figma ansehen",
+      "finalImageAlt": "Endergebnis des Projekts"
+    },
+    "usabilityTest": {
+      "title": "Usability-Test: Erkenntnisse und Lösungen",
+      "headers": {
+        "task": "Testaufgabe",
+        "result": "Ergebnis",
+        "insights": "Erkenntnisse und Lösungen"
+      },
+      "rows": {
+        "0": {
+          "task": "Ein Event finden (z.B. Digi.Coffee)",
+          "result": "Erfolgreich",
+          "insights": "Ablauf mit 100% Erfolg validiert."
+        },
+        "1": {
+          "task": "Auf den Bereich \"Meine Kurse\" zugreifen",
+          "result": "Schwierig",
+          "insights": "<0>Problem:</0> Zugriff nur über das Hauptmenü. <1/> <2>Lösung:</2> Einen CTA auf der Startseite für schnellen Zugriff hinzufügen."
+        },
+        "2": {
+          "task": "Ein Zertifikat finden",
+          "result": "Schwierig",
+          "insights": "<0>Problem:</0> Zertifikate in einem Unterbereich. <1/> <2>Lösung:</2> Direkten CTA zu \"Zertifikate\" im Dashboard einfügen."
+        }
+      }
+    },
+    "results": {
+      "title": "Ergebnisse und Erkenntnisse",
+      "results": {
+        "title": "Ergebnisse",
+        "description": "Das neue Portal hat die Informationen erfolgreich zentralisiert, und die Zeitersparnis durch die Support-KIs war erheblich. Die Schaffung eines strukturierten Kursportals und der einfache Zugang zum Datenkatalog optimierten Prozesse und förderten die interne Weiterbildung."
+      },
+      "learnings": {
+        "title": "Wichtigste Erkenntnisse",
+        "description": "Dieses Projekt hat die Bedeutung unterstrichen, eine Überarbeitung auf Forschungsdaten zu stützen. Die Validierung von Hypothesen durch Usability-Tests war entscheidend, um Probleme vor der Entwicklung zu beheben und so Zeit und Ressourcen zu sparen. Die Migration des Tech-Stacks war ebenfalls eine große Chance zur beruflichen Weiterentwicklung."
+      }
+    }
   }
+
 }

@@ -42,5 +42,178 @@
     "Project_4_title": "SOMMOS",
     "Project_4_desc": "Behind every line of data in an HR system, there is a human journey. The challenge for SOMMOS was exactly this: how can design inject clarity, empathy, and simplicity into a universe of dense information and critical processes? This project reveals the power of UX to humanize technology and support decisions that impact thousands of lives.",
     "button": "Details"
+  },
+  "digitaltech": {
+    "hero": {
+      "alt": "DigitalTech Project Cover"
+    },
+    "meta": {
+      "title": "DigitalTech Portal",
+      "about": {
+        "title": "ABOUT THE PROJECT",
+        "description": "This project consists of the complete refactoring of the corporate technology portal, the \"DigitalTech Portal\", focusing on content centralization, learning, and automation with AI to optimize support in the Digital Tech area."
+      },
+      "role": {
+        "label": "MY ROLE",
+        "value": "UX/UI Designer & Front-end Developer"
+      },
+      "date": {
+        "label": "DATE",
+        "value": "September, 2025"
+      },
+      "tools": {
+        "label": "TOOLS"
+      }
+    },
+    "scenario": {
+      "title": "Current Scenario",
+      "description": "The previous platform, called \"AcademiaX\", was developed without a structured UX/UI process, resulting in several problems such as decentralized information, lack of a structured learning portal, employee overload, and an inefficient user experience."
+    },
+    "challenge": {
+      "title": "The Challenge",
+      "description": "How to redesign the digital experience to centralize all technology initiatives, create a benchmark course portal, and develop support AIs that optimize employee time in an intuitive and scalable way?"
+    },
+    "designProcess": {
+      "title": "Design Process",
+      "description": "To ensure the solution was user-centered and aligned with business goals, I used the Double Diamond methodology, dividing the project into the stages of Discovery, Definition, Development, and Delivery.",
+      "imageAlts": {
+        "discovery": "Discovery Stage",
+        "definition": "Definition Stage",
+        "development": "Development Stage"
+      }
+    },
+    "research": {
+      "title": "Research and Discovery",
+      "user": {
+        "title": "Getting to Know the User",
+        "description": "I conducted interviews and qualitative research with professionals from various areas to map their pain points. Based on the insights, proto-personas were created to represent the main user profiles, validating the need to automate support and centralize knowledge."
+      },
+      "competitors": {
+        "title": "Competitor Analysis",
+        "description": "I conducted a benchmarking analysis of other corporate learning platforms and data portals to identify best practices, interface patterns, and innovation opportunities."
+      }
+    },
+    "benchmarking": {
+      "header": "Feature",
+      "hotmart": {
+        "name": "Hotmart",
+        "branch": "Platform for selling and distributing digital products and affiliate marketing.",
+        "services": {
+          "0": "Hosting for courses and ebooks",
+          "1": "Payment tools",
+          "2": "Affiliate management"
+        },
+        "strengths": {
+          "0": "✅ Complete sales ecosystem",
+          "1": "✅ Strong Affiliate Program"
+        },
+        "weaknesses": {
+          "0": "❌ Variable Quality",
+          "1": "❌ High sales fees"
+        }
+      },
+      "udemy": {
+        "name": "Udemy",
+        "branch": "Global marketplace for online courses with a wide range of topics (B2C and B2B).",
+        "services": {
+          "0": "Sale of individual courses",
+          "1": "Lifetime access to content",
+          "2": "Certificates of completion"
+        },
+        "strengths": {
+          "0": "✅ Huge Catalog",
+          "1": "✅ Aggressive Pricing",
+          "2": "✅ Lifetime Access"
+        },
+        "weaknesses": {
+          "0": "❌ Inconsistent Quality",
+          "1": "❌ Lack of a structured learning path"
+        }
+      },
+      "alura": {
+        "name": "Alura",
+        "branch": "Subscription platform for technology education, focused on professional training.",
+        "services": {
+          "0": "Unlimited access via subscription",
+          "1": "Learning paths (\"Formações\")",
+          "2": "Active support forum"
+        },
+        "strengths": {
+          "0": "✅ High-Quality Curation",
+          "1": "✅ Structured Methodology",
+          "2": "✅ Strong and Active Community"
+        },
+        "weaknesses": {
+          "0": "❌ Specific technology niche",
+          "1": "❌ Subscription model can be a barrier"
+        }
+      },
+      "digitalTech": {
+        "name": "DigitalTech Portal",
+        "branch": "Internal corporate platform for education, knowledge management, and AI support.",
+        "services": {
+          "0": "Internal courses focused on company stacks",
+          "1": "Democratized data catalog",
+          "2": "AIs for general and class support"
+        },
+        "strengths": {
+          "0": "✅ Hyper-Relevant Content",
+          "1": "✅ Zero Cost for the Employee",
+          "2": "✅ Time Optimization with AIs"
+        },
+        "weaknesses": {
+          "0": "❌ Internal production can be a bottleneck",
+          "1": "❌ Limited variety of courses"
+        }
+      },
+      "rows": {
+        "branch": "Field",
+        "services": "Services Offered",
+        "strengths": "Strengths",
+        "weaknesses": "Weaknesses"
+      }
+    },
+    "solution": {
+      "title": "The Solution",
+      "description": "The final solution is a unified, intuitive, and functional portal. The front-end was built with React, Next.js, and Tailwind CSS for a fast and scalable experience. Before development, interactive prototypes in Figma were validated in three rounds of usability testing.",
+      "cta": "See Interactive Prototype on Figma",
+      "finalImageAlt": "Final result of the project"
+    },
+    "usabilityTest": {
+      "title": "Usability Test: Insights and Solutions",
+      "headers": {
+        "task": "Test Task",
+        "result": "Result",
+        "insights": "Insights and Solutions"
+      },
+      "rows": {
+        "0": {
+          "task": "Find an event (e.g., Digi.Coffee)",
+          "result": "Success",
+          "insights": "Flow validated with 100% success."
+        },
+        "1": {
+          "task": "Access the \"My Courses\" area",
+          "result": "Difficulty",
+          "insights": "<0>Problem:</0> Access only in the main menu. <1/> <2>Solution:</2> Add a CTA on the home page for quick access."
+        },
+        "2": {
+          "task": "Locate a certificate",
+          "result": "Difficulty",
+          "insights": "<0>Problem:</0> Certificates in a sub-area. <1/> <2>Solution:</2> Include a direct CTA for \"Certificates\" on the dashboard."
+        }
+      }
+    },
+    "results": {
+      "title": "Results and Learnings",
+      "results": {
+        "title": "Results",
+        "description": "The new portal successfully centralized information, and time savings were significant due to the support AIs. The creation of a structured course portal and easy access to the data catalog optimized processes and boosted internal training."
+      },
+      "learnings": {
+        "title": "Key Learnings",
+        "description": "This project reinforced the importance of basing a refactoring on research data. Validating hypotheses with usability tests was crucial to fix problems before development, saving time and resources. The migration of the tech stack was also a great opportunity for professional development."
+      }
+    }
   }
 }
