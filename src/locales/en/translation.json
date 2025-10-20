@@ -106,7 +106,7 @@
       "title": "Research and Discovery",
       "user": {
         "title": "Getting to Know the User",
-        "description": "I conducted interviews and qualitative research with professionals from various areas to map their pain points. Based on the insights, proto-personas were created to represent the main user profiles, validating the need to automate support and centralize knowledge."
+        "description": "I conducted interviews and qualitative research with professionals from various areas to map their pain points, validating the need to automate support and centralize knowledge."
       },
       "competitors": {
         "title": "Competitor Analysis",
@@ -115,75 +115,56 @@
     },
     "benchmarking": {
       "header": "Feature",
-      "hotmart": {
-        "name": "Hotmart",
-        "branch": "Platform for selling and distributing digital products and affiliate marketing.",
-        "services": {
-          "0": "Hosting for courses and ebooks",
-          "1": "Payment tools",
-          "2": "Affiliate management"
-        },
-        "strengths": {
-          "0": "✅ Complete sales ecosystem",
-          "1": "✅ Strong Affiliate Program"
-        },
-        "weaknesses": {
-          "0": "❌ Variable Quality",
-          "1": "❌ High sales fees"
-        }
-      },
       "udemy": {
         "name": "Udemy",
-        "branch": "Global marketplace for online courses with a wide range of topics (B2C and B2B).",
+        "branch": "B2C/B2B marketplace for courses on various topics.",
         "services": {
           "0": "Sale of individual courses",
           "1": "Lifetime access to content",
-          "2": "Certificates of completion"
+          "2": "Completion certificates"
         },
         "strengths": {
-          "0": "✅ Huge Catalog",
-          "1": "✅ Aggressive Pricing",
-          "2": "✅ Lifetime Access"
+          "0": "✅ Vast Catalog",
+          "1": "✅ Aggressive Pricing"
         },
         "weaknesses": {
-          "0": "❌ Inconsistent Quality",
-          "1": "❌ Lack of a structured learning path"
+          "0": "❌ Generic Content (not company-focused)",
+          "1": "❌ Low strategic alignment"
         }
       },
       "alura": {
         "name": "Alura",
-        "branch": "Subscription platform for technology education, focused on professional training.",
+        "branch": "B2C/B2B subscription platform focused on technology.",
         "services": {
-          "0": "Unlimited access via subscription",
-          "1": "Learning paths (\"Formações\")",
-          "2": "Active support forum"
+          "0": "Access via subscription",
+          "1": "Learning paths (\"Formations\")",
+          "2": "Question forum"
         },
         "strengths": {
-          "0": "✅ High-Quality Curation",
-          "1": "✅ Structured Methodology",
-          "2": "✅ Strong and Active Community"
+          "0": "✅ High-Quality Content",
+          "1": "✅ Structured Methodology"
         },
         "weaknesses": {
-          "0": "❌ Specific technology niche",
-          "1": "❌ Subscription model can be a barrier"
+          "0": "❌ High cost per license",
+          "1": "❌ Content not customized for the company"
         }
       },
       "digitalTech": {
         "name": "DigitalTech Portal",
-        "branch": "Internal corporate platform for education, knowledge management, and AI support.",
+        "branch": "Internal platform for education and knowledge management.",
         "services": {
-          "0": "Internal courses focused on company stacks",
-          "1": "Democratized data catalog",
-          "2": "AIs for general and class support"
+          "0": "Courses focused on the company's stacks",
+          "1": "Internal data catalog",
+          "2": "Support via custom AIs"
         },
         "strengths": {
-          "0": "✅ Hyper-Relevant Content",
-          "1": "✅ Zero Cost for the Employee",
-          "2": "✅ Time Optimization with AIs"
+          "0": "✅ 100% Relevant Content",
+          "1": "✅ Zero Cost for Employee",
+          "2": "✅ Centralized Knowledge"
         },
         "weaknesses": {
-          "0": "❌ Internal production can be a bottleneck",
-          "1": "❌ Limited variety of courses"
+          "0": "❌ Bottleneck in content production",
+          "1": "❌ Variety limited to internal topics"
         }
       },
       "rows": {
@@ -196,31 +177,35 @@
     "solution": {
       "title": "The Solution",
       "description": "The final solution is a unified, intuitive, and functional portal. The front-end was built with React, Next.js, and Tailwind CSS for a fast and scalable experience. Before development, interactive prototypes in Figma were validated in three rounds of usability testing.",
-      "cta": "See Interactive Prototype on Figma",
+      "cta": "View screens on Figma",
       "finalImageAlt": "Final result of the project"
     },
     "usabilityTest": {
-      "title": "Usability Test: Insights and Solutions",
+      "title": "Usability Test: Problems and Solutions",
       "headers": {
         "task": "Test Task",
         "result": "Result",
-        "insights": "Insights and Solutions"
+        "problem": "Problem",
+        "solution": "Solution"
       },
       "rows": {
         "0": {
-          "task": "Find an event (e.g., Digi.Coffee)",
+          "task": "Find a course",
           "result": "Success",
-          "insights": "Flow validated with 100% success."
+          "problem": "No problems identified.",
+          "solution": "The flow was validated with 100% success and should be maintained."
         },
         "1": {
           "task": "Access the \"My Courses\" area",
           "result": "Difficulty",
-          "insights": "<0>Problem:</0> Access only in the main menu. <1/> <2>Solution:</2> Add a CTA on the home page for quick access."
+          "problem": "Access to the \"My Courses\" area is only available through the main menu, requiring more clicks.",
+          "solution": "Add a quick access CTA (Call to Action) to the user's home page."
         },
         "2": {
           "task": "Locate a certificate",
           "result": "Difficulty",
-          "insights": "<0>Problem:</0> Certificates in a sub-area. <1/> <2>Solution:</2> Include a direct CTA for \"Certificates\" on the dashboard."
+          "problem": "The certificates are in a sub-area, making their location unintuitive.",
+          "solution": "Include a shortcut or direct CTA to the \"Certificates\" page on the user's main dashboard."
         }
       }
     },

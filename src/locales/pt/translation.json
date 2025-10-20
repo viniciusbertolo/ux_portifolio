@@ -106,7 +106,7 @@
       "title": "Pesquisa e Descoberta",
       "user": {
         "title": "Conhecendo o Usuário",
-        "description": "Realizei entrevistas e pesquisas qualitativas com profissionais de diversas áreas para mapear suas dores. Com base nos insights, foram criadas protopersonas que representam os principais perfis de usuários, validando a necessidade de automatizar o suporte e centralizar o conhecimento."
+        "description": "Realizei entrevistas e pesquisas qualitativas com profissionais de diversas áreas para mapear suas dores, validando a necessidade de automatizar o suporte e centralizar o conhecimento."
       },
       "competitors": {
         "title": "Análise de Concorrentes",
@@ -115,75 +115,56 @@
     },
     "benchmarking": {
       "header": "Característica",
-      "hotmart": {
-        "name": "Hotmart",
-        "branch": "Plataforma para venda e distribuição de produtos digitais e marketing de afiliados.",
-        "services": {
-          "0": "Hospedagem de cursos e ebooks",
-          "1": "Ferramentas de pagamento",
-          "2": "Gestão de afiliados"
-        },
-        "strengths": {
-          "0": "✅ Ecossistema Completo de vendas",
-          "1": "✅ Forte Programa de Afiliados"
-        },
-        "weaknesses": {
-          "0": "❌ Qualidade Variável",
-          "1": "❌ Taxas Elevadas sobre vendas"
-        }
-      },
       "udemy": {
         "name": "Udemy",
-        "branch": "Marketplace global de cursos online com vasta gama de tópicos (B2C e B2B).",
+        "branch": "Marketplace B2C/B2B de cursos sobre diversos temas.",
         "services": {
           "0": "Venda de cursos avulsos",
           "1": "Acesso vitalício ao conteúdo",
           "2": "Certificados de conclusão"
         },
         "strengths": {
-          "0": "✅ Catálogo Imenso",
-          "1": "✅ Preços Agressivos",
-          "2": "✅ Acesso Vitalício"
+          "0": "✅ Vasto Catálogo",
+          "1": "✅ Preços Agressivos"
         },
         "weaknesses": {
-          "0": "❌ Qualidade Inconsistente",
-          "1": "❌ Falta de Estrutura de aprendizado"
+          "0": "❌ Conteúdo Genérico (não focado na empresa)",
+          "1": "❌ Baixo alinhamento estratégico"
         }
       },
       "alura": {
         "name": "Alura",
-        "branch": "Plataforma de assinatura para educação em tecnologia, com foco em formação profissional.",
+        "branch": "Plataforma B2C/B2B de assinatura com foco em tecnologia.",
         "services": {
-          "0": "Acesso ilimitado via assinatura",
+          "0": "Acesso via assinatura",
           "1": "Trilhas de aprendizado (\"Formações\")",
-          "2": "Fórum de dúvidas ativo"
+          "2": "Fórum de dúvidas"
         },
         "strengths": {
-          "0": "✅ Curadoria de Alta Qualidade",
-          "1": "✅ Metodologia Estruturada",
-          "2": "✅ Comunidade Forte e Ativa"
+          "0": "✅ Conteúdo de Alta Qualidade",
+          "1": "✅ Metodologia Estruturada"
         },
         "weaknesses": {
-          "0": "❌ Nicho Específico de tecnologia",
-          "1": "❌ Modelo de Assinatura pode ser barreira"
+          "0": "❌ Custo elevado por licença",
+          "1": "❌ Conteúdo não customizado para a empresa"
         }
       },
       "digitalTech": {
         "name": "Portal DigitalTech",
-        "branch": "Plataforma corporativa interna de educação, gestão do conhecimento e suporte via IA.",
+        "branch": "Plataforma interna de educação e gestão do conhecimento.",
         "services": {
-          "0": "Cursos internos focados em stacks da empresa",
-          "1": "Catálogo de dados democratizado",
-          "2": "IAs para suporte geral e de aulas"
+          "0": "Cursos focados nas stacks da empresa",
+          "1": "Catálogo de dados interno",
+          "2": "Suporte via IAs customizadas"
         },
         "strengths": {
-          "0": "✅ Conteúdo Hiper-Relevante",
-          "1": "✅ Custo Zero para o Colaborador",
-          "2": "✅ Otimização de Tempo com IAs"
+          "0": "✅ Conteúdo 100% Relevante",
+          "1": "✅ Custo Zero para Colaborador",
+          "2": "✅ Conhecimento Centralizado"
         },
         "weaknesses": {
-          "0": "❌ Produção interna pode ser um gargalo",
-          "1": "❌ Variedade de cursos limitada"
+          "0": "❌ Gargalo na produção de conteúdo",
+          "1": "❌ Variedade limitada aos temas internos"
         }
       },
       "rows": {
@@ -196,31 +177,35 @@
     "solution": {
       "title": "A Solução",
       "description": "A solução final é um portal unificado, intuitivo e funcional. O front-end foi construído com React, Next.js e Tailwind CSS para uma experiência rápida e escalável. Antes do desenvolvimento, protótipos interativos no Figma foram validados em três rodadas de testes de usabilidade.",
-      "cta": "Ver Protótipo Interativo no Figma",
+      "cta": "Ver telas no Figma",
       "finalImageAlt": "Resultado final do projeto"
     },
     "usabilityTest": {
-      "title": "Teste de Usabilidade: Insights e Soluções",
+      "title": "Teste de Usabilidade: Problemas e Soluções",
       "headers": {
         "task": "Tarefa do Teste",
         "result": "Resultado",
-        "insights": "Insights e Soluções"
+        "problem": "Problema",
+        "solution": "Solução"
       },
       "rows": {
         "0": {
-          "task": "Encontrar um evento (ex: Digi.Coffee)",
+          "task": "Encontrar um curso",
           "result": "Sucesso",
-          "insights": "Fluxo validado com 100% de sucesso."
+          "problem": "Nenhum problema identificado.",
+          "solution": "O fluxo foi validado com 100% de sucesso e deve ser mantido."
         },
         "1": {
           "task": "Acessar a área \"Meus Cursos\"",
           "result": "Dificuldade",
-          "insights": "<0>Problema:</0> Acesso apenas no menu principal. <1/> <2>Solução:</2> Adicionar um CTA na home com acesso rápido."
+          "problem": "O acesso à área \"Meus Cursos\" está disponível apenas no menu principal, exigindo mais cliques.",
+          "solution": "Adicionar um CTA (Call to Action) de acesso rápido na home do usuário."
         },
         "2": {
           "task": "Localizar um certificado",
           "result": "Dificuldade",
-          "insights": "<0>Problema:</0> Certificados em sub-área. <1/> <2>Solução:</2> Incluir CTA direto para \"Certificados\" no dashboard."
+          "problem": "Os certificados estão em uma sub-área, tornando a localização pouco intuitiva.",
+          "solution": "Incluir um atalho ou CTA direto para a página de \"Certificados\" no dashboard principal do usuário."
         }
       }
     },

@@ -106,7 +106,7 @@
       "title": "Recherche und Entdeckung",
       "user": {
         "title": "Den Benutzer kennenlernen",
-        "description": "Ich habe Interviews und qualitative Recherchen mit Fachleuten aus verschiedenen Bereichen durchgeführt, um deren Schmerzpunkte zu ermitteln. Basierend auf den Erkenntnissen wurden Proto-Personas erstellt, die die Hauptbenutzerprofile repräsentieren und die Notwendigkeit der Automatisierung des Supports und der Zentralisierung von Wissen bestätigten."
+        "description": "Ich habe Interviews und qualitative Recherchen mit Fachleuten aus verschiedenen Bereichen durchgeführt, um deren Schmerzpunkte zu ermitteln, die die Hauptbenutzerprofile repräsentieren und die Notwendigkeit der Automatisierung des Supports und der Zentralisierung von Wissen bestätigten."
       },
       "competitors": {
         "title": "Wettbewerbsanalyse",
@@ -115,79 +115,60 @@
     },
     "benchmarking": {
       "header": "Merkmal",
-      "hotmart": {
-        "name": "Hotmart",
-        "branch": "Plattform für den Verkauf und Vertrieb von digitalen Produkten und Affiliate-Marketing.",
-        "services": {
-          "0": "Hosting für Kurse und E-Books",
-          "1": "Zahlungstools",
-          "2": "Affiliate-Management"
-        },
-        "strengths": {
-          "0": "✅ Umfassendes Verkaufsökosystem",
-          "1": "✅ Starkes Partnerprogramm"
-        },
-        "weaknesses": {
-          "0": "❌ Unterschiedliche Qualität",
-          "1": "❌ Hohe Verkaufsgebühren"
-        }
-      },
       "udemy": {
         "name": "Udemy",
-        "branch": "Globaler Marktplatz für Online-Kurse mit einer breiten Palette von Themen (B2C und B2B).",
+        "branch": "B2C/B2B-Marktplatz für Kurse zu verschiedenen Themen.",
         "services": {
-          "0": "Verkauf von Einzelkursen",
+          "0": "Verkauf einzelner Kurse",
           "1": "Lebenslanger Zugriff auf Inhalte",
           "2": "Abschlusszertifikate"
         },
         "strengths": {
-          "0": "✅ Riesiger Katalog",
-          "1": "✅ Aggressive Preise",
-          "2": "✅ Lebenslanger Zugriff"
+          "0": "✅ Großer Katalog",
+          "1": "✅ Aggressive Preise"
         },
         "weaknesses": {
-          "0": "❌ Inkonsistente Qualität",
-          "1": "❌ Fehlende strukturierte Lernpfade"
+          "0": "❌ Generische Inhalte (nicht unternehmensbezogen)",
+          "1": "❌ Geringe strategische Ausrichtung"
         }
       },
       "alura": {
         "name": "Alura",
-        "branch": "Abonnement-Plattform für Technologiebildung mit Schwerpunkt auf beruflicher Weiterbildung.",
+        "branch": "B2C/B2B-Abonnementplattform mit Fokus auf Technologie.",
         "services": {
-          "0": "Unbegrenzter Zugang per Abonnement",
-          "1": "Lernpfade (\"Formações\")",
-          "2": "Aktives Support-Forum"
+          "0": "Zugang per Abonnement",
+          "1": "Lernpfade (\"Formationen\")",
+          "2": "Fragenforum"
         },
         "strengths": {
-          "0": "✅ Hochwertige Kuratierung",
-          "1": "✅ Strukturierte Methodik",
-          "2": "✅ Starke und aktive Community"
+          "0": "✅ Hochwertige Inhalte",
+          "1": "✅ Strukturierte Methodik"
         },
         "weaknesses": {
-          "0": "❌ Spezifische Technologienische",
-          "1": "❌ Abonnementmodell kann eine Hürde sein"
+          "0": "❌ Hohe Kosten pro Lizenz",
+          "1": "❌ Nicht auf das Unternehmen zugeschnittene Inhalte"
         }
       },
       "digitalTech": {
         "name": "DigitalTech-Portal",
-        "branch": "Interne Unternehmensplattform für Bildung, Wissensmanagement und KI-Support.",
+        "branch": "Interne Plattform für Bildung und Wissensmanagement.",
         "services": {
-          "0": "Interne Kurse mit Fokus auf Unternehmens-Stacks",
-          "1": "Demokratisierter Datenkatalog",
-          "2": "KIs für allgemeinen und kursbezogenen Support"
+          "0": "Kurse, die auf die Stacks des Unternehmens ausgerichtet sind",
+          "1": "Interner Datenkatalog",
+          "2": "Support durch benutzerdefinierte KIs"
         },
         "strengths": {
-          "0": "✅ Hochrelevante Inhalte",
+          "0": "✅ 100 % relevante Inhalte",
           "1": "✅ Kostenlos für Mitarbeiter",
-          "2": "✅ Zeitoptimierung durch KIs"
+          "2": "✅ Zentralisiertes Wissen"
         },
         "weaknesses": {
-          "0": "❌ Interne Produktion kann ein Engpass sein",
-          "1": "❌ Begrenzte Kursvielfalt"
+          "0": "❌ Engpass bei der Inhaltsproduktion",
+          "1": "❌ Auf interne Themen beschränkte Vielfalt"
         }
       },
       "rows": {
-        "branch": "Branche",
+        "branch": "Bereich",
         "services": "Angebotene Dienstleistungen",
         "strengths": "Stärken",
         "weaknesses": "Schwächen"
@@ -196,31 +177,35 @@
     "solution": {
       "title": "Die Lösung",
       "description": "Die endgültige Lösung ist ein einheitliches, intuitives und funktionales Portal. Das Front-End wurde mit React, Next.js und Tailwind CSS für eine schnelle und skalierbare Erfahrung erstellt. Vor der Entwicklung wurden interaktive Prototypen in Figma in drei Runden von Usability-Tests validiert.",
-      "cta": "Interaktiven Prototyp auf Figma ansehen",
+      "cta": "Screens auf Figma ansehen",
       "finalImageAlt": "Endergebnis des Projekts"
     },
     "usabilityTest": {
-      "title": "Usability-Test: Erkenntnisse und Lösungen",
+      "title": "Usability-Test: Probleme und Lösungen",
       "headers": {
         "task": "Testaufgabe",
         "result": "Ergebnis",
-        "insights": "Erkenntnisse und Lösungen"
+        "problem": "Problem",
+        "solution": "Lösung"
       },
       "rows": {
         "0": {
-          "task": "Ein Event finden (z.B. Digi.Coffee)",
+          "task": "Einen Kurs finden",
           "result": "Erfolgreich",
-          "insights": "Ablauf mit 100% Erfolg validiert."
+          "problem": "Keine Probleme festgestellt.",
+          "solution": "Der Ablauf wurde zu 100 % erfolgreich validiert und sollte beibehalten werden."
         },
         "1": {
-          "task": "Auf den Bereich \"Meine Kurse\" zugreifen",
-          "result": "Schwierig",
-          "insights": "<0>Problem:</0> Zugriff nur über das Hauptmenü. <1/> <2>Lösung:</2> Einen CTA auf der Startseite für schnellen Zugriff hinzufügen."
+          "task": "Auf den Bereich „Meine Kurse“ zugreifen",
+          "result": "Schwierigkeiten",
+          "problem": "Der Zugriff auf den Bereich „Meine Kurse“ ist nur über das Hauptmenü möglich, was mehr Klicks erfordert.",
+          "solution": "Einen CTA (Call to Action) für den Schnellzugriff auf der Startseite des Benutzers hinzufügen."
         },
         "2": {
           "task": "Ein Zertifikat finden",
-          "result": "Schwierig",
-          "insights": "<0>Problem:</0> Zertifikate in einem Unterbereich. <1/> <2>Lösung:</2> Direkten CTA zu \"Zertifikate\" im Dashboard einfügen."
+          "result": "Schwierigkeiten",
+          "problem": "Die Zertifikate befinden sich in einem Unterbereich, was das Auffinden wenig intuitiv macht.",
+          "solution": "Eine Verknüpfung oder einen direkten CTA zur Seite „Zertifikate“ im Haupt-Dashboard des Benutzers einfügen."
         }
       }
     },
