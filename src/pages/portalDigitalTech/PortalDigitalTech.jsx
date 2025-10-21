@@ -36,6 +36,7 @@ const DigitalTechPage = () => {
         i18n.changeLanguage(lng);
     };
 
+    
     // Itens do menu para navegação interna
     const menuItems = [
         { id: 'about', key: 'digitaltech.meta.about.title' },
