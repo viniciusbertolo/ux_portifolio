@@ -43,6 +43,28 @@
     "Project_4_desc": "Hinter jeder Datenzeile in einem HR-System verbirgt sich eine menschliche Reise. Die Herausforderung von SOMMOS war genau diese: Wie kann Design Klarheit, Empathie und Einfachheit in ein Universum aus dichten Informationen und kritischen Prozessen bringen? Dieses Projekt zeigt die Kraft von UX, Technologie zu vermenschlichen und Entscheidungen zu unterstützen, die Tausende von Leben beeinflussen.",
     "button": "Details"
   },
+  "other_projects": {
+    "title": "Weitere Projekte",
+    "button": "Auf Figma ansehen",
+    "cards": [
+      {
+        "title": "Luigi Sorvetes",
+        "description": "Erstellung einer hochkonvertierenden Landingpage für das Eisdielen-Franchise Luigi, ausgerichtet auf den Ausbau der digitalen Präsenz der Marke."
+      },
+      {
+        "title": "CCAB",
+        "description": "UI/UX-Design für die Plattform 'Easy Trade' der Arabisch-Brasilianischen Handelskammer zur Optimierung von Außenhandelsprozessen."
+      },
+      {
+        "title": "Casa Verde",
+        "description": "E-Commerce-Projekt mit Mobile-First-Ansatz für eine Marke für botanische Dekoration, das sich auf das visuelle Einkaufserlebnis konzentriert."
+      },
+      {
+        "title": "GPT Suzano",
+        "description": "Schnittstelle für die KI-Plattform von Suzano, entwickelt zur Zentralisierung von Lösungen und zur Optimierung des Arbeitsablaufs der Mitarbeiter."
+      }
+    ]
+  },
   "network": {
     "title": "Kontakt & Netzwerke"
   },

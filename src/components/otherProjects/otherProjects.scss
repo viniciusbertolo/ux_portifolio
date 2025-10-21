@@ -1,0 +1,135 @@
+// Reutilizando as mesmas variáveis de breakpoint do seu arquivo original
+$breakpoint-mobile: 768px;
+
+.otherProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000; // Um fundo escuro para a seção
+
+    h1 {
+        font-size: 36px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        line-height: 1.1;
+        margin-bottom: 16px;
+
+        // Aninhando a media query para manter os estilos do h1 agrupados
+        @media (min-width: 768px) {
+            font-size: 100px;
+            line-height: 1;
+            text-align: center;
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+        }
+    }
+
+    // Aninhando as classes filhas dentro da classe pai .otherProjects
+    .progressBar {
+        width: 100%;
+        height: 10px;
+        background-color: #ff8c00;
+        border-radius: 4px;
+        margin-bottom: 50px;
+
+        @media (max-width: $breakpoint-mobile) {
+            height: 4px;
+        }
+    }
+
+    @media (max-width: 767px) {
+    .otherProjects {
+        align-items: flex-start;
+    }
+}
+
+    .cardsContainer {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        max-width: 1366px;
+        width: 100%;
+
+        @media (max-width: $breakpoint-mobile) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    .card {
+        background-color: #222222;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: calc(25% - 23px);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .imgContainer {
+            width: 100%;
+            height: 200px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .textContainer {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-grow: 1;
+
+            h3 {
+                font-size: 24px;
+                color: white;
+            }
+
+            p {
+                color: lightgray;
+                font-size: 16px;
+                flex-grow: 1;
+            }
+            
+            a {
+                background-color: #ff8c00;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+                width: 100%;
+                max-width: 200px;
+                cursor: pointer;
+                color: black;
+                text-align: center;
+                font-weight: bold;
+                transition: 0.2s all;
+                align-self: flex-start;
+
+                &:hover {
+                    background-color: #333;
+                    color: white;
+                }
+            }
+        }
+    }
+}

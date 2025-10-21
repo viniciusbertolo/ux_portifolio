@@ -43,6 +43,28 @@
     "Project_4_desc": "Por trás de cada linha de dados em um sistema de RH, existe uma jornada humana. O desafio do SOMMOS foi exatamente este: como o design pode injetar clareza, empatia e simplicidade em um universo de informações densas e processos críticos? Este projeto revela o poder do UX para humanizar a tecnologia e dar suporte a decisões que impactam milhares de vidas.",
     "button": "Detalhes"
   },
+  "other_projects": {
+    "title": "Outros Projetos",
+    "button": "Ver no Figma",
+    "cards": [
+      {
+        "title": "Luigi Sorvetes",
+        "description": "Criação de Landing Page de alta conversão para a franquia de sorvetes Luigi, focada em expandir a presença digital da marca."
+      },
+      {
+        "title": "CCAB",
+        "description": "Design de UI/UX para a plataforma 'Easy Trade' da Câmara de Comércio Árabe-Brasileira, otimizando processos de comércio exterior."
+      },
+      {
+        "title": "Casa Verde",
+        "description": "Projeto de e-commerce com abordagem Mobile First para uma marca de decoração botânica, focado na experiência de compra visual."
+      },
+      {
+        "title": "GPT Suzano",
+        "description": "Interface para plataforma de IA da Suzano, projetada para centralizar soluções e otimizar o fluxo de trabalho dos colaboradores."
+      }
+    ]
+  },
   "network": {
     "title": "Contato & Redes"
   },

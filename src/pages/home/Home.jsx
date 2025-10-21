@@ -2,6 +2,7 @@ import BackTop from "../../components/backTop/BackTop"
 import Contact from "../../components/contact/Contact"
 import Header from "../../components/header/Header"
 import Hero from "../../components/hero/Hero"
+import OtherProjects from "../../components/otherProjects/OtherProjects"
 import Portfolio from "../../components/portfolio/Portfolio"
 import Services from "../../components/services/Services"
 import Socials from "../../components/social/Social"
@@ -30,6 +31,8 @@ export default function Home() {
 
 
             <Portfolio />
+
+            <OtherProjects />
 
             <section>
                 <Socials />
