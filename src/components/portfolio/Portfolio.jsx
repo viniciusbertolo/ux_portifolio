@@ -54,21 +54,21 @@ const Portfolio = () => {
     {
         id: 1,
         title: t('projects.Project_1_title'),
-        img: "https://images.pexels.com/photos/33847404/pexels-photo-33847404.jpeg",
+        img: "/digital_tech_project.png",
         description: t('projects.Project_1_desc'),
         rota: "/digital-tech"
     },
     {
         id: 2,
         title: t('projects.Project_2_title'),
-        img: "https://images.pexels.com/photos/33847404/pexels-photo-33847404.jpeg",
+        img: "/ds_img.png",
         description: t('projects.Project_2_desc'),
         rota: "/digital-tech"    
     },
     {
         id: 3,
         title: t('projects.Project_3_title'),
-        img: "https://images.pexels.com/photos/33847404/pexels-photo-33847404.jpeg",
+        img: "/vagalumen_ai_c.gif",
         description: t('projects.Project_3_desc'),
         rota: "/digital-tech"
     },
