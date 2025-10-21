@@ -68,7 +68,7 @@ const Portfolio = () => {
     {
         id: 3,
         title: t('projects.Project_3_title'),
-        img: "/vagalumen_ai_c.gif",
+        img: "/vagalumen.png",
         description: t('projects.Project_3_desc'),
         rota: "/digital-tech"
     },
