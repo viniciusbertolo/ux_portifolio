@@ -75,7 +75,7 @@ const Portfolio = () => {
     {
         id: 4,
         title: t('projects.Project_4_title'),
-        img: "https://images.pexels.com/photos/33847404/pexels-photo-33847404.jpeg",
+        img: "/sommos.png",
         description: t('projects.Project_4_desc'),
         rota: "/digital-tech"
     },
