@@ -60,7 +60,7 @@ const OtherProjects = () => {
                         <div className="textContainer">
                             <h3>{item.title}</h3>
                             <p>{item.description}</p>
-                            <a href={item.rota}>{t('other_projects.button')}</a>
+                            <a href={item.rota} target='_blank'>{t('other_projects.button')}</a>
                         </div>
                     </div>
                 ))}

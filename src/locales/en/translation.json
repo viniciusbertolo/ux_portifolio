@@ -200,6 +200,7 @@
       "title": "The Solution",
       "description": "The final solution is a unified, intuitive, and functional portal. The front-end was built with React, Next.js, and Tailwind CSS for a fast and scalable experience. Before development, interactive prototypes in Figma were validated in three rounds of usability testing.",
       "cta": "View screens on Figma",
+      "warning": "In compliance with the LGPD (General Data Protection Law) and to protect the company's identity, the screens and prototypes presented may have been altered in relation to the original project.",
       "finalImageAlt": "Final result of the project"
     },
     "usabilityTest": {
@@ -240,6 +241,122 @@
       "learnings": {
         "title": "Key Learnings",
         "description": "This project reinforced the importance of basing a refactoring on research data. Validating hypotheses with usability tests was crucial to fix problems before development, saving time and resources. The migration of the tech stack was also a great opportunity for professional development."
+      }
+    }
+  },
+  "broto": {
+    "hero": {
+      "alt": "Broto Design System Project Cover"
+    },
+    "meta": {
+      "title": "Broto Design System",
+      "about": {
+        "title": "ABOUT THE PROJECT",
+        "description": "Broto is Suzano's official Design System, created to unify the visual and interaction language of all the company's digital products. I acted as a UX/UI Designer in the conception, prototyping, and technical alignment of the components."
+      },
+      "role": {
+        "label": "MY ROLE",
+        "value": "UX/UI Designer (Design System)"
+      },
+      "date": {
+        "label": "DATE",
+        "value": "October, 2025"
+      },
+      "tools": {
+        "label": "TOOLS"
+      }
+    },
+    "scenario": {
+      "title": "Current Scenario",
+      "description": "Before Broto, Suzano faced visual and experience inconsistencies across its various digital products. Each team developed its own components, leading to rework, high maintenance costs, and a fragmented brand identity."
+    },
+    "challenge": {
+      "title": "The Challenge",
+      "description": "How to create a scalable Design System, with the 'Suzano look', that standardizes the user experience, accelerates development, and is flexible enough to meet the needs of multiple products and teams?"
+    },
+    "designProcess": {
+      "title": "My Work Process",
+      "description": "My work focused on three pillars: Research (Discovery), Design (Prototyping), and Collaboration (Handoff). The goal was to ensure components were not only visually aligned but also technically feasible and reusable.",
+      "imageAlts": {
+        "discovery": "Diagram of the Design System creation process"
+      }
+    },
+    "research": {
+      "title": "Research and Discovery",
+      "user": {
+        "title": "Component Audit",
+        "description": "I started with a complete audit of internal products. I mapped existing components (buttons, cards, modals) to identify patterns, inconsistencies, and the most urgent needs of the product teams."
+      },
+      "competitors": {
+        "title": "Design Systems Benchmarking",
+        "description": "I analyzed mature Design Systems in the market (like Material Design, Carbon, Atlassian) to understand best practices for documentation, versioning, and design token structure."
+      }
+    },
+    "references": {
+      "title": "References and Inspirations",
+      "description": "No system is created in a vacuum. Broto was heavily inspired by the best design and engineering practices from leading systems in the market.",
+      "mui": {
+        "title": "Material-UI (MUI)",
+        "description": "A reference for React components. MUI's well-defined component structure and extensive documentation served as the basis for our architecture."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "description": "Inspiration for the 'utility-first' approach and the implementation of Design Tokens. It facilitated the creation of consistent, low-level styles."
+      },
+      "lucide": {
+        "title": "Lucide Icons",
+        "description": "Used as our main icon library. The consistency, lightness, and 'line-art' style of Lucide were perfect for Suzano's visual identity."
+      },
+      "aggrid": {
+        "title": "AG Grid",
+        "description": "For complex data components (data grids), AG Grid was the reference for 'feature set' and performance, helping us define our own table components."
+      }
+    },
+    "solution": {
+      "title": "The Solution: Figma Library",
+      "description": "The solution was the creation of a centralized library in Figma. I designed the components (atoms, molecules, organisms) based on the defined Design Tokens (colors, typography, spacing). I created high-fidelity prototypes to validate the use of components in real contexts before development.",
+      "cta": "View library in Figma",
+      "warning": "In compliance with the LGPD and to protect the company's identity, the screens and prototypes presented may have been altered from the original project.",
+      "finalImageAlt": "Broto Design System components in Figma"
+    },
+    "usabilityTest": {
+      "title": "Alignment and Handoff",
+      "headers": {
+        "task": "Alignment Challenge",
+        "result": "Status",
+        "problem": "Problem Identified",
+        "solution": "Action Taken"
+      },
+      "rows": {
+        "0": {
+          "task": "Dev Adoption",
+          "result": "Difficulty",
+          "problem": "Developers had difficulty translating Figma to code (React/Tailwind).",
+          "solution": "Creation of clear 'specs' documentation and 'design review' sessions with the front-end team."
+        },
+        "1": {
+          "task": "Token Consistency",
+          "result": "Completed",
+          "problem": "Color and font variations were being used outside the standard, breaking consistency.",
+          "solution": "Implementation of Design Tokens in Figma and alignment for them to be the 'single source of truth' (SSoT)."
+        },
+        "2": {
+          "task": "DS Governance",
+          "result": "Difficulty",
+          "problem": "New product needs required component variations not foreseen in the DS.",
+          "solution": "Definition of a governance process to propose, approve, and version new components in the DS."
+        }
+      }
+    },
+    "results": {
+      "title": "Results and Learnings",
+      "results": {
+        "title": "Results",
+        "description": "Broto began the standardization of Suzano's digital products, reducing design and development time. The Figma library became the 'single source of truth', improving collaboration between designers and developers and strengthening the brand identity."
+      },
+      "learnings": {
+        "title": "Key Learnings",
+        "description": "This project was a deep dive into systems creation. I learned the importance of governance (how the system evolves) and that a Design System is a living product, requiring constant maintenance and strong collaboration with engineering to ensure parity between design (Figma) and code (React)."
       }
     }
   }

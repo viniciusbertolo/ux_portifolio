@@ -63,7 +63,7 @@ const Portfolio = () => {
         title: t('projects.Project_2_title'),
         img: "/ds_img.png",
         description: t('projects.Project_2_desc'),
-        rota: "/digital-tech"    
+        rota: "/broto"    
     },
     {
         id: 3,

@@ -1,0 +1,1016 @@
+/* --- Variáveis --- */
+$bg-color: #000000;
+$primary-color: #ff8c00;
+/* Você pode mudar esta cor para o verde da Suzano/Broto se quiser */
+$text-color: #ffffff;
+$text-secondary-color: #a0a0a0;
+$surface-color: #1a1a1a;
+$success-color: #28a745;
+$warning-color: #c70000;
+/* Ajustado para um tom mais forte de "dificuldade" */
+
+/* --- MELHORIA DE UX: SCROLL SUAVE --- */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px; // Evita que o título da seção fique colado no topo ao navegar
+}
+
+/* --- AJUSTE GLOBAL CONTRA OVERFLOW DE TEXTO --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* --- Regra de Segurança para Quebra de Linha dos Filhos --- */
+/* Isto força parágrafos, citações, e outros elementos de texto 
+  dentro do container principal a quebrar palavras longas 
+  e respeitar a largura do pai.
+*/
+
+
+/* --- Estilo Base da Página --- */
+.project-page {
+    background-color: $bg-color;
+    color: $text-color;
+    // A propriedade 'overflow-x: hidden;' foi removida para permitir que 'position: sticky' funcione.
+}
+
+/* --- Capa (Hero) --- */
+.project-hero {
+    height: 60vh;
+    width: 100%;
+    background-color: #111;
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+}
+
+/* --- LAYOUT COM MENU LATERAL --- */
+.page-with-sidebar {
+
+    // display: grid;
+    // Define duas colunas: uma para o menu e outra para o conteúdo principal
+    // grid-template-columns: 240px 1fr;
+    // grid-template-columns: 240px 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    // max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 64px 24px;
+    position: absolute;
+    left: 50%;
+    /* 1. Move a borda esquerda do elemento para o meio da tela */
+    transform: translateX(-50%);
+    /* 2. Empurra o elemento para a esquerda pela metade de sua própria largura */
+    padding-bottom: 450px;
+}
+
+/* --- ESTILOS DO MENU LATERAL --- */
+.project-sidebar {
+    position: sticky; // Efeito "fixo" durante o scroll
+    top: 40px; // Distância do topo
+    align-self: start; // Garante que o menu comece do topo do seu container
+    width: 280px;
+
+
+    .language-switcher {
+        display: flex; // Coloca as bandeiras lado a lado
+        align-items: center;
+        gap: 16px; // Espaçamento entre as bandeiras
+        margin-top: 24px; // Espaço acima, separando do menu
+        padding-top: 16px; // Espaçamento interno
+        border-top: 1px solid $primary-color; // Linha divisória
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .flag-icon {
+        font-size: 30px; // Controla o tamanho das bandeiras SVG
+        cursor: pointer;
+        line-height: 0; // Ajuda a alinhar as bandeiras
+        transition: opacity 0.3s ease, transform 0.2s ease;
+        border-radius: 8px;
+
+        // Efeito de hover para todas as bandeiras
+        &:hover {
+            opacity: 1;
+            transform: scale(1.15);
+        }
+
+        // Estilo para as bandeiras que NÃO estão ativas
+        &.inactive {
+            opacity: 0.6;
+        }
+
+        // Estilo para a bandeira ATIVA
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    li a {
+        display: block;
+        padding: 12px 16px;
+        color: $text-secondary-color;
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 500;
+        border-radius: 6px;
+        border-left: 3px solid transparent; // Borda para o estado ativo
+        transition: all 0.2s ease-in-out;
+
+
+
+        &:hover {
+            background-color: $surface-color;
+            color: $text-color;
+        }
+
+        // Estilo do item ativo
+        &.active {
+            color: $primary-color;
+            font-weight: 700;
+            border-left-color: $primary-color;
+            background-color: rgba($primary-color, 0.05);
+        }
+    }
+}
+
+/* --- Container Principal do Conteúdo --- */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%; // Ocupa a coluna do grid
+}
+
+.project-container>.language-switcher {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+    // ...nós mostramos as bandeiras que estão no container principal...
+    .project-container>.language-switcher {
+        display: flex;
+        justify-content: flex-start; // Alinha à esquerda
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 16px; // Espaço para não colar no título
+        width: 100%;
+
+        // Mantém os estilos das bandeiras que já existiam
+        .flag-icon {
+            font-size: 28px;
+            border-radius: 8px;
+            // ...outros estilos de .flag-icon são herdados
+
+            // Efeito de hover para todas as bandeiras
+            &:hover {
+                opacity: 1;
+                transform: scale(1.15);
+            }
+
+            // Estilo para as bandeiras que NÃO estão ativas
+            &.inactive {
+                opacity: 0.6;
+            }
+
+            // Estilo para a bandeira ATIVA
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* --- Seção de Título --- */
+.project-title-section {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    /* Garante que não vazem */
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        color: $text-color;
+        line-height: 1.2;
+        text-align: left;
+    }
+}
+
+/* --- Seção de Metadados --- */
+.project-meta {
+    display: flex;
+    gap: 48px;
+    align-items: start;
+    border-top: 1px solid $surface-color;
+    border-bottom: 1px solid $surface-color;
+    padding: 32px 0;
+    margin-bottom: 32px;
+    min-width: 100%;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    /* Garante que não vazem */
+
+    h2 {
+        font-size: 1.2rem;
+        color: $primary-color;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: $text-secondary-color;
+    }
+
+    .meta-details {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        overflow-wrap: break-word;
+        max-width: 100%;
+        /* Garante que não vazem */
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+
+            strong {
+                color: $text-secondary-color;
+                font-weight: 600;
+                font-size: 0.8rem;
+                margin-bottom: 0.5rem;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+
+            span {
+                color: $text-color;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .tool-icons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: $text-secondary-color;
+
+        svg {
+            font-size: 32px;
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                color: $primary-color;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    /* Garante que não vazem */
+}
+
+/* --- Seções de Conteúdo Padrão --- */
+.project-content {
+    overflow-wrap: break-word;
+    max-width: 100%;
+    /* Garante que não vazem */
+
+    h2 {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        display: inline-block;
+        line-height: 1.2;
+        padding-bottom: 10px;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background-color: $primary-color;
+            border-radius: 2px;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: $text-secondary-color;
+        margin-bottom: 1rem;
+    }
+}
+
+/* --- Seção de Desafio (Blockquote) --- */
+.project-challenge {
+    height: auto;
+    min-height: unset;
+
+    blockquote {
+        border-left: 4px solid $primary-color;
+        padding-left: 2rem;
+        margin: 0;
+        font-size: 1.5rem;
+        font-style: italic;
+        color: $text-color;
+        line-height: 1.6;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* --- Seção Dividida --- */
+.split-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 1rem;
+
+
+    h3 {
+        color: $text-color;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* --- Seção de Referências (Grid) --- */
+.references-grid {
+    display: grid;
+    // Cria 2 colunas em telas maiores
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+
+}
+
+.reference-item {
+    background-color: $surface-color;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        border-color: rgba($primary-color, 0.3);
+    }
+
+    svg {
+        font-size: 2.5rem; // Tamanho do ícone
+        color: $primary-color; // Cor do ícone
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: $text-color; // Título do card em branco
+        margin-bottom: 0.75rem;
+    }
+
+    p {
+        font-size: 1rem; // Texto de descrição menor
+        line-height: 1.6;
+        color: $text-secondary-color;
+        margin-bottom: 0; // Remove margem padrão do <p>
+    }
+}
+
+/* --- Ajuste Responsivo para a Grid de Referências --- */
+@media (max-width: 768px) {
+    .references-grid {
+        // Em telas menores, volta para 1 coluna
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .reference-item {
+        padding: 1.5rem;
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
+    }
+}
+
+/* --- Tabela de Benchmarking (NÃO USADA NO BROTO, MAS ESTILO MANTIDO) --- */
+.benchmarking-container {
+    overflow-x: auto;
+    margin-top: 2rem;
+    -webkit-overflow-scrolling: touch;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    /* Garante que não vazem */
+
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #121212;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $primary-color;
+        border-radius: 4px;
+    }
+}
+
+.benchmarking-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    background-color: $surface-color;
+    border-radius: 8px;
+    overflow: hidden;
+
+    thead th {
+        padding: 1.5rem 1rem;
+        text-align: left;
+        font-size: 1.1rem;
+        color: $text-color;
+        border-bottom: 2px solid $bg-color;
+        white-space: nowrap;
+
+        &.your-project-col {
+            background-color: #212121;
+            border-left: 4px solid $primary-color;
+        }
+    }
+
+    .company-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .company-logo {
+            height: 24px;
+            width: auto;
+        }
+    }
+
+    tbody td {
+        padding: 1.25rem 1rem;
+        vertical-align: top;
+        border-bottom: 1px solid $bg-color;
+        color: $text-secondary-color;
+        line-height: 1.6;
+        font-size: 0.95rem;
+
+        &:last-child {
+            background-color: #212121;
+            border-left: 4px solid $primary-color;
+        }
+    }
+
+    .row-header {
+        font-weight: 600;
+        color: $text-color;
+        white-space: nowrap;
+        background-color: #1f1f1f;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 0.75rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+}
+
+/* --- Galeria de Imagens, CTA, Tabela de Usabilidade --- */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin-top: 1.5rem;
+    width: 100%;
+
+   
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        background-color: $surface-color;
+    }
+}
+
+
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    background-color: $surface-color;
+    color: $text-color;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    svg {
+        font-size: 24px;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        background-color: #2b2b2b;
+        transform: translateY(-2px);
+
+        svg {
+            transform: scale(1.1);
+        }
+    }
+}
+
+/* --- Título da Tabela --- */
+.table-title {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* --- Tabela de Usabilidade/Alinhamento --- */
+.usability-table {
+    width: 100%;
+    margin: 2rem 0;
+
+    /* ISSO É O MAIS IMPORTANTE:
+       Força a tabela a obedecer o 'width: 100%' e não
+       tentar se alargar para caber o conteúdo.
+    */
+    table-layout: fixed;
+
+    border-collapse: collapse;
+    background-color: $surface-color;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Mantém os cantos arredondados */
+
+    // Estilos do Cabeçalho (Desktop)
+    thead th {
+        padding: 1.5rem 1.25rem;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $text-color;
+        border-bottom: 2px solid $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+
+        /* --- CORREÇÃO APLICADA --- */
+        white-space: normal;
+        /* Permite que o cabeçalho quebre a linha */
+        overflow-wrap: break-word;
+        /* Força a quebra de palavras */
+    }
+
+    // Estilos do Corpo da Tabela (Desktop)
+    tbody td {
+        padding: 1.25rem;
+        vertical-align: top;
+        border-bottom: 1px solid $bg-color;
+        color: $text-secondary-color;
+        line-height: 1.6;
+        font-size: 0.95rem;
+
+        /* --- CORREÇÃO APLICADA --- */
+        overflow-wrap: break-word;
+        /* Força a quebra do texto da célula */
+        white-space: normal;
+
+        strong {
+            color: $text-color;
+            font-weight: 600;
+        }
+    }
+
+    // Remove a borda da última linha
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    // Estilos para a "pílula" de status
+    .status-pill {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        font-size: 0.875rem;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        /* Queremos que a pílula fique em uma linha */
+
+        &.success {
+            color: $text-color;
+            background-color: $success-color;
+            border-color: rgba(22, 163, 74, 0.3);
+        }
+
+        &.difficulty {
+            color: $text-color;
+            background-color: $warning-color;
+            border-color: rgba(217, 119, 6, 0.3);
+        }
+    }
+}
+
+
+.figma-embed-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    /* Ou a altura que desejar */
+    background-color: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.figma-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.loading-overlay,
+.error-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.error-overlay {
+    color: #555;
+    font-weight: 500;
+}
+
+/* Animação simples de Spinner */
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #ccc;
+    border-bottom-color: $primary-color;
+    /* Ajuste para a cor do seu tema */
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 350px) {
+
+    /* --- AJUSTE PARA O LAYOUT DE MENU --- */
+    .page-with-sidebar {
+        line-break: anywhere;
+        grid-template-columns: 1fr;
+        padding: 48px 24px; // Ajusta o padding da página
+        width: 100%;
+    }
+
+    .project-sidebar {
+        // O menu é escondido
+        display: none;
+    }
+
+    .project-container {
+        padding: 0; // Remove padding extra pois já está em .page-with-sidebar
+    }
+}
+
+
+/* DisclaimerTag.scss */
+
+.disclaimer-wrapper {
+    display: flex;
+
+    width: 100%;
+
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.vertical-line {
+    width: 3px;
+    background-color: #FFA500;
+    margin-right: 0.8rem;
+    border-radius: 1.5px;
+
+    @media (max-width: 768px) {
+        margin-right: 0.6rem;
+    }
+}
+
+
+
+.disclaimer-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+/* --- Media Queries para Responsividade --- */
+@media (min-width: 351px) and (max-width: 1200px) {
+
+    /* --- AJUSTE PARA O LAYOUT DE MENU --- */
+    .page-with-sidebar {
+        // Em telas menores, o layout volta a ser de uma coluna só
+        grid-template-columns: 1fr;
+        padding: 48px 24px; // Ajusta o padding da página
+        width: 100%;
+        line-break: normal;
+    }
+
+    .project-sidebar {
+        // O menu é escondido
+        display: none;
+    }
+
+    .project-container {
+        padding: 0; // Remove padding extra pois já está em .page-with-sidebar
+    }
+}
+
+@media (max-width: 768px) {
+    .page-with-sidebar {
+        padding: 48px 16px;
+    }
+
+    .project-container {
+        gap: 32px;
+    }
+
+    .content-section {
+        gap: 40px;
+    }
+
+    .project-title-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-content p {
+        font-size: 1.05rem;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .project-content h2,
+    .project-challenge h2 {
+        font-size: 2rem;
+    }
+
+    .split-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-challenge blockquote {
+        font-size: 1.2rem;
+    }
+
+    .usability-table {
+        font-size: 0.9rem;
+    }
+
+    /* --- AJUSTES PARA TABELA RESPONSIVA EM FORMATO DE CARD --- */
+
+    .benchmarking-container {
+        overflow-x: hidden; // Remove a rolagem horizontal
+    }
+
+    .benchmarking-table {
+        min-width: 100%;
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+
+        thead {
+            display: none; // Esconde o cabeçalho original
+        }
+
+        tr {
+            display: block; // Transforma a linha em um card
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid $surface-color;
+
+            // Esconde as linhas de Ramo e Serviços no celular
+            &.bench-row-branch,
+            &.bench-row-services {
+                display: none;
+            }
+        }
+
+        td {
+            display: flex; // Usa flexbox para alinhar label e conteúdo
+            justify-content: space-between; // Empurra o label para a esquerda e o conteúdo para a direita
+            align-items: flex-start; // Alinha pelo topo
+            padding: 0.85rem 1rem;
+            border: 0;
+            border-bottom: 1px solid #282828;
+            background-color: $surface-color;
+            text-align: right; // Alinha o conteúdo (ul) à direita
+
+            // O label (ex: "Hotmart")
+            &::before {
+                content: attr(data-label);
+                font-weight: bold;
+                color: $text-color;
+                padding-right: 1rem; // Espaço entre o label e o conteúdo
+                text-align: left;
+                flex-shrink: 0; // Impede que o label encolha
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+
+        // Transforma a primeira célula (ex: "Pontos Fortes") no título do card
+        td.row-header {
+            display: block;
+            text-align: left;
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1.2;
+            color: $primary-color;
+            background-color: #212121;
+            padding: 1rem;
+            border-bottom: 1px solid #282828;
+
+            // Esconde o label duplicado
+            &::before {
+                content: "";
+                display: none;
+            }
+        }
+    }
+
+    .usability-table {
+        min-width: 100%;
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+
+        thead {
+            display: none; // Esconde o cabeçalho original
+        }
+
+        tr {
+            display: block; // Transforma a linha em um card
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid $surface-color;
+            background-color: #1f1f1f; // Fundo do card
+
+        }
+
+        td {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0.85rem 1rem;
+            border: 0;
+            border-bottom: 1px solid #282828;
+            text-align: right;
+
+
+            // O label que vem do data-label
+            &::before {
+                content: attr(data-label);
+                font-weight: bold;
+                color: $text-color;
+                padding-right: 1rem;
+                text-align: left;
+                flex-shrink: 0;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+
+        // Transforma a célula da Tarefa no título do card
+        td.usability-task {
+            display: block;
+            text-align: left;
+            font-size: 1.25rem;
+            font-weight: bold;
+            line-height: 1.3;
+            color: $primary-color;
+            background-color: #212121;
+            padding: 1rem;
+
+            // Esconde o label "Tarefa do Teste:" que seria duplicado
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

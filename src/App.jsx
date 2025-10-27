@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Home from './pages/home/Home';
 import ProjectDetailPage from './pages/projetoGenerico/ProjetoGenerico';
 import DigitalTechPage from './pages/portalDigitalTech/PortalDigitalTech';
+import BrotoPage from './pages/broto/brotoPage';
 
 export default function App() {
 
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projeto" element={<ProjectDetailPage />} />
           <Route path="/digital-tech" element={<DigitalTechPage />} />
+          <Route path="/broto" element={<BrotoPage />} />
       </Routes>
     </Router>
   )

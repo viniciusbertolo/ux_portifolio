@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation, Trans } from 'react-i18next';
 import ReactCountryFlag from "react-country-flag";
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react'; // Ou o ícone que preferir
+import { ArrowLeft } from 'lucide-react';
 
 import {
     SiFigma,
@@ -36,7 +36,7 @@ const DigitalTechPage = () => {
         i18n.changeLanguage(lng);
     };
 
-    
+
     // Itens do menu para navegação interna
     const menuItems = [
         { id: 'about', key: 'digitaltech.meta.about.title' },
@@ -48,10 +48,7 @@ const DigitalTechPage = () => {
         { id: 'results', key: 'digitaltech.results.title' },
     ];
 
-   
 
-
-    // Substitua o useEffect inteiro por esta versão corrigida
     useEffect(() => {
         const observerOptions = {
             root: null,
@@ -119,12 +116,11 @@ const DigitalTechPage = () => {
 
             <div className="project-body">
 
-                {/* --- NOVO CONTAINER PARA O LAYOUT COM MENU LATERAL --- */}
                 <div className="page-with-sidebar">
                     <motion.nav className="project-sidebar" variants={fadeInUp}>
-                        <div className="mb-6"> {/* Margem para separar do menu */}
+                        <div className="mb-6"> 
                             <button
-                                onClick={() => navigate(-1)} // A mágica acontece aqui!
+                                onClick={() => navigate("/")} // A mágica acontece aqui!
                                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-200"
                             >
                                 <ArrowLeft size={18} />
@@ -365,33 +361,21 @@ const DigitalTechPage = () => {
                             <motion.section id="solution" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('digitaltech.solution.title')}</h2>
                                 <p>{t('digitaltech.solution.description')}</p>
-                                {/* <iframe
-                                    style={{
-                                        border: 'none',
-                                        width: '100%',
-                                        height: '70vh'
-                                    }}
-                                    src="https://embed.figma.com/proto/EzUgyzL8JfAUo8V7CgzBIW/AcademiaX-Portifolio?page-id=27%3A901&node-id=27-9299&viewport=148%2C60%2C0.04&scaling=scale-down-width&content-scaling=fixed&embed-host=share"
-                                    allowFullScreen // <-- Alteração aqui
-                                >
-                                </iframe> */}
+                                
 
                                 <div className="figma-embed-container">
-                                    {/* Indicador de Carregamento (Spinner) */}
                                     {isLoading && (
                                         <div className="loading-overlay">
                                             <div className="spinner"></div>
                                         </div>
                                     )}
 
-                                    {/* Mensagem de Erro */}
                                     {hasError && (
                                         <div className="error-overlay">
                                             <p>Não foi possível carregar o protótipo.</p>
                                         </div>
                                     )}
 
-                                    {/* O Iframe */}
                                     <iframe
                                         className="figma-iframe"
                                         style={{ visibility: isLoading || hasError ? 'hidden' : 'visible' }}
@@ -407,53 +391,17 @@ const DigitalTechPage = () => {
                                     <SiFigma />
                                     {t('digitaltech.solution.cta')}
                                 </motion.a>
+                                <div className="disclaimer-wrapper">
+                                    <div className="vertical-line"></div>
+                                    <div className="disclaimer-content">
+                                        <small className="disclaimer-text">
+                                           {t('digitaltech.solution.warning')}
+                                        </small>
+                                    </div>
+                                </div>
                                 <h3 className="table-title">{t('digitaltech.usabilityTest.title')}</h3>
                                 <div className="table-container">
-                                    {/* <table className="usability-table">
-                                        <thead>
-                                            <tr>
-                                                <th>{t('digitaltech.usabilityTest.headers.task')}</th>
-                                                <th>{t('digitaltech.usabilityTest.headers.result')}</th>
-                                                <th>{t('digitaltech.usabilityTest.headers.insights')}</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>{t('digitaltech.usabilityTest.rows.0.task')}</td>
-                                                <td className={t('digitaltech.usabilityTest.rows.0.result') === 'Sucesso' ? 'status-success' : 'status-difficulty'}>
-                                                    {t('digitaltech.usabilityTest.rows.0.result')}
-                                                </td>
-                                                <td>{t('digitaltech.usabilityTest.rows.0.insights')}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>{t('digitaltech.usabilityTest.rows.1.task')}</td>
-                                                <td className={t('digitaltech.usabilityTest.rows.1.result') === 'Sucesso' ? 'status-success' : 'status-difficulty'}>
-                                                    {t('digitaltech.usabilityTest.rows.1.result')}
-                                                </td>
-                                                <td>
-                                                    <Trans
-                                                        i18nKey={'digitaltech.usabilityTest.rows.1.insights'}
-                                                        components={{ 0: <strong />, 1: <br />, 2: <strong /> }}
-                                                        t={t}
-                                                    />
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>{t('digitaltech.usabilityTest.rows.2.task')}</td>
-                                                <td className={t('digitaltech.usabilityTest.rows.2.result') === 'Sucesso' ? 'status-success' : 'status-difficulty'}>
-                                                    {t('digitaltech.usabilityTest.rows.2.result')}
-                                                </td>
-                                                <td>
-                                                    <Trans
-                                                        i18nKey={'digitaltech.usabilityTest.rows.2.insights'}
-                                                        components={{ 0: <strong />, 1: <br />, 2: <strong /> }}
-                                                        t={t}
-                                                    />
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table> */}
-
+                                    
                                     <table className="usability-table">
                                         <thead>
                                             <tr>
@@ -470,18 +418,16 @@ const DigitalTechPage = () => {
                                                     {t('digitaltech.usabilityTest.rows.0.task')}
                                                 </td>
                                                 <td data-label={t('digitaltech.usabilityTest.headers.result')}>
-                                                    {/* <span className={t('digitaltech.usabilityTest.rows.0.result') === 'Sucesso' ? 'status-pill success' : 'status-pill difficulty'}>
-                                                        {t('digitaltech.usabilityTest.rows.0.result')}
-                                                    </span> */}
+                                                    
                                                     <span className="status-pill success">
                                                         {t('digitaltech.usabilityTest.rows.0.result')}
                                                     </span>
                                                 </td>
-                                                {/* NOVA COLUNA */}
+                                                
                                                 <td data-label={t('digitaltech.usabilityTest.headers.problem')}>
                                                     {t('digitaltech.usabilityTest.rows.0.problem')}
                                                 </td>
-                                                {/* NOVA COLUNA */}
+                                                
                                                 <td data-label={t('digitaltech.usabilityTest.headers.solution')}>
                                                     {t('digitaltech.usabilityTest.rows.0.solution')}
                                                 </td>
@@ -496,9 +442,7 @@ const DigitalTechPage = () => {
                                                     <span className="status-pill difficulty">
                                                         {t('digitaltech.usabilityTest.rows.1.result')}
                                                     </span>
-                                                    {/* <span className={t('digitaltech.usabilityTest.rows.1.result') === 'Sucesso' ? 'status-pill success' : 'status-pill difficulty'}>
-                                                        {t('digitaltech.usabilityTest.rows.1.result')}
-                                                    </span> */}
+                                        
                                                 </td>
                                                 <td data-label={t('digitaltech.usabilityTest.headers.problem')}>
                                                     {t('digitaltech.usabilityTest.rows.1.problem')}
@@ -517,9 +461,7 @@ const DigitalTechPage = () => {
                                                     <span className="status-pill difficulty">
                                                         {t('digitaltech.usabilityTest.rows.2.result')}
                                                     </span>
-                                                    {/* <span className={t('digitaltech.usabilityTest.rows.2.result') === 'Sucesso' ? 'status-pill success' : 'status-pill difficulty'}>
-                                                        {t('digitaltech.usabilityTest.rows.2.result')}
-                                                    </span> */}
+                                                    
                                                 </td>
                                                 <td data-label={t('digitaltech.usabilityTest.headers.problem')}>
                                                     {t('digitaltech.usabilityTest.rows.2.problem')}
