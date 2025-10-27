@@ -4,7 +4,7 @@ import { useTranslation, Trans } from 'react-i18next';
 import ReactCountryFlag from "react-country-flag";
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import { LayoutGrid } from 'lucide-react'; 
+import { LayoutGrid } from 'lucide-react';
 
 import {
     SiFigma,
@@ -251,6 +251,107 @@ const BrotoPage = () => { // ATUALIZADO
                                     <motion.img variants={fadeInUp} src="/ds_conception.png" alt={t('broto.designProcess.imageAlts.discovery')} /> {/* ATUALIZADO */}
                                 </div>
                             </motion.section>
+
+                            {/* <motion.section id="research" className="project-content scroll-section" variants={fadeInUp}>
+                                <h2>{t('digitaltech.research.title')}</h2>
+                                <div className="split-section">
+                                    <motion.div className="split-item" variants={fadeInUp}>
+                                        <h3>{t('digitaltech.research.user.title')}</h3>
+                                        <p>{t('digitaltech.research.user.description')}</p>
+                                    </motion.div>
+                                    <motion.div className="split-item" variants={fadeInUp}>
+                                        <h3>{t('digitaltech.research.competitors.title')}</h3>
+                                        <p>{t('digitaltech.research.competitors.description')}</p>
+                                    </motion.div>
+                                </div>
+                                <div className="benchmarking-container">
+                                    <table className="benchmarking-table">
+                                        <thead>
+                                            <tr>
+                                                <th>{t('digitaltech.benchmarking.header')}</th>
+                                                <th>{t('digitaltech.benchmarking.udemy.name')}</th>
+                                                <th>{t('digitaltech.benchmarking.alura.name')}</th>
+                                                <th className="your-project-col">{t('digitaltech.benchmarking.digitalTech.name')}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr className="bench-row-branch">
+                                                <td className="row-header" data-label={t('digitaltech.benchmarking.rows.branch')}>{t('digitaltech.benchmarking.rows.branch')}</td>
+                                                <td data-label={t('digitaltech.benchmarking.udemy.name')}>{t('digitaltech.benchmarking.udemy.branch')}</td>
+                                                <td data-label={t('digitaltech.benchmarking.alura.name')}>{t('digitaltech.benchmarking.alura.branch')}</td>
+                                                <td data-label={t('digitaltech.benchmarking.digitalTech.name')}>{t('digitaltech.benchmarking.digitalTech.branch')}</td>
+                                            </tr>
+                                            <tr className="bench-row-services">
+                                                <td className="row-header" data-label={t('digitaltech.benchmarking.rows.services')}>{t('digitaltech.benchmarking.rows.services')}</td>
+                                                <td data-label={t('digitaltech.benchmarking.udemy.name')}>
+                                                    <ul>
+                                                        <li>{t('digitaltech.benchmarking.udemy.services.0')}</li>
+                                                        <li>{t('digitaltech.benchmarking.udemy.services.1')}</li>
+                                                        <li>{t('digitaltech.benchmarking.udemy.services.2')}</li>
+                                                    </ul>
+                                                </td>
+                                                <td data-label={t('digitaltech.benchmarking.alura.name')}>
+                                                    <ul>
+                                                        <li>{t('digitaltech.benchmarking.alura.services.0')}</li>
+                                                        <li>{t('digitaltech.benchmarking.alura.services.1')}</li>
+                                                        <li>{t('digitaltech.benchmarking.alura.services.2')}</li>
+                                                    </ul>
+                                                </td>
+                                                <td data-label={t('digitaltech.benchmarking.digitalTech.name')}>
+                                                    <ul>
+                                                        <li>{t('digitaltech.benchmarking.digitalTech.services.0')}</li>
+                                                        <li>{t('digitaltech.benchmarking.digitalTech.services.1')}</li>
+                                                        <li>{t('digitaltech.benchmarking.digitalTech.services.2')}</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr className="bench-row-strengths">
+                                                <td className="row-header" data-label={t('digitaltech.benchmarking.rows.strengths')}>{t('digitaltech.benchmarking.rows.strengths')}</td>
+                                                <td data-label={t('digitaltech.benchmarking.udemy.name')}>
+                                                    <ul>
+                                                        <li>{t('digitaltech.benchmarking.udemy.strengths.0')}</li>
+                                                        <li>{t('digitaltech.benchmarking.udemy.strengths.1')}</li>
+                                                    </ul>
+                                                </td>
+                                                <td data-label={t('digitaltech.benchmarking.alura.name')}>
+                                                    <ul>
+                                                        <li>{t('digitaltech.benchmarking.alura.strengths.0')}</li>
+                                                        <li>{t('digitaltech.benchmarking.alura.strengths.1')}</li>
+                                                    </ul>
+                                                </td>
+                                                <td data-label={t('digitaltech.benchmarking.digitalTech.name')}>
+                                                    <ul>
+                                                        <li>{t('digitaltech.benchmarking.digitalTech.strengths.0')}</li>
+                                                        <li>{t('digitaltech.benchmarking.digitalTech.strengths.1')}</li>
+                                                        <li>{t('digitaltech.benchmarking.digitalTech.strengths.2')}</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr className="bench-row-weaknesses">
+                                                <td className="row-header" data-label={t('digitaltech.benchmarking.rows.weaknesses')}>{t('digitaltech.benchmarking.rows.weaknesses')}</td>
+                                                <td data-label={t('digitaltech.benchmarking.udemy.name')}>
+                                                    <ul>
+                                                        <li>{t('digitaltech.benchmarking.udemy.weaknesses.0')}</li>
+                                                        <li>{t('digitaltech.benchmarking.udemy.weaknesses.1')}</li>
+                                                    </ul>
+                                                </td>
+                                                <td data-label={t('digitaltech.benchmarking.alura.name')}>
+                                                    <ul>
+                                                        <li>{t('digitaltech.benchmarking.alura.weaknesses.0')}</li>
+                                                        <li>{t('digitaltech.benchmarking.alura.weaknesses.1')}</li>
+                                                    </ul>
+                                                </td>
+                                                <td data-label={t('digitaltech.benchmarking.digitalTech.name')}>
+                                                    <ul>
+                                                        <li>{t('digitaltech.benchmarking.digitalTech.weaknesses.0')}</li>
+                                                        <li>{t('digitaltech.benchmarking.digitalTech.weaknesses.1')}</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </motion.section> */}
 
                             <motion.section id="research" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('broto.research.title')}</h2> {/* ATUALIZADO */}

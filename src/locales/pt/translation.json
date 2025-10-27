@@ -359,6 +359,102 @@
         "description": "Este projeto foi um mergulho profundo na criação de sistemas. Aprendi a importância da governança (como o sistema evolui) e que um Design System é um produto vivo, que exige manutenção constante e forte colaboração com a engenharia para garantir a paridade entre o design (Figma) e o código (React)."
       }
     }
+  },
+  "vagalumen": {
+    "hero": {
+      "alt": "Capa do Projeto Vagalumen IA"
+    },
+    "meta": {
+      "title": "Vagalumen IA - Gemini Data Interface",
+      "about": {
+        "title": "SOBRE O PROJETO",
+        "description": "O Vagalumen IA é uma plataforma interna em parceria com o Google, projetada para democratizar o acesso a dados de treinamento do Gemini. A ferramenta substitui consultas complexas no GCP por uma interface de prompt intuitiva, segura e em tempo real."
+      },
+      "role": {
+        "label": "MINHA FUNÇÃO",
+        "value": "UX/UI Designer & Front-end Developer"
+      },
+      "date": {
+        "label": "DATA",
+        "value": "Outubro, 2025"
+      },
+      "tools": {
+        "label": "FERRAMENTAS"
+      }
+    },
+    "scenario": {
+      "title": "Cenário Atual",
+      "description": "Anteriormente, o acesso aos dados de treinamento do Gemini era um gargalo. O processo exigia acesso direto ao Google Cloud Platform (GCP), conhecimento de SQL e era demorado. Além disso, havia riscos significativos de vazamento de informações sensíveis, pois os controles de acesso eram complexos de gerenciar."
+    },
+    "challenge": {
+      "title": "O Desafio",
+      "description": "Como poderíamos criar uma interface que abstraísse a complexidade do GCP, permitindo que usuários de negócio (não-técnicos) acessassem dados de forma segura e instantânea, usando apenas linguagem natural (prompts)?"
+    },
+    "designProcess": {
+      "title": "Meu Processo de Atuação",
+      "description": "Atuei em todo o ciclo de vida do produto, desde a concepção da experiência (UX) até a implementação (Front-end). O foco foi traduzir um requisito técnico complexo (acesso a dados de IA) em uma experiência de usuário simples e segura.",
+      "imageAlts": {
+        "discovery": "Diagrama do processo de Design Thinking aplicado ao Vagalumen"
+      }
+    },
+    "research": {
+      "title": "Pesquisa e Descoberta",
+      "user": {
+        "title": "Entrevistas com Usuários",
+        "description": "Realizei entrevistas com os analistas de dados e gestores de produto (os usuários-alvo) para mapear suas frustrações com o processo atual (GCP/SQL) e validar as hipóteses de valor de uma interface baseada em prompt."
+      },
+      "competitors": {
+        "title": "Análise de Risco e Viabilidade",
+        "description": "Trabalhei junto aos engenheiros de dados e especialistas do Google para entender as limitações técnicas da API do Gemini e os requisitos de segurança. Isso foi crucial para desenhar uma interface que fosse ao mesmo tempo poderosa e segura."
+      }
+    },
+    "solution": {
+      "title": "A Solução: Interface de Prompt Segura",
+      "description": "Desenhei no Figma uma interface limpa, focada na funcionalidade de prompt. Criei protótipos navegáveis que simulavam a interação de 'perguntar e receber' dados, que foram usados em testes de usabilidade para refinar o fluxo. Após a validação, programei os componentes da interface em React, garantindo que a experiência de design fosse implementada com fidelidade.",
+      "cta": "Ver protótipo no Figma",
+      "warning": "Em conformidade com os acordos de confidencialidade (NDA) com o Google, os dados, métricas e nomes no protótipo foram alterados para proteger informações sensíveis do projeto.",
+      "finalImageAlt": "Telas do Vagalumen IA no Figma"
+    },
+    "usabilityTest": {
+      "title": "Testes de Usabilidade e Iteração",
+      "headers": {
+        "task": "Tarefa do Teste",
+        "result": "Status",
+        "problem": "Problema Identificado",
+        "solution": "Ação Tomada"
+      },
+      "rows": {
+        "0": {
+          "task": "Realizar uma consulta de dados",
+          "result": "Sucesso (com observação)",
+          "problem": "Usuários tentaram escrever prompts muito complexos ou técnicos, similares a SQL, no primeiro uso.",
+          "solution": "Adição de 'exemplos de prompts' e 'placeholder text' na UI para guiar o usuário a usar linguagem natural."
+        },
+        "1": {
+          "task": "Entender a segurança dos dados",
+          "result": "Dificuldade",
+          "problem": "Usuários não tinham certeza se o prompt poderia 'vazar' dados ou se a resposta era segura.",
+          "solution": "Adição de 'tooltips' e uma seção clara de 'Status de Segurança' na resposta, indicando que os dados foram anonimizados."
+        },
+        "2": {
+          "task": "Exportar um relatório",
+          "result": "Sucesso",
+          "problem": "O fluxo para exportar os dados gerados (CSV, JSON) não estava claro no protótipo inicial.",
+          "solution": "Refinamento do design do 'botão de exportação' e dos modais de confirmação, tornando a ação mais explícita."
+        }
+      }
+    },
+    "results": {
+      "title": "Resultados e Aprendizados",
+      "results": {
+        "title": "Resultados",
+        "description": "O Vagalumen IA transformou o acesso a dados. O tempo para obter insights foi reduzido de horas (às vezes dias) para segundos. A plataforma eliminou a necessidade de treinamento em SQL para times de negócio e mitigou os riscos de segurança, tornando-se uma ferramenta estratégica na parceria com o Google."
+      },
+      "learnings": {
+        "title": "Principais Aprendizados",
+        "description": "Este projeto foi um desafio de traduzir uma tecnologia de IA de backend (Gemini) em uma experiência de frontend (React) simples e intuitiva. Meu maior aprendizado foi a importância de iterar rapidamente com base nos testes de usabilidade. A colaboração direta com os engenheiros de IA foi essencial para equilibrar o que era tecnicamente possível com o que era humanamente desejável para o usuário."
+      }
+    }
   }
 
 }
