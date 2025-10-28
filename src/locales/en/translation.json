@@ -359,5 +359,101 @@
         "description": "This project was a deep dive into systems creation. I learned the importance of governance (how the system evolves) and that a Design System is a living product, requiring constant maintenance and strong collaboration with engineering to ensure parity between design (Figma) and code (React)."
       }
     }
+  },
+  "vagalumen": {
+  "hero": {
+    "alt": "Vagalumen IA Project Cover"
+  },
+  "meta": {
+    "title": "Vagalumen IA - Gemini Data Interface",
+    "about": {
+      "title": "ABOUT THE PROJECT",
+      "description": "Vagalumen IA is an internal platform in partnership with Google, designed to democratize access to Gemini training data. The tool replaces complex queries in GCP with an intuitive, secure, and real-time prompt interface."
+    },
+    "role": {
+      "label": "MY ROLE",
+      "value": "UX/UI Designer & Front-end Developer"
+    },
+    "date": {
+      "label": "DATE",
+      "value": "March, 2025"
+    },
+    "tools": {
+      "label": "TOOLS"
+    }
+  },
+  "scenario": {
+    "title": "Current Scenario",
+    "description": "Previously, access to Gemini training data was a bottleneck. The process required direct access to the Google Cloud Platform (GCP), SQL knowledge, and was time-consuming. Additionally, there were significant risks of sensitive information leaks, as access controls were complex to manage."
+  },
+  "challenge": {
+    "title": "The Challenge",
+    "description": "How could we create an interface that abstracts the complexity of GCP, allowing business users (non-technical) to access data securely and instantly, using only natural language (prompts)?"
+  },
+  "designProcess": {
+    "title": "My Process",
+    "description": "I worked on the entire product lifecycle, from experience design (UX) to implementation (Front-end). The focus was to translate a complex technical requirement (access to AI data) into a simple and secure user experience.",
+    "imageAlts": {
+      "discovery": "Diagram of the Design Thinking process applied to Vagalumen"
+    }
+  },
+  "research": {
+    "title": "Research and Discovery",
+    "user": {
+      "title": "User Interviews",
+      "description": "I conducted interviews with data analysts and product managers (the target users) to map their frustrations with the current process (GCP/SQL) and validate the value hypotheses of a prompt-based interface."
+    },
+    "competitors": {
+      "title": "Risk and Feasibility Analysis",
+      "description": "I worked with the BI & Analytics team and Google specialists to understand the technical limitations of the Gemini API and security requirements. This was crucial for designing an interface that was both powerful and secure."
+    }
+  },
+  "solution": {
+    "title": "The Solution: Secure Prompt Interface",
+    "description": "I designed a clean interface in Figma, focused on the prompt functionality. I created clickable prototypes that simulated the 'ask and receive' data interaction, which were used in usability tests to refine the flow. After validation, I coded the interface components in React, ensuring the design experience was implemented faithfully.",
+    "cta": "View screens in Figma",
+    "warning": "In compliance with non-disclosure agreements (NDA) with Google, the data, metrics, and names in the prototype have been altered to protect sensitive project information.",
+    "finalImageAlt": "Vagalumen IA screens in Figma"
+  },
+  "usabilityTest": {
+    "title": "Usability Testing and Iteration",
+    "headers": {
+      "task": "Test Task",
+      "result": "Status",
+      "problem": "Problem Identified",
+      "solution": "Action Taken"
+    },
+    "rows": {
+      "0": {
+        "task": "Perform a query",
+        "result": "Success (with observation)",
+        "problem": "Users tried to write very complex or technical prompts, similar to SQL, on first use.",
+        "solution": "Added 'prompt examples' and 'placeholder text' to the UI to guide the user to use natural language."
+      },
+      "1": {
+        "task": "Navigate through different contexts",
+        "result": "Difficulty",
+        "problem": "Users did not easily find the context menu",
+        "solution": "Addition of context within the input field itself"
+      },
+      "2": {
+        "task": "Export a report",
+        "result": "Success",
+        "problem": "The flow to export the generated data (CSV) was not clear in the initial prototype.",
+        "solution": "Refinement of the 'export button' design, making the action more explicit."
+      }
+    }
+  },
+  "results": {
+    "title": "Results and Learnings",
+    "results": {
+      "title": "Results",
+      "description": "Vagalumen IA transformed data access. The time to obtain insights was reduced from hours (sometimes days) to seconds. The platform eliminated the need for SQL training for business teams and mitigated security risks, becoming a strategic tool in the partnership with Google."
+    },
+    "learnings": {
+      "title": "Key Learnings",
+      "description": "This project was a challenge of translating a backend AI technology (Gemini) into a simple and intuitive frontend experience (React). My biggest learning was the importance of iterating quickly based on usability tests. Direct collaboration with AI engineers was essential to balance what was technically possible with what was humanly desirable for the user."
+    }
   }
+}
 }

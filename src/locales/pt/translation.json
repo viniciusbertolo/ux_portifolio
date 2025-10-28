@@ -376,7 +376,7 @@
       },
       "date": {
         "label": "DATA",
-        "value": "Outubro, 2025"
+        "value": "Março, 2025"
       },
       "tools": {
         "label": "FERRAMENTAS"
@@ -405,13 +405,13 @@
       },
       "competitors": {
         "title": "Análise de Risco e Viabilidade",
-        "description": "Trabalhei junto aos engenheiros de dados e especialistas do Google para entender as limitações técnicas da API do Gemini e os requisitos de segurança. Isso foi crucial para desenhar uma interface que fosse ao mesmo tempo poderosa e segura."
+        "description": "Trabalhei junto ao time de BI & Analitycs e especialistas do Google para entender as limitações técnicas da API do Gemini e os requisitos de segurança. Isso foi crucial para desenhar uma interface que fosse ao mesmo tempo poderosa e segura."
       }
     },
     "solution": {
       "title": "A Solução: Interface de Prompt Segura",
       "description": "Desenhei no Figma uma interface limpa, focada na funcionalidade de prompt. Criei protótipos navegáveis que simulavam a interação de 'perguntar e receber' dados, que foram usados em testes de usabilidade para refinar o fluxo. Após a validação, programei os componentes da interface em React, garantindo que a experiência de design fosse implementada com fidelidade.",
-      "cta": "Ver protótipo no Figma",
+      "cta": "Ver telas no Figma",
       "warning": "Em conformidade com os acordos de confidencialidade (NDA) com o Google, os dados, métricas e nomes no protótipo foram alterados para proteger informações sensíveis do projeto.",
       "finalImageAlt": "Telas do Vagalumen IA no Figma"
     },
@@ -425,22 +425,22 @@
       },
       "rows": {
         "0": {
-          "task": "Realizar uma consulta de dados",
+          "task": "Realizar uma consulta",
           "result": "Sucesso (com observação)",
           "problem": "Usuários tentaram escrever prompts muito complexos ou técnicos, similares a SQL, no primeiro uso.",
           "solution": "Adição de 'exemplos de prompts' e 'placeholder text' na UI para guiar o usuário a usar linguagem natural."
         },
         "1": {
-          "task": "Entender a segurança dos dados",
+          "task": "Navegar por diferentes contextos",
           "result": "Dificuldade",
-          "problem": "Usuários não tinham certeza se o prompt poderia 'vazar' dados ou se a resposta era segura.",
-          "solution": "Adição de 'tooltips' e uma seção clara de 'Status de Segurança' na resposta, indicando que os dados foram anonimizados."
+          "problem": "Usuários não encontraram com facilidade o menu de contexto",
+          "solution": "Adição de contexto dentro do próprio campo de input"
         },
         "2": {
           "task": "Exportar um relatório",
           "result": "Sucesso",
-          "problem": "O fluxo para exportar os dados gerados (CSV, JSON) não estava claro no protótipo inicial.",
-          "solution": "Refinamento do design do 'botão de exportação' e dos modais de confirmação, tornando a ação mais explícita."
+          "problem": "O fluxo para exportar os dados gerados (CSV) não estava claro no protótipo inicial.",
+          "solution": "Refinamento do design do 'botão de exportação', tornando a ação mais explícita."
         }
       }
     },

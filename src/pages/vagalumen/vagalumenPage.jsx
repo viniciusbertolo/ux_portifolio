@@ -110,7 +110,7 @@ const VagalumenPage = () => { // ATUALIZADO
         >
             <motion.header className="project-hero" variants={fadeInUp} id="topo">
                 {/* ATUALIZADO: Substitua pela imagem de capa do Vagalumen */}
-                <img src="/header_vagalumen.webp" alt={t('vagalumen.hero.alt')} className="hero-image" />
+                <img src="/vagalumen.png" alt={t('vagalumen.hero.alt')} className="hero-image" />
             </motion.header>
 
             <div className="project-body">
@@ -252,7 +252,7 @@ const VagalumenPage = () => { // ATUALIZADO
                                 <p>{t('vagalumen.designProcess.description')}</p> {/* ATUALIZADO */}
                                 <div className="image-gallery">
                                     {/* ATUALIZADO: Substitua pela imagem do seu processo (ex: Double Diamond) */}
-                                    <motion.img variants={fadeInUp} src="/vagalumen_process.png" alt={t('vagalumen.designProcess.imageAlts.discovery')} /> {/* ATUALIZADO */}
+                                    <motion.img variants={fadeInUp} src="/vagalumen_proto.png" alt={t('vagalumen.designProcess.imageAlts.discovery')} /> {/* ATUALIZADO */}
                                 </div>
                             </motion.section>
 
@@ -269,11 +269,10 @@ const VagalumenPage = () => { // ATUALIZADO
                                     </motion.div>
                                 </div>
 
-                                <div className="image-gallery">
-                                    {/* ATUALIZADO: Sugestão de imagem de telas ou fluxos */}
+                                {/* <div className="image-gallery">
                                     <motion.img
                                         src="/vagalumen_screens_1.png" alt={t('vagalumen.solution.finalImageAlt')} className="final-image" />
-                                </div>
+                                </div> */}
                             </motion.section>
 
 
@@ -284,7 +283,7 @@ const VagalumenPage = () => { // ATUALIZADO
                                 <h2>{t('vagalumen.solution.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('vagalumen.solution.description')}</p> {/* ATUALIZADO */}
 
-                                <div className="figma-embed-container">
+                                <div className="figma-embed-container" style={{height: '100vh'}}>
                                     {isLoading && (
                                         <div className="loading-overlay">
                                             <div className="spinner"></div>
@@ -299,16 +298,19 @@ const VagalumenPage = () => { // ATUALIZADO
 
                                     <iframe
                                         className="figma-iframe"
+
                                         style={{ visibility: isLoading || hasError ? 'hidden' : 'visible' }}
-                                        src="https://embed.figma.com/proto/EzUgyzL8JfAUo8V7CgzBIW/AcademiaX-Portifolio?page-id=27%3A901&node-id=27-9299&viewport=148%2C60%2C0.04&scaling=scale-down-width&content-scaling=fixed&embed-host=share"
+                                        src="https://embed.figma.com/proto/6odua3Pd8GJtpsgRmH4LDE/landing-page-Luigi-sorvetes?page-id=222%3A2&node-id=222-148&viewport=122%2C168%2C0.06&scaling=scale-down-width&content-scaling=fixed&embed-host=share"
                                         onLoad={handleLoad}
                                         onError={handleError}
                                         allowFullScreen
                                     ></iframe>
+
+                                    
                                 </div>
 
                                 {/* ATUALIZADO: Altere este 'href' para o link do seu arquivo Figma */}
-                                <motion.a href="https://www.figma.com/..." target="_blank" rel="noopener noreferrer" className="cta-button figma-cta" variants={fadeInUp}>
+                                <motion.a href="https://www.figma.com/design/6odua3Pd8GJtpsgRmH4LDE/landing-page-Luigi-sorvetes?node-id=222-2&t=5LVs9X6dlsue520D-1" target="_blank" rel="noopener noreferrer" className="cta-button figma-cta" variants={fadeInUp}>
                                     <SiFigma />
                                     {t('vagalumen.solution.cta')} {/* ATUALIZADO */}
                                 </motion.a>
@@ -397,7 +399,22 @@ const VagalumenPage = () => { // ATUALIZADO
                                 <div className="image-gallery">
                                     {/* ATUALIZADO: Sugestão de mais imagens de tela */}
                                     <motion.img
-                                        src="/vagalumen_screens_2.png" alt={t('vagalumen.solution.finalImageAlt')} className="final-image" style={{ width: '40%' }} />
+                                        src="/vagalumen_tela_1.png" alt={t('vagalumen.solution.finalImageAlt')} className="final-image" />
+                                </div>
+                                <div className="image-gallery">
+                                    {/* ATUALIZADO: Sugestão de mais imagens de tela */}
+                                    <motion.img
+                                        src="/vagalumen_tela_2.png" alt={t('vagalumen.solution.finalImageAlt')} className="final-image" />
+                                </div>
+                                <div className="image-gallery">
+                                    {/* ATUALIZADO: Sugestão de mais imagens de tela */}
+                                    <motion.img
+                                        src="/vagalumen_tela_3.png" alt={t('vagalumen.solution.finalImageAlt')} className="final-image" />
+                                </div>
+                                <div className="image-gallery">
+                                    {/* ATUALIZADO: Sugestão de mais imagens de tela */}
+                                    <motion.img
+                                        src="/vagalumen_tela_4.png" alt={t('vagalumen.solution.finalImageAlt')} className="final-image" />
                                 </div>
                             </motion.section>
 

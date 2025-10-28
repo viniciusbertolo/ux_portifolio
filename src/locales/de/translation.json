@@ -359,5 +359,101 @@
         "description": "Dieses Projekt war ein tiefer Einblick in die Systemerstellung. Ich habe die Bedeutung von Governance gelernt (wie sich das System entwickelt) und dass ein Design System ein lebendiges Produkt ist, das ständige Wartung und enge Zusammenarbeit mit dem Engineering erfordert, um die Parität zwischen Design (Figma) und Code (React) sicherzustellen."
       }
     }
+  },
+  "vagalumen": {
+  "hero": {
+    "alt": "Titelbild des Vagalumen IA-Projekts"
+  },
+  "meta": {
+    "title": "Vagalumen IA - Gemini-Datenschnittstelle",
+    "about": {
+      "title": "ÜBER DAS PROJEKT",
+      "description": "Vagalumen IA ist eine interne Plattform in Partnerschaft mit Google, die den Zugang zu Gemini-Trainingsdaten demokratisieren soll. Das Tool ersetzt komplexe Abfragen in GCP durch eine intuitive, sichere und echtzeitfähige Prompt-Schnittstelle."
+    },
+    "role": {
+      "label": "MEINE ROLLE",
+      "value": "UX/UI-Designer & Front-end-Entwickler"
+    },
+    "date": {
+      "label": "DATUM",
+      "value": "März 2025"
+    },
+    "tools": {
+      "label": "WERKZEUGE"
+    }
+  },
+  "scenario": {
+    "title": "Aktuelles Szenario",
+    "description": "Bisher war der Zugriff auf Gemini-Trainingsdaten ein Engpass. Der Prozess erforderte direkten Zugriff auf die Google Cloud Platform (GCP), SQL-Kenntnisse und war zeitaufwändig. Darüber hinaus bestanden erhebliche Risiken von Lecks sensibler Informationen, da die Zugriffskontrollen komplex zu verwalten waren."
+  },
+  "challenge": {
+    "title": "Die Herausforderung",
+    "description": "Wie könnten wir eine Schnittstelle schaffen, die die Komplexität von GCP abstrahiert und es Geschäftsanwendern (nicht-technischen) ermöglicht, sicher und sofort auf Daten zuzugreifen, indem sie nur natürliche Sprache (Prompts) verwenden?"
+  },
+  "designProcess": {
+    "title": "Mein Vorgehen",
+    "description": "Ich habe am gesamten Produktlebenszyklus gearbeitet, von der Konzeption des Nutzererlebnisses (UX) bis zur Implementierung (Front-end). Der Fokus lag darauf, eine komplexe technische Anforderung (Zugriff auf KI-Daten) in ein einfaches und sicheres Benutzererlebnis zu übersetzen.",
+    "imageAlts": {
+      "discovery": "Diagramm des auf Vagalumen angewandten Design-Thinking-Prozesses"
+    }
+  },
+  "research": {
+    "title": "Recherche und Entdeckung",
+    "user": {
+      "title": "Benutzerinterviews",
+      "description": "Ich führte Interviews mit Datenanalysten und Produktmanagern (den Zielbenutzern) durch, um ihre Frustrationen mit dem aktuellen Prozess (GCP/SQL) zu erfassen und die Werthypothesen einer prompt-basierten Schnittstelle zu validieren."
+    },
+    "competitors": {
+      "title": "Risiko- und Machbarkeitsanalyse",
+      "description": "Ich habe mit dem BI & Analytics-Team und Google-Spezialisten zusammengearbeitet, um die technischen Einschränkungen der Gemini-API und die Sicherheitsanforderungen zu verstehen. Dies war entscheidend, um eine Schnittstelle zu entwerfen, die sowohl leistungsstark als auch sicher war."
+    }
+  },
+  "solution": {
+    "title": "Die Lösung: Sichere Prompt-Schnittstelle",
+    "description": "Ich habe in Figma eine saubere, auf die Prompt-Funktionalität ausgerichtete Oberfläche entworfen. Ich habe klickbare Prototypen erstellt, die die 'Fragen-und-Empfangen'-Dateninteraktion simulierten und in Usability-Tests zur Verfeinerung des Ablaufs verwendet wurden. Nach der Validierung habe ich die Schnittstellenkomponenten in React programmiert, um sicherzustellen, dass das Designerlebnis originalgetreu umgesetzt wurde.",
+    "cta": "Bildschirme in Figma ansehen",
+    "warning": "In Übereinstimmung mit den Vertraulichkeitsvereinbarungen (NDA) mit Google wurden die Daten, Metriken und Namen im Prototyp geändert, um sensible Projektinformationen zu schützen.",
+    "finalImageAlt": "Vagalumen IA-Bildschirme in Figma"
+  },
+  "usabilityTest": {
+    "title": "Usability-Tests und Iteration",
+    "headers": {
+      "task": "Testaufgabe",
+      "result": "Status",
+      "problem": "Identifiziertes Problem",
+      "solution": "Ergriffene Maßnahme"
+    },
+    "rows": {
+      "0": {
+        "task": "Eine Abfrage durchführen",
+        "result": "Erfolgreich (mit Anmerkung)",
+        "problem": "Benutzer versuchten beim ersten Gebrauch, sehr komplexe oder technische, SQL-ähnliche Prompts zu schreiben.",
+        "solution": "Hinzufügen von 'Prompt-Beispielen' und 'Platzhaltertext' zur Benutzeroberfläche, um den Benutzer zur Verwendung natürlicher Sprache anzuleiten."
+      },
+      "1": {
+        "task": "Durch verschiedene Kontexte navigieren",
+        "result": "Schwierigkeiten",
+        "problem": "Benutzer fanden das Kontextmenü nicht leicht",
+        "solution": "Hinzufügen von Kontext direkt im Eingabefeld"
+      },
+      "2": {
+        "task": "Einen Bericht exportieren",
+        "result": "Erfolgreich",
+        "problem": "Der Ablauf zum Exportieren der generierten Daten (CSV) war im ursprünglichen Prototyp nicht klar.",
+        "solution": "Verfeinerung des Designs der 'Export-Schaltfläche', um die Aktion deutlicher zu machen."
+      }
+    }
+  },
+  "results": {
+    "title": "Ergebnisse und Erkenntnisse",
+    "results": {
+      "title": "Ergebnisse",
+      "description": "Vagalumen IA hat den Datenzugriff transformiert. Die Zeit bis zur Gewinnung von Einblicken wurde von Stunden (manchmal Tagen) auf Sekunden reduziert. Die Plattform eliminierte die Notwendigkeit von SQL-Schulungen für Business-Teams und minderte Sicherheitsrisiken, wodurch sie zu einem strategischen Werkzeug in der Partnerschaft mit Google wurde."
+    },
+    "learnings": {
+      "title": "Wichtige Erkenntnisse",
+      "description": "Dieses Projekt war eine Herausforderung, eine Backend-KI-Technologie (Gemini) in ein einfaches und intuitives Frontend-Erlebnis (React) zu übersetzen. Meine größte Erkenntnis war die Wichtigkeit, schnell auf der Grundlage von Usability-Tests zu iterieren. Die direkte Zusammenarbeit mit KI-Ingenieuren war unerlässlich, um das technisch Mögliche mit dem menschlich Wünschenswerten für den Benutzer in Einklang zu bringen."
+    }
   }
+}
 }
