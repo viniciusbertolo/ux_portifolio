@@ -455,6 +455,101 @@
         "description": "Este projeto foi um desafio de traduzir uma tecnologia de IA de backend (Gemini) em uma experiência de frontend (React) simples e intuitiva. Meu maior aprendizado foi a importância de iterar rapidamente com base nos testes de usabilidade. A colaboração direta com os engenheiros de IA foi essencial para equilibrar o que era tecnicamente possível com o que era humanamente desejável para o usuário."
       }
     }
+  },
+  "sommos": {
+    "hero": {
+      "alt": "Capa do Projeto SOMMOS"
+    },
+    "meta": {
+      "title": "SOMMOS - Plataforma de Gestão de Pessoas",
+      "about": {
+        "title": "SOBRE O PROJETO",
+        "description": "O SOMMOS é um sistema robusto de gestão de dados de RH, desenhado para conectar o time de Recursos Humanos aos colaboradores, centralizando informações de PDI, PDC, cargos, salários e avaliações."
+      },
+      "role": {
+        "label": "MINHA FUNÇÃO",
+        "value": "UX/UI Designer"
+      },
+      "date": {
+        "label": "DATA",
+        "value": "Novembro, 2024"
+      },
+      "tools": {
+        "label": "FERRAMENTAS"
+      }
+    },
+    "scenario": {
+      "title": "Cenário Atual",
+      "description": "O time de RH gerenciava um grande volume de dados de colaboradores em sistemas descentralizados e planilhas. Processos como PDI, avaliações e planos de sucessão eram manuais, gerando inconsistências e dificultando a visualização de dados coletivos."
+    },
+    "challenge": {
+      "title": "O Desafio",
+      "description": "Como criar uma plataforma unificada que organize esse grande volume de dados, facilite a gestão de PDI/PDC e forneça dashboards claros para o RH, sem sobrecarregar o usuário com informações?"
+    },
+    "designProcess": {
+      "title": "Meu Processo de Atuação",
+      "description": "Atuei em colaboração direta com uma equipe multidisciplinar (RH, PO, Devs). Minha função foi do discovery à entrega, focando em desenhar as telas, criar protótipos interativos, conduzir testes de usabilidade e argumentar as soluções de design com stakeholders e o time técnico.",
+      "imageAlts": {
+        "discovery": "Diagrama do processo de design do SOMMOS"
+      }
+    },
+    "research": {
+      "title": "Pesquisa e Descoberta",
+      "user": {
+        "title": "Entendendo os Stakeholders (RH)",
+        "description": "Conduzi entrevistas com o time de RH (que eram os usuários e stakeholders) para mapear as dores no gerenciamento de PDI, PDC e na visualização dos 'Raio-X' individuais e coletivos. O maior ponto era a dificuldade em cruzar dados."
+      },
+      "competitors": {
+        "title": "Análise de Plataformas de HR Tech",
+        "description": "Analisei sistemas de gestão de performance e talentos do mercado para entender como lidavam com a visualização de dados complexos (dashboards, avaliações) e planos de desenvolvimento."
+      }
+    },
+    "solution": {
+      "title": "A Solução: Plataforma Integrada de Talentos",
+      "description": "Desenhei no Figma uma plataforma completa, com fluxos dedicados para PDI, PDC, Raio-X individual/coletivo e um dashboard de avaliações. O maior desafio de design foi o dashboard, onde a solução foi criar visualizações que não fossem extensas, mesmo com grande volume de dados. Os protótipos foram validados em testes de usabilidade.",
+      "cta": "Ver telas no Figma",
+      "warning": "Para proteger informações confidenciais da empresa e dados de colaboradores, os nomes, fotos e métricas no protótipo foram anonimizados.",
+      "finalImageAlt": "Telas do projeto SOMMOS no Figma"
+    },
+    "usabilityTest": {
+      "title": "Testes de Usabilidade e Iteração",
+      "headers": {
+        "task": "Tarefa do Teste",
+        "result": "Status",
+        "problem": "Problema Identificado",
+        "solution": "Ação Tomada"
+      },
+      "rows": {
+        "0": {
+          "task": "Visualizar avaliações de líderes por gerência no Dashboard.",
+          "result": "Sucesso",
+          "problem": "N/A (Fluxo validado).",
+          "solution": "Manter a interação de 'hover' no gráfico, que foi bem recebida."
+        },
+        "1": {
+          "task": "Utilizar a sugestão de IA para criar um item no PDI.",
+          "result": "Dificuldade",
+          "problem": "O botão para acionar a IA tinha baixa visibilidade e estava mal localizado.",
+          "solution": "Melhorar a localização e o destaque visual (cor/tamanho) do botão de IA."
+        },
+        "2": {
+          "task": "Identificar no Raio-X Coletivo quem está habilitado para sucessão no time.",
+          "result": "Dificuldade",
+          "problem": "Usuários não conseguiam identificar os colaboradores na visualização.",
+          "solution": "Adicionar um 'tooltip' com os nomes dos colaboradores ao final da página/gráfico."
+        }
+      }
+    },
+    "results": {
+      "title": "Resultados e Aprendizados",
+      "results": {
+        "title": "Resultados",
+        "description": "O sistema SOMMOS centralizou com sucesso os dados de gestão de pessoas. Os fluxos de PDI e PDC se tornaram mais eficientes, e os dashboards permitiram ao RH ter uma visão estratégica sobre avaliações e talentos, que antes era impossível de obter."
+      },
+      "learnings": {
+        "title": "Principais Aprendizados",
+        "description": "Este projeto foi um exercício intenso de colaboração multidisciplinar. Meu maior aprendizado foi como argumentar e negociar soluções de design com stakeholders (que também eram os usuários) e o time de desenvolvimento, equilibrando as necessidades de usabilidade com as restrições técnicas de um sistema de dados complexo."
+      }
+    }
   }
-
 }

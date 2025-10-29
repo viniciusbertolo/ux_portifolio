@@ -15,6 +15,10 @@ import {
     SiGooglecloud,  // Adicionado
 } from "react-icons/si";
 
+import { BsMicrosoftTeams } from "react-icons/bs";
+import { DiScrum } from "react-icons/di";
+import { PiKanbanDuotone } from "react-icons/pi";
+
 
 // import './vagalumenPage.scss'; // ATUALIZADO
 import BackTop from '../../components/backTop/BackTop';
@@ -225,6 +229,9 @@ const VagalumenPage = () => { // ATUALIZADO
                                         <SiTailwindcss title="Tailwind CSS" />
                                         <SiTypescript title="TypeScript" />
                                         <SiGooglecloud title="Google Cloud (Gemini)" />
+                                        <BsMicrosoftTeams title="Teams" />
+                                        <DiScrum size={50} title="Scrum" />
+                                        <PiKanbanDuotone size={40} title="Kanban" />
                                     </div>
                                 </div>
                             </motion.div>
@@ -283,7 +290,7 @@ const VagalumenPage = () => { // ATUALIZADO
                                 <h2>{t('vagalumen.solution.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('vagalumen.solution.description')}</p> {/* ATUALIZADO */}
 
-                                <div className="figma-embed-container" style={{height: '100vh'}}>
+                                <div className="figma-embed-container" style={{ height: '100vh' }}>
                                     {isLoading && (
                                         <div className="loading-overlay">
                                             <div className="spinner"></div>
@@ -306,7 +313,7 @@ const VagalumenPage = () => { // ATUALIZADO
                                         allowFullScreen
                                     ></iframe>
 
-                                    
+
                                 </div>
 
                                 {/* ATUALIZADO: Altere este 'href' para o link do seu arquivo Figma */}

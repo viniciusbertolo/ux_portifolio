@@ -361,99 +361,195 @@
     }
   },
   "vagalumen": {
-  "hero": {
-    "alt": "Titelbild des Vagalumen IA-Projekts"
-  },
-  "meta": {
-    "title": "Vagalumen IA - Gemini-Datenschnittstelle",
-    "about": {
-      "title": "ÜBER DAS PROJEKT",
-      "description": "Vagalumen IA ist eine interne Plattform in Partnerschaft mit Google, die den Zugang zu Gemini-Trainingsdaten demokratisieren soll. Das Tool ersetzt komplexe Abfragen in GCP durch eine intuitive, sichere und echtzeitfähige Prompt-Schnittstelle."
+    "hero": {
+      "alt": "Titelbild des Vagalumen IA-Projekts"
     },
-    "role": {
-      "label": "MEINE ROLLE",
-      "value": "UX/UI-Designer & Front-end-Entwickler"
-    },
-    "date": {
-      "label": "DATUM",
-      "value": "März 2025"
-    },
-    "tools": {
-      "label": "WERKZEUGE"
-    }
-  },
-  "scenario": {
-    "title": "Aktuelles Szenario",
-    "description": "Bisher war der Zugriff auf Gemini-Trainingsdaten ein Engpass. Der Prozess erforderte direkten Zugriff auf die Google Cloud Platform (GCP), SQL-Kenntnisse und war zeitaufwändig. Darüber hinaus bestanden erhebliche Risiken von Lecks sensibler Informationen, da die Zugriffskontrollen komplex zu verwalten waren."
-  },
-  "challenge": {
-    "title": "Die Herausforderung",
-    "description": "Wie könnten wir eine Schnittstelle schaffen, die die Komplexität von GCP abstrahiert und es Geschäftsanwendern (nicht-technischen) ermöglicht, sicher und sofort auf Daten zuzugreifen, indem sie nur natürliche Sprache (Prompts) verwenden?"
-  },
-  "designProcess": {
-    "title": "Mein Vorgehen",
-    "description": "Ich habe am gesamten Produktlebenszyklus gearbeitet, von der Konzeption des Nutzererlebnisses (UX) bis zur Implementierung (Front-end). Der Fokus lag darauf, eine komplexe technische Anforderung (Zugriff auf KI-Daten) in ein einfaches und sicheres Benutzererlebnis zu übersetzen.",
-    "imageAlts": {
-      "discovery": "Diagramm des auf Vagalumen angewandten Design-Thinking-Prozesses"
-    }
-  },
-  "research": {
-    "title": "Recherche und Entdeckung",
-    "user": {
-      "title": "Benutzerinterviews",
-      "description": "Ich führte Interviews mit Datenanalysten und Produktmanagern (den Zielbenutzern) durch, um ihre Frustrationen mit dem aktuellen Prozess (GCP/SQL) zu erfassen und die Werthypothesen einer prompt-basierten Schnittstelle zu validieren."
-    },
-    "competitors": {
-      "title": "Risiko- und Machbarkeitsanalyse",
-      "description": "Ich habe mit dem BI & Analytics-Team und Google-Spezialisten zusammengearbeitet, um die technischen Einschränkungen der Gemini-API und die Sicherheitsanforderungen zu verstehen. Dies war entscheidend, um eine Schnittstelle zu entwerfen, die sowohl leistungsstark als auch sicher war."
-    }
-  },
-  "solution": {
-    "title": "Die Lösung: Sichere Prompt-Schnittstelle",
-    "description": "Ich habe in Figma eine saubere, auf die Prompt-Funktionalität ausgerichtete Oberfläche entworfen. Ich habe klickbare Prototypen erstellt, die die 'Fragen-und-Empfangen'-Dateninteraktion simulierten und in Usability-Tests zur Verfeinerung des Ablaufs verwendet wurden. Nach der Validierung habe ich die Schnittstellenkomponenten in React programmiert, um sicherzustellen, dass das Designerlebnis originalgetreu umgesetzt wurde.",
-    "cta": "Bildschirme in Figma ansehen",
-    "warning": "In Übereinstimmung mit den Vertraulichkeitsvereinbarungen (NDA) mit Google wurden die Daten, Metriken und Namen im Prototyp geändert, um sensible Projektinformationen zu schützen.",
-    "finalImageAlt": "Vagalumen IA-Bildschirme in Figma"
-  },
-  "usabilityTest": {
-    "title": "Usability-Tests und Iteration",
-    "headers": {
-      "task": "Testaufgabe",
-      "result": "Status",
-      "problem": "Identifiziertes Problem",
-      "solution": "Ergriffene Maßnahme"
-    },
-    "rows": {
-      "0": {
-        "task": "Eine Abfrage durchführen",
-        "result": "Erfolgreich (mit Anmerkung)",
-        "problem": "Benutzer versuchten beim ersten Gebrauch, sehr komplexe oder technische, SQL-ähnliche Prompts zu schreiben.",
-        "solution": "Hinzufügen von 'Prompt-Beispielen' und 'Platzhaltertext' zur Benutzeroberfläche, um den Benutzer zur Verwendung natürlicher Sprache anzuleiten."
+    "meta": {
+      "title": "Vagalumen IA - Gemini-Datenschnittstelle",
+      "about": {
+        "title": "ÜBER DAS PROJEKT",
+        "description": "Vagalumen IA ist eine interne Plattform in Partnerschaft mit Google, die den Zugang zu Gemini-Trainingsdaten demokratisieren soll. Das Tool ersetzt komplexe Abfragen in GCP durch eine intuitive, sichere und echtzeitfähige Prompt-Schnittstelle."
       },
-      "1": {
-        "task": "Durch verschiedene Kontexte navigieren",
-        "result": "Schwierigkeiten",
-        "problem": "Benutzer fanden das Kontextmenü nicht leicht",
-        "solution": "Hinzufügen von Kontext direkt im Eingabefeld"
+      "role": {
+        "label": "MEINE ROLLE",
+        "value": "UX/UI-Designer & Front-end-Entwickler"
       },
-      "2": {
-        "task": "Einen Bericht exportieren",
-        "result": "Erfolgreich",
-        "problem": "Der Ablauf zum Exportieren der generierten Daten (CSV) war im ursprünglichen Prototyp nicht klar.",
-        "solution": "Verfeinerung des Designs der 'Export-Schaltfläche', um die Aktion deutlicher zu machen."
+      "date": {
+        "label": "DATUM",
+        "value": "März 2025"
+      },
+      "tools": {
+        "label": "WERKZEUGE"
+      }
+    },
+    "scenario": {
+      "title": "Aktuelles Szenario",
+      "description": "Bisher war der Zugriff auf Gemini-Trainingsdaten ein Engpass. Der Prozess erforderte direkten Zugriff auf die Google Cloud Platform (GCP), SQL-Kenntnisse und war zeitaufwändig. Darüber hinaus bestanden erhebliche Risiken von Lecks sensibler Informationen, da die Zugriffskontrollen komplex zu verwalten waren."
+    },
+    "challenge": {
+      "title": "Die Herausforderung",
+      "description": "Wie könnten wir eine Schnittstelle schaffen, die die Komplexität von GCP abstrahiert und es Geschäftsanwendern (nicht-technischen) ermöglicht, sicher und sofort auf Daten zuzugreifen, indem sie nur natürliche Sprache (Prompts) verwenden?"
+    },
+    "designProcess": {
+      "title": "Mein Vorgehen",
+      "description": "Ich habe am gesamten Produktlebenszyklus gearbeitet, von der Konzeption des Nutzererlebnisses (UX) bis zur Implementierung (Front-end). Der Fokus lag darauf, eine komplexe technische Anforderung (Zugriff auf KI-Daten) in ein einfaches und sicheres Benutzererlebnis zu übersetzen.",
+      "imageAlts": {
+        "discovery": "Diagramm des auf Vagalumen angewandten Design-Thinking-Prozesses"
+      }
+    },
+    "research": {
+      "title": "Recherche und Entdeckung",
+      "user": {
+        "title": "Benutzerinterviews",
+        "description": "Ich führte Interviews mit Datenanalysten und Produktmanagern (den Zielbenutzern) durch, um ihre Frustrationen mit dem aktuellen Prozess (GCP/SQL) zu erfassen und die Werthypothesen einer prompt-basierten Schnittstelle zu validieren."
+      },
+      "competitors": {
+        "title": "Risiko- und Machbarkeitsanalyse",
+        "description": "Ich habe mit dem BI & Analytics-Team und Google-Spezialisten zusammengearbeitet, um die technischen Einschränkungen der Gemini-API und die Sicherheitsanforderungen zu verstehen. Dies war entscheidend, um eine Schnittstelle zu entwerfen, die sowohl leistungsstark als auch sicher war."
+      }
+    },
+    "solution": {
+      "title": "Die Lösung: Sichere Prompt-Schnittstelle",
+      "description": "Ich habe in Figma eine saubere, auf die Prompt-Funktionalität ausgerichtete Oberfläche entworfen. Ich habe klickbare Prototypen erstellt, die die 'Fragen-und-Empfangen'-Dateninteraktion simulierten und in Usability-Tests zur Verfeinerung des Ablaufs verwendet wurden. Nach der Validierung habe ich die Schnittstellenkomponenten in React programmiert, um sicherzustellen, dass das Designerlebnis originalgetreu umgesetzt wurde.",
+      "cta": "Bildschirme in Figma ansehen",
+      "warning": "In Übereinstimmung mit den Vertraulichkeitsvereinbarungen (NDA) mit Google wurden die Daten, Metriken und Namen im Prototyp geändert, um sensible Projektinformationen zu schützen.",
+      "finalImageAlt": "Vagalumen IA-Bildschirme in Figma"
+    },
+    "usabilityTest": {
+      "title": "Usability-Tests und Iteration",
+      "headers": {
+        "task": "Testaufgabe",
+        "result": "Status",
+        "problem": "Identifiziertes Problem",
+        "solution": "Ergriffene Maßnahme"
+      },
+      "rows": {
+        "0": {
+          "task": "Eine Abfrage durchführen",
+          "result": "Erfolgreich (mit Anmerkung)",
+          "problem": "Benutzer versuchten beim ersten Gebrauch, sehr komplexe oder technische, SQL-ähnliche Prompts zu schreiben.",
+          "solution": "Hinzufügen von 'Prompt-Beispielen' und 'Platzhaltertext' zur Benutzeroberfläche, um den Benutzer zur Verwendung natürlicher Sprache anzuleiten."
+        },
+        "1": {
+          "task": "Durch verschiedene Kontexte navigieren",
+          "result": "Schwierigkeiten",
+          "problem": "Benutzer fanden das Kontextmenü nicht leicht",
+          "solution": "Hinzufügen von Kontext direkt im Eingabefeld"
+        },
+        "2": {
+          "task": "Einen Bericht exportieren",
+          "result": "Erfolgreich",
+          "problem": "Der Ablauf zum Exportieren der generierten Daten (CSV) war im ursprünglichen Prototyp nicht klar.",
+          "solution": "Verfeinerung des Designs der 'Export-Schaltfläche', um die Aktion deutlicher zu machen."
+        }
+      }
+    },
+    "results": {
+      "title": "Ergebnisse und Erkenntnisse",
+      "results": {
+        "title": "Ergebnisse",
+        "description": "Vagalumen IA hat den Datenzugriff transformiert. Die Zeit bis zur Gewinnung von Einblicken wurde von Stunden (manchmal Tagen) auf Sekunden reduziert. Die Plattform eliminierte die Notwendigkeit von SQL-Schulungen für Business-Teams und minderte Sicherheitsrisiken, wodurch sie zu einem strategischen Werkzeug in der Partnerschaft mit Google wurde."
+      },
+      "learnings": {
+        "title": "Wichtige Erkenntnisse",
+        "description": "Dieses Projekt war eine Herausforderung, eine Backend-KI-Technologie (Gemini) in ein einfaches und intuitives Frontend-Erlebnis (React) zu übersetzen. Meine größte Erkenntnis war die Wichtigkeit, schnell auf der Grundlage von Usability-Tests zu iterieren. Die direkte Zusammenarbeit mit KI-Ingenieuren war unerlässlich, um das technisch Mögliche mit dem menschlich Wünschenswerten für den Benutzer in Einklang zu bringen."
       }
     }
   },
-  "results": {
-    "title": "Ergebnisse und Erkenntnisse",
-    "results": {
-      "title": "Ergebnisse",
-      "description": "Vagalumen IA hat den Datenzugriff transformiert. Die Zeit bis zur Gewinnung von Einblicken wurde von Stunden (manchmal Tagen) auf Sekunden reduziert. Die Plattform eliminierte die Notwendigkeit von SQL-Schulungen für Business-Teams und minderte Sicherheitsrisiken, wodurch sie zu einem strategischen Werkzeug in der Partnerschaft mit Google wurde."
+  "sommos": {
+    "hero": {
+      "alt": "SOMMOS-Projekt-Cover"
     },
-    "learnings": {
-      "title": "Wichtige Erkenntnisse",
-      "description": "Dieses Projekt war eine Herausforderung, eine Backend-KI-Technologie (Gemini) in ein einfaches und intuitives Frontend-Erlebnis (React) zu übersetzen. Meine größte Erkenntnis war die Wichtigkeit, schnell auf der Grundlage von Usability-Tests zu iterieren. Die direkte Zusammenarbeit mit KI-Ingenieuren war unerlässlich, um das technisch Mögliche mit dem menschlich Wünschenswerten für den Benutzer in Einklang zu bringen."
+    "meta": {
+      "title": "SOMMOS - Personalmanagement-Plattform",
+      "about": {
+        "title": "ÜBER DAS PROJEKT",
+        "description": "SOMMOS ist ein robustes HR-Datenmanagementsystem, das entwickelt wurde, um das Personalteam (HR) mit den Mitarbeitern zu verbinden und Informationen zu PDI (Persönlicher Entwicklungsplan), PDC (Karriereentwicklungsplan), Positionen, Gehältern und Bewertungen zu zentralisieren."
+      },
+      "role": {
+        "label": "MEINE ROLLE",
+        "value": "UX/UI Designer"
+      },
+      "date": {
+        "label": "DATUM",
+        "value": "November 2024"
+      },
+      "tools": {
+        "label": "TOOLS"
+      }
+    },
+    "scenario": {
+      "title": "Aktuelles Szenario",
+      "description": "Das HR-Team verwaltete ein großes Volumen an Mitarbeiterdaten in dezentralen Systemen und Tabellen. Prozesse wie PDI, Bewertungen und Nachfolgepläne waren manuell, was zu Inkonsistenzen führte und die Visualisierung kollektiver Daten erschwerte."
+    },
+    "challenge": {
+      "title": "Die Herausforderung",
+      "description": "Wie kann eine einheitliche Plattform geschaffen werden, die dieses große Datenvolumen organisiert, die Verwaltung von PDI/PDC erleichtert und klare Dashboards für die Personalabteilung bereitstellt, ohne den Benutzer mit Informationen zu überlasten?"
+    },
+    "designProcess": {
+      "title": "Mein Arbeitsprozess",
+      "description": "Ich arbeitete in direkter Zusammenarbeit mit einem multidisziplinären Team (HR, PO, Devs). Meine Rolle erstreckte sich von der Discovery-Phase bis zur Auslieferung und konzentrierte sich auf die Gestaltung der Bildschirme, die Erstellung interaktiver Prototypen, die Durchführung von Usability-Tests und die Abstimmung sowie Argumentation der Designlösungen mit Stakeholdern und dem technischen Team.",
+      "imageAlts": {
+        "discovery": "SOMMOS Designprozess-Diagramm"
+      }
+    },
+    "research": {
+      "title": "Recherche und Entdeckung",
+      "user": {
+        "title": "Die Stakeholder (HR) verstehen",
+        "description": "Ich führte Interviews mit dem HR-Team (das sowohl Benutzer als auch Stakeholder war), um die Schwachstellen bei der Verwaltung von PDI, PDC und bei der Visualisierung von individuellen und kollektiven 'Röntgenbildern' (Analysen) zu ermitteln. Das größte Problem war die Schwierigkeit, Daten abzugleichen."
+      },
+      "competitors": {
+        "title": "Analyse von HR-Tech-Plattformen",
+        "description": "Ich analysierte Performance- und Talentmanagementsysteme auf dem Markt, um zu verstehen, wie sie mit der Visualisierung komplexer Daten (Dashboards, Bewertungen) und Entwicklungsplänen umgingen."
+      }
+    },
+    "solution": {
+      "title": "Die Lösung: Integrierte Talentplattform",
+      "description": "Ich habe in Figma eine komplette Plattform entworfen, mit dedizierten Abläufen für PDI, PDC, individuelle/kollektive 'Röntgen-Analysen' und einem Bewertungs-Dashboard. Die größte Design-Herausforderung war das Dashboard, bei dem die Lösung darin bestand, Visualisierungen zu erstellen, die trotz des großen Datenvolumens nicht überladen wirkten. Die Prototypen wurden in Usability-Tests validiert.",
+      "cta": "Bildschirme in Figma ansehen",
+      "warning": "Um vertrauliche Unternehmensinformationen und Mitarbeiterdaten zu schützen, wurden die Namen, Fotos und Metriken im Prototyp anonymisiert.",
+      "finalImageAlt": "SOMMOS-Projektbildschirme in Figma"
+    },
+    "usabilityTest": {
+      "title": "Usability-Tests und Iteration",
+      "headers": {
+        "task": "Testaufgabe",
+        "result": "Status",
+        "problem": "Identifiziertes Problem",
+        "solution": "Ergriffene Maßnahme"
+      },
+      "rows": {
+        "0": {
+          "task": "Bewertungen von Führungskräften nach Managementbereich im Dashboard anzeigen.",
+          "result": "Erfolg",
+          "problem": "N/A (Ablauf validiert).",
+          "solution": "Die 'Hover'-Interaktion im Diagramm beibehalten, die gut ankam."
+        },
+        "1": {
+          "task": "Den KI-Vorschlag verwenden, um einen Punkt im PDI zu erstellen.",
+          "result": "Schwierigkeit",
+          "problem": "Der Button zum Auslösen der KI war schlecht sichtbar und ungünstig platziert.",
+          "solution": "Position und visuelle Hervorhebung (Farbe/Größe) des KI-Buttons verbessern."
+        },
+        "2": {
+          "task": "In der kollektiven 'Röntgen-Analyse' identifizieren, wer im Team für die Nachfolge geeignet ist.",
+          "result": "Schwierigkeit",
+          "problem": "Benutzer konnten die Mitarbeiter in der Visualisierung nicht identifizieren.",
+          "solution": "Ein 'Tooltip' mit den Namen der Mitarbeiter am Ende der Seite/des Diagramms hinzufügen."
+        }
+      }
+    },
+    "results": {
+      "title": "Ergebnisse und Erkenntnisse",
+      "results": {
+        "title": "Ergebnisse",
+        "description": "Das SOMMOS-System hat die Personalmanagementdaten erfolgreich zentralisiert. Die PDI- und PDC-Abläufe wurden effizienter, und die Dashboards ermöglichten der Personalabteilung einen strategischen Überblick über Bewertungen und Talente, der zuvor unmöglich zu gewinnen war."
+      },
+      "learnings": {
+        "title": "Wichtigste Erkenntnisse",
+        "description": "Dieses Projekt war eine intensive Übung in multidisziplinärer Zusammenarbeit. Meine wichtigste Erkenntnis war, wie man Designlösungen mit Stakeholdern (die auch die Benutzer waren) und dem Entwicklungsteam argumentiert und aushandelt, wobei die Usability-Anforderungen mit den technischen Einschränkungen eines komplexen Datensystems in Einklang gebracht werden mussten."
+      }
     }
   }
-}
 }

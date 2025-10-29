@@ -70,14 +70,14 @@ const Portfolio = () => {
         title: t('projects.Project_3_title'),
         img: "/vagalumen.png",
         description: t('projects.Project_3_desc'),
-        rota: "/digital-tech"
+        rota: "/vagalumen-ai"
     },
     {
         id: 4,
         title: t('projects.Project_4_title'),
         img: "/sommos.png",
         description: t('projects.Project_4_desc'),
-        rota: "/digital-tech"
+        rota: "/sommos"
     },
 
 ]

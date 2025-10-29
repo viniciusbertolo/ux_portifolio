@@ -15,6 +15,10 @@ import {
     SiLucide, // <-- ADICIONE ESTE
 } from "react-icons/si";
 
+import { BsMicrosoftTeams } from "react-icons/bs";
+import { DiScrum } from "react-icons/di";
+import { PiKanbanDuotone } from "react-icons/pi";
+
 
 import './brotoPage.scss'; // ATUALIZADO
 import BackTop from '../../components/backTop/BackTop';
@@ -220,6 +224,9 @@ const BrotoPage = () => { // ATUALIZADO
                                     <strong>{t('broto.meta.tools.label')}</strong> {/* ATUALIZADO */}
                                     <div className="tool-icons"> {/* ATUALIZADO */}
                                         <SiFigma title="Figma" />
+                                        <BsMicrosoftTeams title="Teams" />
+                                        <DiScrum size={50} title="Scrum" />
+                                        <PiKanbanDuotone size={40} title="Kanban" />
 
                                     </div>
                                 </div>

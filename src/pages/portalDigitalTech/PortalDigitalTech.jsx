@@ -13,6 +13,10 @@ import {
     SiNodedotjs
 } from "react-icons/si";
 
+import { BsMicrosoftTeams } from "react-icons/bs";
+import { DiScrum } from "react-icons/di";
+import { PiKanbanDuotone } from "react-icons/pi";
+
 import './portalDigitalTech.scss';
 import BackTop from '../../components/backTop/BackTop';
 
@@ -118,7 +122,7 @@ const DigitalTechPage = () => {
 
                 <div className="page-with-sidebar">
                     <motion.nav className="project-sidebar" variants={fadeInUp}>
-                        <div className="mb-6"> 
+                        <div className="mb-6">
                             <button
                                 onClick={() => navigate("/")} // A mágica acontece aqui!
                                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-200"
@@ -226,6 +230,9 @@ const DigitalTechPage = () => {
                                         <SiNextdotjs title="Next.js" />
                                         <SiTailwindcss title="Tailwind CSS" />
                                         <SiNodedotjs title="Node.js" />
+                                        <BsMicrosoftTeams title="Teams" />
+                                        <DiScrum size={50} title="Scrum" />
+                                        <PiKanbanDuotone size={40} title="Kanban" />
                                     </div>
                                 </div>
                             </motion.div>
@@ -361,7 +368,7 @@ const DigitalTechPage = () => {
                             <motion.section id="solution" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('digitaltech.solution.title')}</h2>
                                 <p>{t('digitaltech.solution.description')}</p>
-                                
+
 
                                 <div className="figma-embed-container">
                                     {isLoading && (
@@ -395,13 +402,13 @@ const DigitalTechPage = () => {
                                     <div className="vertical-line"></div>
                                     <div className="disclaimer-content">
                                         <small className="disclaimer-text">
-                                           {t('digitaltech.solution.warning')}
+                                            {t('digitaltech.solution.warning')}
                                         </small>
                                     </div>
                                 </div>
                                 <h3 className="table-title">{t('digitaltech.usabilityTest.title')}</h3>
                                 <div className="table-container">
-                                    
+
                                     <table className="usability-table">
                                         <thead>
                                             <tr>
@@ -418,16 +425,16 @@ const DigitalTechPage = () => {
                                                     {t('digitaltech.usabilityTest.rows.0.task')}
                                                 </td>
                                                 <td data-label={t('digitaltech.usabilityTest.headers.result')}>
-                                                    
+
                                                     <span className="status-pill success">
                                                         {t('digitaltech.usabilityTest.rows.0.result')}
                                                     </span>
                                                 </td>
-                                                
+
                                                 <td data-label={t('digitaltech.usabilityTest.headers.problem')}>
                                                     {t('digitaltech.usabilityTest.rows.0.problem')}
                                                 </td>
-                                                
+
                                                 <td data-label={t('digitaltech.usabilityTest.headers.solution')}>
                                                     {t('digitaltech.usabilityTest.rows.0.solution')}
                                                 </td>
@@ -442,7 +449,7 @@ const DigitalTechPage = () => {
                                                     <span className="status-pill difficulty">
                                                         {t('digitaltech.usabilityTest.rows.1.result')}
                                                     </span>
-                                        
+
                                                 </td>
                                                 <td data-label={t('digitaltech.usabilityTest.headers.problem')}>
                                                     {t('digitaltech.usabilityTest.rows.1.problem')}
@@ -461,7 +468,7 @@ const DigitalTechPage = () => {
                                                     <span className="status-pill difficulty">
                                                         {t('digitaltech.usabilityTest.rows.2.result')}
                                                     </span>
-                                                    
+
                                                 </td>
                                                 <td data-label={t('digitaltech.usabilityTest.headers.problem')}>
                                                     {t('digitaltech.usabilityTest.rows.2.problem')}
