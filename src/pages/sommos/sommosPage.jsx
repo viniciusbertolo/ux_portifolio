@@ -107,7 +107,7 @@ const SommosPage = () => { // ATUALIZADO
         >
             <motion.header className="project-hero" variants={fadeInUp} id="topo">
                 {/* ATUALIZADO: Substitua pela imagem de capa do SOMMOS */}
-                <img src="/sommos_header.png" alt={t('sommos.hero.alt')} className="hero-image" />
+                <img src="/sommos_header.jpg" alt={t('sommos.hero.alt')} className="hero-image" />
             </motion.header>
 
             <div className="project-body">

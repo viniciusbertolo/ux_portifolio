@@ -114,7 +114,7 @@ const VagalumenPage = () => { // ATUALIZADO
         >
             <motion.header className="project-hero" variants={fadeInUp} id="topo">
                 {/* ATUALIZADO: Substitua pela imagem de capa do Vagalumen */}
-                <img src="/vagalumen.png" alt={t('vagalumen.hero.alt')} className="hero-image" />
+                <img src="/vagalumen_header.jpg" alt={t('vagalumen.hero.alt')} className="hero-image" />
             </motion.header>
 
             <div className="project-body">
