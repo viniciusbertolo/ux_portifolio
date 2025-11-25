@@ -1,6 +1,6 @@
 {
   "header": {
-    "header_1": "FÄHIGKEITEN",
+    "header_1": "ÜBER MICH",
     "header_2": "PROJEKTE",
     "header_3": "NETZWERKE",
     "header_4": "KONTAKT",
@@ -12,6 +12,14 @@
     "desc_main": "Benutzer sind keine Roboter. Entdecken Sie, wie ich in verschiedenen Projekten mit ihnen umgehe und Schmerzpunkte in beeindruckende, interaktive Bildschirme und Prototypen verwandle!",
     "button_1_main": "Kontakt",
     "button_2_main": "Meine Projekte"
+  },
+  "about": {
+    "experienceText": "Jahre Erfahrung",
+    "whoIam": "Wer ich bin",
+    "title1": "Design mit",
+    "title2": "Energie",
+    "text": "Ich denke wie ein Ingenieur, baue wie ein Entwickler und sehe wie ein Designer. Von Natur aus neugierig, nehme ich die Welt ständig auseinander, um zu verstehen, wie sie funktioniert – sei es ein System, ein Rezept oder einer dieser ewigen Schreie, die Rockgeschichte geschrieben haben. Fernab vom Bildschirm: Ich singe, spiele Musik und lebe den Classic Rock. Die Balance halte ich mit Training, gutem Essen und Reisen. Am Ende erschaffe ich digitale Lösungen und sammle Geschichten, die zählen.",
+    "button": "Meine Projekte"
   },
   "skills": {
     "sub_title": "Meine Fähigkeiten und Werkzeuge zur Schaffung unglaublicher Erlebnisse",

@@ -19,6 +19,7 @@ $breakpoint-short-mobile-height: 670px; // Ponto de quebra para telas baixas com
         color: white;
         font-size: 36px;
         z-index: 1;
+        background-color: #000000;
 
         @media (max-width: $breakpoint-mobile) {
             padding-top: calc(env(safe-area-inset-top) + 25px);

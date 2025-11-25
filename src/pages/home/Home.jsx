@@ -1,3 +1,4 @@
+import About from "../../components/about/About"
 import BackTop from "../../components/backTop/BackTop"
 import Contact from "../../components/contact/Contact"
 import Header from "../../components/header/Header"
@@ -22,6 +23,9 @@ export default function Home() {
 
                 <Header />
                 <Hero />
+            </section>
+            <section>
+                <About />
             </section>
 
             <section>

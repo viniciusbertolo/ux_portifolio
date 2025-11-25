@@ -1,6 +1,6 @@
 {
   "header": {
-    "header_1": "HABILIDADES",
+    "header_1": "SOBRE MIM",
     "header_2": "PROJETOS",
     "header_3": "REDES",
     "header_4": "CONTATO",
@@ -12,6 +12,14 @@
     "desc_main": "Usuários não são robôs, saiba como eu lido com eles em diferentes tipos de projetos, transformando dores em telas e protótipos interativos de brilhar os olhos!",
     "button_1_main": "Contatos",
     "button_2_main": "Meus Projetos"
+  },
+  "about":{
+    "experienceText":"anos de experiência",
+    "whoIam":"Quem sou eu",
+    "title1":"Design com",
+    "title2":"Energia",
+    "text":"Penso como engenheiro, construo como desenvolvedor e enxergo como designer. Curioso por natureza, vivo desmontando o mundo para entender como ele funciona — seja um sistema, uma receita ou um daqueles gritos eternos que fizeram história no rock. Longe da tela: canto, toco e vibro ao som do rock clássico. Mantenho o equilíbrio entre treino, boa comida e viagens. No fim das contas, crio soluções digitais enquanto coleciono histórias que valem a pena.",
+    "button":"Meus projetos"
   },
   "skills": {
     "sub_title": "Minhas habilidades e ferramentas para criar experiências incríveis",

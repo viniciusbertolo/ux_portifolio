@@ -99,21 +99,21 @@ const SommosPage = () => { // ATUALIZADO
 
 
     return (
-        <motion.div
+        <div
             className="project-page"
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
         >
-            <motion.header className="project-hero" variants={fadeInUp} id="topo">
+            <header className="project-hero" variants={fadeInUp} id="topo">
                 {/* ATUALIZADO: Substitua pela imagem de capa do SOMMOS */}
                 <img src="/sommos_header.jpg" alt={t('sommos.hero.alt')} className="hero-image" />
-            </motion.header>
+            </header>
 
             <div className="project-body">
 
                 <div className="page-with-sidebar">
-                    <motion.nav className="project-sidebar" variants={fadeInUp}>
+                    <nav className="project-sidebar" variants={fadeInUp}>
                         <div className="mb-6">
                             <button
                                 onClick={() => navigate("/")}
@@ -159,7 +159,7 @@ const SommosPage = () => { // ATUALIZADO
                                 className={`flag-icon ${i18n.language.startsWith('en') ? 'active' : 'inactive'}`}
                             />
                         </div>
-                    </motion.nav>
+                    </nav>
 
                     <main className="project-container">
 
@@ -187,11 +187,11 @@ const SommosPage = () => { // ATUALIZADO
                                 className={`flag-icon ${i18n.language.startsWith('en') ? 'active' : 'inactive'}`}
                             />
                         </div>
-                        <motion.section className="project-title-section" variants={fadeInUp}>
+                        <section className="project-title-section" variants={fadeInUp}>
                             <h1>{t('sommos.meta.title')}</h1> {/* ATUALIZADO */}
-                        </motion.section>
+                        </section>
 
-                        <motion.section
+                        <section
                             id="about"
                             className="project-meta scroll-section"
                             variants={staggerContainer}
@@ -199,11 +199,11 @@ const SommosPage = () => { // ATUALIZADO
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <motion.div className="meta-description" variants={fadeInUp}>
+                            <div className="meta-description" variants={fadeInUp}>
                                 <h2>{t('sommos.meta.about.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('sommos.meta.about.description')}</p> {/* ATUALIZADO */}
-                            </motion.div>
-                            <motion.div className="meta-details" variants={fadeInUp}>
+                            </div>
+                            <div className="meta-details" variants={fadeInUp}>
                                 <div className="detail-item">
                                     <strong>{t('sommos.meta.role.label')}</strong> {/* ATUALIZADO */}
                                     <span>{t('sommos.meta.role.value')}</span> {/* ATUALIZADO */}
@@ -224,50 +224,50 @@ const SommosPage = () => { // ATUALIZADO
                                         
                                     </div>
                                 </div>
-                            </motion.div>
-                        </motion.section>
+                            </div>
+                        </section>
 
-                        <motion.div
+                        <div
                             className="content-section"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.1 }}
                             variants={staggerContainer}
                         >
-                            <motion.section id="scenario" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="scenario" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('sommos.scenario.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('sommos.scenario.description')}</p> {/* ATUALIZADO */}
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="challenge" className="project-challenge scroll-section" variants={fadeInUp}>
+                            <section id="challenge" className="project-challenge scroll-section" variants={fadeInUp}>
                                 <h2>{t('sommos.challenge.title')}</h2> {/* ATUALIZADO */}
                                 <blockquote>{t('sommos.challenge.description')}</blockquote> {/* ATUALIZADO */}
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="design-process" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="design-process" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('sommos.designProcess.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('sommos.designProcess.description')}</p> {/* ATUALIZADO */}
                                 <div className="image-gallery">
                                     {/* ATUALIZADO: Substitua pela imagem do seu processo */}
-                                    <motion.img variants={fadeInUp} src="/sommos_proto.png" alt={t('sommos.designProcess.imageAlts.discovery')} /> {/* ATUALIZADO */}
+                                    <img variants={fadeInUp} src="/sommos_proto.png" alt={t('sommos.designProcess.imageAlts.discovery')} /> {/* ATUALIZADO */}
                                 </div>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="research" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="research" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('sommos.research.title')}</h2> {/* ATUALIZADO */}
                                 <div className="split-section">
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('sommos.research.user.title')}</h3> {/* ATUALIZADO */}
                                         <p>{t('sommos.research.user.description')}</p> {/* ATUALIZADO */}
-                                    </motion.div>
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    </div>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('sommos.research.competitors.title')}</h3> {/* ATUALIZADO */}
                                         <p>{t('sommos.research.competitors.description')}</p> {/* ATUALIZADO */}
-                                    </motion.div>
+                                    </div>
                                 </div>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="solution" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="solution" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('sommos.solution.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('sommos.solution.description')}</p> {/* ATUALIZADO */}
 
@@ -296,10 +296,10 @@ const SommosPage = () => { // ATUALIZADO
                                 </div>
 
                                 {/* ATUALIZADO: Altere este 'href' para o link do seu arquivo Figma */}
-                                <motion.a href="https://www.figma.com/design/PR5IitHoCdGLplL2qYwI3E/SOMMOS-Portifolio?node-id=0-1&t=ljTuQudZKZW9GsNu-1" target="_blank" rel="noopener noreferrer" className="cta-button figma-cta" variants={fadeInUp}>
+                                <a href="https://www.figma.com/design/PR5IitHoCdGLplL2qYwI3E/SOMMOS-Portifolio?node-id=0-1&t=ljTuQudZKZW9GsNu-1" target="_blank" rel="noopener noreferrer" className="cta-button figma-cta" variants={fadeInUp}>
                                     <SiFigma />
                                     {t('sommos.solution.cta')} {/* ATUALIZADO */}
-                                </motion.a>
+                                </a>
 
                                 <div className="disclaimer-wrapper">
                                     <div className="vertical-line"></div>
@@ -382,40 +382,40 @@ const SommosPage = () => { // ATUALIZADO
 
                                 <div className="image-gallery">
                                     {/* ATUALIZADO: Sugestão de mais imagens de tela */}
-                                    <motion.img
+                                    <img
                                         src="/sommos_tela_1.png" alt={t('sommos.solution.finalImageAlt')} className="final-image" />
                                 </div>
                                 <div className="image-gallery">
                                     {/* ATUALIZADO: Sugestão de mais imagens de tela */}
-                                    <motion.img
+                                    <img
                                         src="/sommos_tela_2.png" alt={t('sommos.solution.finalImageAlt')} className="final-image" />
                                 </div>
                                 <div className="image-gallery">
                                     {/* ATUALIZADO: Sugestão de mais imagens de tela */}
-                                    <motion.img
+                                    <img
                                         src="/sommos_tela_3.png" alt={t('sommos.solution.finalImageAlt')} className="final-image" />
                                 </div>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="results" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="results" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('sommos.results.title')}</h2> {/* ATUALIZADO */}
                                 <div className="split-section">
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('sommos.results.results.title')}</h3> {/* ATUALIZADO */}
                                         <p>{t('sommos.results.results.description')}</p> {/* ATUALIZADO */}
-                                    </motion.div>
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    </div>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('sommos.results.learnings.title')}</h3> {/* ATUALIZADO */}
                                         <p>{t('sommos.results.learnings.description')}</p> {/* ATUALIZADO */}
-                                    </motion.div>
+                                    </div>
                                 </div>
-                            </motion.section>
-                        </motion.div>
+                            </section>
+                        </div>
                     </main>
                 </div>
             </div>
             <BackTop />
-        </motion.div>
+        </div>
     );
 };
 

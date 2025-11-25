@@ -106,21 +106,21 @@ const BrotoPage = () => { // ATUALIZADO
 
 
     return (
-        <motion.div
+        <div
             className="project-page"
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
         >
-            <motion.header className="project-hero" variants={fadeInUp} id="topo">
+            <header className="project-hero" variants={fadeInUp} id="topo">
                 {/* ATUALIZADO: Sugestão de nova imagem de capa */}
                 <img src="/header_broto.webp" alt={t('broto.hero.alt')} className="hero-image" />
-            </motion.header>
+            </header>
 
             <div className="project-body">
 
                 <div className="page-with-sidebar">
-                    <motion.nav className="project-sidebar" variants={fadeInUp}>
+                    <nav className="project-sidebar" variants={fadeInUp}>
                         <div className="mb-6">
                             <button
                                 onClick={() => navigate("/")}
@@ -166,7 +166,7 @@ const BrotoPage = () => { // ATUALIZADO
                                 className={`flag-icon ${i18n.language.startsWith('en') ? 'active' : 'inactive'}`}
                             />
                         </div>
-                    </motion.nav>
+                    </nav>
 
                     <main className="project-container">
 
@@ -195,11 +195,11 @@ const BrotoPage = () => { // ATUALIZADO
                                 className={`flag-icon ${i18n.language.startsWith('en') ? 'active' : 'inactive'}`}
                             />
                         </div>
-                        <motion.section className="project-title-section" variants={fadeInUp}>
+                        <section className="project-title-section" variants={fadeInUp}>
                             <h1>{t('broto.meta.title')}</h1> {/* ATUALIZADO */}
-                        </motion.section>
+                        </section>
 
-                        <motion.section
+                        <section
                             id="about"
                             className="project-meta scroll-section"
                             variants={staggerContainer}
@@ -207,11 +207,11 @@ const BrotoPage = () => { // ATUALIZADO
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <motion.div className="meta-description" variants={fadeInUp}>
+                            <div className="meta-description" variants={fadeInUp}>
                                 <h2>{t('broto.meta.about.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('broto.meta.about.description')}</p> {/* ATUALIZADO */}
-                            </motion.div>
-                            <motion.div className="meta-details" variants={fadeInUp}>
+                            </div>
+                            <div className="meta-details" variants={fadeInUp}>
                                 <div className="detail-item">
                                     <strong>{t('broto.meta.role.label')}</strong> {/* ATUALIZADO */}
                                     <span>{t('broto.meta.role.value')}</span> {/* ATUALIZADO */}
@@ -230,46 +230,46 @@ const BrotoPage = () => { // ATUALIZADO
 
                                     </div>
                                 </div>
-                            </motion.div>
-                        </motion.section>
+                            </div>
+                        </section>
 
-                        <motion.div
+                        <div
                             className="content-section"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.1 }}
                             variants={staggerContainer}
                         >
-                            <motion.section id="scenario" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="scenario" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('broto.scenario.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('broto.scenario.description')}</p> {/* ATUALIZADO */}
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="challenge" className="project-challenge scroll-section" variants={fadeInUp}>
+                            <section id="challenge" className="project-challenge scroll-section" variants={fadeInUp}>
                                 <h2>{t('broto.challenge.title')}</h2> {/* ATUALIZADO */}
                                 <blockquote>{t('broto.challenge.description')}</blockquote> {/* ATUALIZADO */}
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="design-process" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="design-process" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('broto.designProcess.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('broto.designProcess.description')}</p> {/* ATUALIZADO */}
                                 <div className="image-gallery">
                                     {/* Esta imagem do Double Diamond é genérica e pode ser mantida */}
-                                    <motion.img variants={fadeInUp} src="/ds_conception.png" alt={t('broto.designProcess.imageAlts.discovery')} /> {/* ATUALIZADO */}
+                                    <img variants={fadeInUp} src="/ds_conception.png" alt={t('broto.designProcess.imageAlts.discovery')} /> {/* ATUALIZADO */}
                                 </div>
-                            </motion.section>
+                            </section>
 
-                            {/* <motion.section id="research" className="project-content scroll-section" variants={fadeInUp}>
+                            {/* <section id="research" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('digitaltech.research.title')}</h2>
                                 <div className="split-section">
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('digitaltech.research.user.title')}</h3>
                                         <p>{t('digitaltech.research.user.description')}</p>
-                                    </motion.div>
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    </div>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('digitaltech.research.competitors.title')}</h3>
                                         <p>{t('digitaltech.research.competitors.description')}</p>
-                                    </motion.div>
+                                    </div>
                                 </div>
                                 <div className="benchmarking-container">
                                     <table className="benchmarking-table">
@@ -358,19 +358,19 @@ const BrotoPage = () => { // ATUALIZADO
                                         </tbody>
                                     </table>
                                 </div>
-                            </motion.section> */}
+                            </section> */}
 
-                            <motion.section id="research" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="research" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('broto.research.title')}</h2> {/* ATUALIZADO */}
                                 <div className="split-section">
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('broto.research.user.title')}</h3> {/* ATUALIZADO */}
                                         <p>{t('broto.research.user.description')}</p> {/* ATUALIZADO */}
-                                    </motion.div>
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    </div>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('broto.research.competitors.title')}</h3> {/* ATUALIZADO */}
                                         <p>{t('broto.research.competitors.description')}</p> {/* ATUALIZADO */}
-                                    </motion.div>
+                                    </div>
 
                                 </div>
 
@@ -381,48 +381,48 @@ const BrotoPage = () => { // ATUALIZADO
                                 */}
                                 <div className="image-gallery">
                                     {/* ATUALIZADO: Sugestão de imagem de componentes */}
-                                    <motion.img
+                                    <img
                                         src="/roadmap_ds.png" alt={t('broto.solution.finalImageAlt')} className="final-image" />
                                 </div>
-                            </motion.section>
+                            </section>
 
 
-                            <motion.section id="references" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="references" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('broto.references.title')}</h2>
                                 <p>{t('broto.references.description')}</p>
 
                                 <div className="references-grid">
                                     {/* --- Card 1: Material-UI --- */}
-                                    <motion.div className="reference-item" variants={fadeInUp}>
+                                    <div className="reference-item" variants={fadeInUp}>
                                         <SiMaterialdesign />
                                         <h3>{t('broto.references.mui.title')}</h3>
                                         <p>{t('broto.references.mui.description')}</p>
-                                    </motion.div>
+                                    </div>
 
                                     {/* --- Card 2: Tailwind CSS --- */}
-                                    <motion.div className="reference-item" variants={fadeInUp}>
+                                    <div className="reference-item" variants={fadeInUp}>
                                         <SiTailwindcss />
                                         <h3>{t('broto.references.tailwind.title')}</h3>
                                         <p>{t('broto.references.tailwind.description')}</p>
-                                    </motion.div>
+                                    </div>
 
                                     {/* --- Card 3: Lucide Icons --- */}
-                                    <motion.div className="reference-item" variants={fadeInUp}>
+                                    <div className="reference-item" variants={fadeInUp}>
                                         <SiLucide />
                                         <h3>{t('broto.references.lucide.title')}</h3>
                                         <p>{t('broto.references.lucide.description')}</p>
-                                    </motion.div>
+                                    </div>
 
                                     {/* --- Card 4: AG Grid --- */}
-                                    <motion.div className="reference-item" variants={fadeInUp}>
+                                    <div className="reference-item" variants={fadeInUp}>
                                         <LayoutGrid size={30} />
                                         <h3>{t('broto.references.aggrid.title')}</h3>
                                         <p>{t('broto.references.aggrid.description')}</p>
-                                    </motion.div>
+                                    </div>
                                 </div>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="solution" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="solution" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('broto.solution.title')}</h2> {/* ATUALIZADO */}
                                 <p>{t('broto.solution.description')}</p> {/* ATUALIZADO */}
 
@@ -452,10 +452,10 @@ const BrotoPage = () => { // ATUALIZADO
                                 </div> */}
 
                                 {/* ATUALIZADO: Altere este 'href' para o link do seu arquivo Figma */}
-                                <motion.a href="https://www.figma.com/design/YuXdacjoBXQjISKDG6FHSx/Casa-verde?node-id=772-2&t=O23oxrHTCWZz6vnT-1" target="_blank" rel="noopener noreferrer" className="cta-button figma-cta" variants={fadeInUp}>
+                                <a href="https://www.figma.com/design/YuXdacjoBXQjISKDG6FHSx/Casa-verde?node-id=772-2&t=O23oxrHTCWZz6vnT-1" target="_blank" rel="noopener noreferrer" className="cta-button figma-cta" variants={fadeInUp}>
                                     <SiFigma />
                                     {t('broto.solution.cta')} {/* ATUALIZADO */}
-                                </motion.a>
+                                </a>
 
                                 <div className="disclaimer-wrapper">
                                     <div className="vertical-line"></div>
@@ -545,30 +545,30 @@ const BrotoPage = () => { // ATUALIZADO
 
                                 <div className="image-gallery">
                                     {/* ATUALIZADO: Sugestão de imagem de componentes */}
-                                    <motion.img
+                                    <img
                                         src="/ds_sidebar.png" alt={t('broto.solution.finalImageAlt')} className="final-image" style={{ width: '40%' }} />
                                 </div>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="results" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="results" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('broto.results.title')}</h2> {/* ATUALIZADO */}
                                 <div className="split-section">
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('broto.results.results.title')}</h3> {/* ATUALIZADO */}
                                         <p>{t('broto.results.results.description')}</p> {/* ATUALIZADO */}
-                                    </motion.div>
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    </div>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('broto.results.learnings.title')}</h3> {/* ATUALIZADO */}
                                         <p>{t('broto.results.learnings.description')}</p> {/* ATUALIZADO */}
-                                    </motion.div>
+                                    </div>
                                 </div>
-                            </motion.section>
-                        </motion.div>
+                            </section>
+                        </div>
                     </main>
                 </div>
             </div>
             <BackTop />
-        </motion.div>
+        </div>
     );
 };
 

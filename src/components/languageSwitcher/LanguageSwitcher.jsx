@@ -5,9 +5,9 @@ import { ChevronDown } from 'lucide-react';
 import './languageSwitcher.scss';
 
 const languages = [
-  { code: 'pt', countryCode: 'BR', name: 'Português' },
-  { code: 'en', countryCode: 'US', name: 'English' },
-  { code: 'de', countryCode: 'DE', name: 'Deutsch' },
+  { code: 'pt', countryCode: 'BR', name: 'Português', label: 'PT' },
+  { code: 'en', countryCode: 'US', name: 'English', label: 'EN' },
+  { code: 'de', countryCode: 'DE', name: 'Deutsch', label: 'DE' },
 ];
 
 // 1. Mantivemos a lógica para aceitar uma className externa
@@ -50,7 +50,7 @@ function LanguageSwitcher({ className = '' }) {
           title={currentLang.name}
         />
         {/* 4. A exibição do código do país e a fonte foram mantidas */}
-        <span className='font-[Open_Sans]'>{currentLang.countryCode}</span>
+        <span className='font-[Open_Sans]'>{currentLang.label}</span>
         <ChevronDown size={18} className={`chevron ${isOpen ? 'open' : ''}`} />
       </div>
 

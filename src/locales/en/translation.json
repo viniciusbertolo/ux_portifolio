@@ -1,10 +1,10 @@
 {
   "header": {
-    "header_1": "SKILLS",
+    "header_1": "ABOUT ME",
     "header_2": "PROJECTS",
     "header_3": "NETWORKS",
     "header_4": "CONTACT",
-    "button": "CURRICULUM (CV)"
+    "button": "RESUME(CV)"
   },
   "hero": {
     "up_title_main": "VINICIUS MÜSCHENBORN",
@@ -12,6 +12,14 @@
     "desc_main": "Users aren't robots. See how I handle them in different kinds of projects, turning pain points into stunning, interactive screens and prototypes!",
     "button_1_main": "Contact Me",
     "button_2_main": "My Projects"
+  },
+  "about": {
+    "experienceText": "years of experience",
+    "whoIam": "Who I am",
+    "title1": "Design with",
+    "title2": "Energy",
+    "text": "I think like an engineer, build like a developer, and see like a designer. Curious by nature, I’m always taking the world apart to understand how it ticks—whether it’s a system, a recipe, or those timeless screams that made rock history. Away from the screen: I sing, play, and vibe to classic rock. I keep my balance through working out, good food, and traveling. In the end, I create digital solutions while collecting stories worth telling.",
+    "button": "My projects"
   },
   "skills": {
     "sub_title": "My skills and tools for creating incredible experiences",

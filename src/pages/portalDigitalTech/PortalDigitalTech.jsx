@@ -108,20 +108,20 @@ const DigitalTechPage = () => {
 
 
     return (
-        <motion.div
+        <div
             className="project-page"
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
         >
-            <motion.header className="project-hero" variants={fadeInUp} id="topo">
+            <header className="project-hero" variants={fadeInUp} id="topo">
                 <img src="/header_digital_tech.png" alt={t('digitaltech.hero.alt')} className="hero-image" />
-            </motion.header>
+            </header>
 
             <div className="project-body">
 
                 <div className="page-with-sidebar">
-                    <motion.nav className="project-sidebar" variants={fadeInUp}>
+                    <nav className="project-sidebar" variants={fadeInUp}>
                         <div className="mb-6">
                             <button
                                 onClick={() => navigate("/")} // A mágica acontece aqui!
@@ -168,7 +168,7 @@ const DigitalTechPage = () => {
                                 className={`flag-icon ${i18n.language.startsWith('en') ? 'active' : 'inactive'}`}
                             />
                         </div>
-                    </motion.nav>
+                    </nav>
 
                     <main className="project-container">
 
@@ -197,11 +197,11 @@ const DigitalTechPage = () => {
                                 className={`flag-icon ${i18n.language.startsWith('en') ? 'active' : 'inactive'}`}
                             />
                         </div>
-                        <motion.section className="project-title-section" variants={fadeInUp}>
+                        <section className="project-title-section" variants={fadeInUp}>
                             <h1>{t('digitaltech.meta.title')}</h1>
-                        </motion.section>
+                        </section>
 
-                        <motion.section
+                        <section
                             id="about"
                             className="project-meta scroll-section"
                             variants={staggerContainer}
@@ -209,11 +209,11 @@ const DigitalTechPage = () => {
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <motion.div className="meta-description" variants={fadeInUp}>
+                            <div className="meta-description" variants={fadeInUp}>
                                 <h2>{t('digitaltech.meta.about.title')}</h2>
                                 <p>{t('digitaltech.meta.about.description')}</p>
-                            </motion.div>
-                            <motion.div className="meta-details" variants={fadeInUp}>
+                            </div>
+                            <div className="meta-details" variants={fadeInUp}>
                                 <div className="detail-item">
                                     <strong>{t('digitaltech.meta.role.label')}</strong>
                                     <span>{t('digitaltech.meta.role.value')}</span>
@@ -235,10 +235,10 @@ const DigitalTechPage = () => {
                                         <PiKanbanDuotone size={40} title="Kanban" />
                                     </div>
                                 </div>
-                            </motion.div>
-                        </motion.section>
+                            </div>
+                        </section>
 
-                        <motion.div
+                        <div
                             className="content-section"
                             initial="hidden"
                             whileInView="visible"
@@ -246,35 +246,35 @@ const DigitalTechPage = () => {
                             variants={staggerContainer}
                         >
                             {/* Adicionado id e classe .scroll-section para o observer */}
-                            <motion.section id="scenario" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="scenario" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('digitaltech.scenario.title')}</h2>
                                 <p>{t('digitaltech.scenario.description')}</p>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="challenge" className="project-challenge scroll-section" variants={fadeInUp}>
+                            <section id="challenge" className="project-challenge scroll-section" variants={fadeInUp}>
                                 <h2>{t('digitaltech.challenge.title')}</h2>
                                 <blockquote>{t('digitaltech.challenge.description')}</blockquote>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="design-process" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="design-process" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('digitaltech.designProcess.title')}</h2>
                                 <p>{t('digitaltech.designProcess.description')}</p>
                                 <div className="image-gallery">
-                                    <motion.img variants={fadeInUp} src="/double-diamond-design.jpg" alt={t('digitaltech.designProcess.imageAlts.discovery')} />
+                                    <img variants={fadeInUp} src="/double-diamond-design.jpg" alt={t('digitaltech.designProcess.imageAlts.discovery')} />
                                 </div>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="research" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="research" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('digitaltech.research.title')}</h2>
                                 <div className="split-section">
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('digitaltech.research.user.title')}</h3>
                                         <p>{t('digitaltech.research.user.description')}</p>
-                                    </motion.div>
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    </div>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('digitaltech.research.competitors.title')}</h3>
                                         <p>{t('digitaltech.research.competitors.description')}</p>
-                                    </motion.div>
+                                    </div>
                                 </div>
                                 <div className="benchmarking-container">
                                     <table className="benchmarking-table">
@@ -363,9 +363,9 @@ const DigitalTechPage = () => {
                                         </tbody>
                                     </table>
                                 </div>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="solution" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="solution" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('digitaltech.solution.title')}</h2>
                                 <p>{t('digitaltech.solution.description')}</p>
 
@@ -394,10 +394,10 @@ const DigitalTechPage = () => {
                                 </div>
 
 
-                                <motion.a href="https://www.figma.com/design/EzUgyzL8JfAUo8V7CgzBIW/AcademiaX-Portifolio?node-id=27-901&t=KVkxGYzJH6i2xWYy-1" target="_blank" rel="noopener noreferrer" className="cta-button figma-cta" variants={fadeInUp}>
+                                <a href="https://www.figma.com/design/EzUgyzL8JfAUo8V7CgzBIW/AcademiaX-Portifolio?node-id=27-901&t=KVkxGYzJH6i2xWYy-1" target="_blank" rel="noopener noreferrer" className="cta-button figma-cta" variants={fadeInUp}>
                                     <SiFigma />
                                     {t('digitaltech.solution.cta')}
-                                </motion.a>
+                                </a>
                                 <div className="disclaimer-wrapper">
                                     <div className="vertical-line"></div>
                                     <div className="disclaimer-content">
@@ -482,30 +482,30 @@ const DigitalTechPage = () => {
                                 </div>
 
                                 <div className="image-gallery">
-                                    <motion.img
+                                    <img
                                         src="/figma_prototype.png" alt={t('digitaltech.solution.finalImageAlt')} className="final-image" />
                                 </div>
-                            </motion.section>
+                            </section>
 
-                            <motion.section id="results" className="project-content scroll-section" variants={fadeInUp}>
+                            <section id="results" className="project-content scroll-section" variants={fadeInUp}>
                                 <h2>{t('digitaltech.results.title')}</h2>
                                 <div className="split-section">
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('digitaltech.results.results.title')}</h3>
                                         <p>{t('digitaltech.results.results.description')}</p>
-                                    </motion.div>
-                                    <motion.div className="split-item" variants={fadeInUp}>
+                                    </div>
+                                    <div className="split-item" variants={fadeInUp}>
                                         <h3>{t('digitaltech.results.learnings.title')}</h3>
                                         <p>{t('digitaltech.results.learnings.description')}</p>
-                                    </motion.div>
+                                    </div>
                                 </div>
-                            </motion.section>
-                        </motion.div>
+                            </section>
+                        </div>
                     </main>
                 </div>
             </div>
             <BackTop />
-        </motion.div>
+        </div>
 
 
     );

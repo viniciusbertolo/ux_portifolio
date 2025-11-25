@@ -20,7 +20,7 @@ const Header = () => {
             <h1 className="font-[Open_Sans] text-3xl md:text-4xl lg:text-5xl font-light m-0">VMUS</h1>
 
             <nav className="hidden md:flex items-center gap-12">
-                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#skills">
+                <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#about">
                     {t('header.header_1')}
                 </a>
                 <a className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#projects">
@@ -61,7 +61,7 @@ const Header = () => {
 
             <div id='mobileMenu' className=' hidden fixed top-0 pt-20 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-90 backdrop-blur- md'>
                 <nav className="flex flex-col gap-6 items-center">
-                    <a onClick={toggleMobileMenu} className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#skills">
+                    <a onClick={toggleMobileMenu} className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#about">
                         {t('header.header_1')}
                     </a>
                     <a onClick={toggleMobileMenu} className="font-[Open_Sans] text-base tracking-wider transition-colors hover:text-gray-300 z-50" href="#projects">
