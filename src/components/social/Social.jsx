@@ -16,9 +16,9 @@ const Socials = () => {
 
   // 3. Criamos o mapa de arquivos de currículo (lembre-se de colocá-los na pasta /public)
   const resumeFiles = {
-    pt: '/CV - Vinicius 2025.pdf',
-    en: '/CV - Vinicius 2025 - English.pdf',
-    de: '/CV - Vinicius 2025 - English.pdf',
+    pt: '/CV - Vinicius - UI - UX - PT.pdf',
+    en: '/CV - Vinicius - UI - UX - EN.pdf',
+    de: '/CV - Vinicius - UI - UX - EN.pdf',
   };
 
   // 4. Determinamos o caminho correto do currículo, com o inglês como padrão

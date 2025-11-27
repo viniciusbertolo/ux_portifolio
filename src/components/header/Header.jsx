@@ -13,8 +13,18 @@ const Header = () => {
         }
     }
 
+    const { t, i18n } = useTranslation();
+    
+      // 3. Criamos o mapa de arquivos de currículo (lembre-se de colocá-los na pasta /public)
+      const resumeFiles = {
+        pt: '/CV - Vinicius - UI - UX - PT.pdf',
+        en: '/CV - Vinicius - UI - UX - EN.pdf',
+        de: '/CV - Vinicius - UI - UX - EN.pdf',
+      };
+    
+      // 4. Determinamos o caminho correto do currículo, com o inglês como padrão
+      const resumeHref = resumeFiles[i18n.language] || resumeFiles['en'];
 
-    const { t } = useTranslation();
     return (
         <header className="flex justify-between items-center py-4 px-4 lg:px-20">
             <h1 className="font-[Open_Sans] text-3xl md:text-4xl lg:text-5xl font-light m-0">VMUS</h1>
@@ -45,9 +55,9 @@ const Header = () => {
             {/* --- Container para Desktop --- */}
             <div className="hidden md:flex items-center gap-6">
                 <LanguageSwitcher />
-                <button className="font-[Open_Sans] bg-[#222222] text-white py-3 px-8 rounded-[10px] border-none font-bold transition-all duration-500 hover:bg-[#ff8c00] hover:text-black cursor-pointer z-50">
+                <a href={resumeHref} target="_blank" className="font-[Open_Sans] bg-[#222222] text-white py-3 px-8 rounded-[10px] border-none font-bold transition-all duration-500 hover:bg-[#ff8c00] hover:text-black cursor-pointer z-50">
                     {t('header.button')}
-                </button>
+                </a>
             </div>
 
 
